@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocumentation_server=self.webpackChunkdocumentation_server||[]).push([[3726],{1429:e=>{e.exports=JSON.parse('{"label":"human health","permalink":"/docs/fr/blog/tags/human-health","allTagsPath":"/docs/fr/blog/tags","count":1}')}}]);

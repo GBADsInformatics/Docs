@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocumentation_server=self.webpackChunkdocumentation_server||[]).push([[4488],{2346:e=>{e.exports=JSON.parse('{"label":"concept","permalink":"/fr/blog/tags/concept","allTagsPath":"/fr/blog/tags","count":1}')}}]);
