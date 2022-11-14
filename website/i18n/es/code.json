@@ -1,0 +1,384 @@
+{
+  "GBADs Informatics logo": {
+    "message": "Logotipo de GBADs Informática",
+    "description": "GBADs Informatics logo"
+  },
+  "GBADs Informatics": {
+    "message": "GBAD Informática"
+  },
+  "New? Start here 📋": {
+    "message": "¿Nuevo? Comienza aquí 📋"
+  },
+  "The": {
+    "message": "La"
+  },
+  "Global Burden of Animal Diseases": {
+    "message": "Carga Mundial de Enfermedades Animales"
+  },
+  "(GBADs) is an international initiative that aims to improve decision-making for animal health by integrating data from a variety of sources and sharing tools for analysis. It will contribute to the United Nations’ Sustainable Development Goals of zero hunger, good health and well-being, gender equality, and responsible consumption and production. GBADs has multiple theme groups, one of which is Informatics.": {
+    "message": "(GBADs) es una iniciativa internacional que tiene como objetivo mejorar la toma de decisiones para la salud animal mediante la integración de datos de una variedad de fuentes y el intercambio de herramientas para su análisis. Contribuirá a los Objetivos de Desarrollo Sostenible de las Naciones Unidas incluyendo los de hambre cero, buena salud y bienestar, igualdad de género y consumo y producción responsables. GBADs tiene múltiples grupos temáticos, uno de los cuales es Informática."
+  },
+  "is dedicated to providing data, data products, data quality assessment, and modelling products through data governance and secure Cloud services for all stakeholders.": {
+    "message": "se dedica a proporcionar datos, productos de datos, evaluación de la calidad de los datos y productos de modelado a través de la gobernanza de datos y servicios seguros en la nube para todas las partes interesadas."
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "Esta página colapsó.",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "Intentar otra vez",
+    "description": "The label of the button to try again when the page crashed"
+  },
+  "theme.NotFound.title": {
+    "message": "Página No Encontrada",
+    "description": "The title of the 404 page"
+  },
+  "theme.NotFound.p1": {
+    "message": "No pudimos encontrar lo que buscaba.",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "Comuníquese con el dueño del sitio que lo vinculó a la URL original y hágale saber que su vínculo está roto.",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "Cerrar",
+    "description": "The ARIA label for close button of announcement bar"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "Volver al principio",
+    "description": "The ARIA label for the back to top button"
+  },
+  "theme.blog.archive.title": {
+    "message": "archivo",
+    "description": "The page & hero title of the blog archive page"
+  },
+  "theme.blog.archive.description": {
+    "message": "archivo",
+    "description": "The page & hero description of the blog archive page"
+  },
+  "theme.blog.paginator.navAriaLabel": {
+    "message": "Navegacion por la pagina de la lista de blogs",
+    "description": "The ARIA label for the blog pagination"
+  },
+  "theme.blog.paginator.newerEntries": {
+    "message": "Entradas más recientes",
+    "description": "The label used to navigate to the newer blog posts page (previous page)"
+  },
+  "theme.blog.paginator.olderEntries": {
+    "message": "Entradas mas antiguas",
+    "description": "The label used to navigate to the older blog posts page (next page)"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "Lectura de un minuto|{readingTime} min de lectura",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.post.readMore": {
+    "message": "Leer Más",
+    "description": "The label used in blog post item excerpts to link to full blog posts"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "Navegación de publicaciones recientes",
+    "description": "The ARIA label for recent posts in the blog sidebar"
+  },
+  "theme.blog.post.paginator.navAriaLabel": {
+    "message": "Barra de paginacion de publicaciones del blog",
+    "description": "The ARIA label for the blog posts pagination"
+  },
+  "theme.blog.post.paginator.newerPost": {
+    "message": "Publicacion mas reciente",
+    "description": "The blog post button label to navigate to the newer/previous post"
+  },
+  "theme.blog.post.paginator.olderPost": {
+    "message": "Publicacion mas antigua",
+    "description": "The blog post button label to navigate to the older/next post"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "Copiar código al portapapeles",
+    "description": "The ARIA label for copy code blocks button"
+  },
+  "theme.CodeBlock.copied": {
+    "message": "copiado",
+    "description": "The copied button label on code blocks"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "Copiar",
+    "description": "The copy button label on code blocks"
+  },
+  "theme.blog.post.plurals": {
+    "message": "Una publicación|{count} publicaciones",
+    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.tagTitle": {
+    "message": "{nPosts} etiquetados con \"{tagName}\"",
+    "description": "The title of the page for a blog tag"
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "Ver Todas las Etiquetas",
+    "description": "The label of the link targeting the tag list page"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "Expandir barra lateral",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "Expandir barra lateral",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "Colapsar barra lateral",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "Colapsar barra lateral",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.DocSidebarItem.toggleCollapsedCategoryAriaLabel": {
+    "message": "Alternar la categoría de la barra lateral plegable '{label}'",
+    "description": "The ARIA label to toggle the collapsible sidebar category"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "Navegación de páginas de documentos",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "Anterior",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.paginator.next": {
+    "message": "siguiente",
+    "description": "The label used to navigate to the next doc"
+  },
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "Un documento etiquetado|{count} documentos etiquetados",
+    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.tagDocListPageTitle": {
+    "message": "{nDocsTagged} con \"{tagName}\"",
+    "description": "The title of the page for a docs tag"
+  },
+  "theme.docs.versions.unreleasedVersionLabel": {
+    "message": "Esta es documentación sin liberar para {siteTitle} {versionLabel} versión.",
+    "description": "The label used to tell the user that he's browsing an unreleased doc version"
+  },
+  "theme.docs.versions.unmaintainedVersionLabel": {
+    "message": "Esta es documentación para {siteTitle} {versionLabel}, que ya no se mantiene activamente.",
+    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
+  },
+  "theme.docs.versions.latestVersionSuggestionLabel": {
+    "message": "Para la documentación actualizada, vea {latestVersionLink} ({versionLabel}).",
+    "description": "The label used to tell the user to check the latest version"
+  },
+  "theme.docs.versions.latestVersionLinkLabel": {
+    "message": "última versión",
+    "description": "The label used for the latest version suggestion link label"
+  },
+  "theme.common.editThisPage": {
+    "message": "Editar esta página",
+    "description": "The link label to edit the current page"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "Enlace directo al encabezado",
+    "description": "Title for link to heading"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": "en {fecha}",
+    "description": "The words used to describe on which date a page has been last updated"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": "por {usuario}",
+    "description": "The words used to describe by who the page has been last updated"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "Última actualización{atDate}{byUser}",
+    "description": "The sentence used to display when a page has been last updated, and by who"
+  },
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "← Volver al menú principal",
+    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+  },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "Versiones",
+    "description": "The label for the navbar versions dropdown on mobile view"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "Saltar al contenido principal",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "En esta pagina",
+    "description": "The label used by the button on the collapsible TOC component"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "Etiquetas:",
+    "description": "The label alongside a tag list"
+  },
+  "cmfcmf/d-s-l.searchBar.placeholder": {
+    "message": "Buscar...",
+    "description": "Placeholder shown in the searchbar"
+  },
+  "cmfcmf/d-s-l.searchBar.clearButtonTitle": {
+    "message": "Borrar",
+    "description": "Title of the button to clear the current search input"
+  },
+  "cmfcmf/d-s-l.searchBar.detachedCancelButtonText": {
+    "message": "cancelar",
+    "description": "Text of the button to close the detached search window"
+  },
+  "cmfcmf/d-s-l.searchBar.submitButtonTitle": {
+    "message": "Enviar",
+    "description": "Title of the button to submit a new search"
+  },
+  "cmfcmf/d-s-l.searchBar.noResults": {
+    "message": "No se han encontrado resultados.",
+    "description": "message shown if no results are found"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "Etiquetas",
+    "description": "The title of the tag list page"
+  },
+  "Informatics Theme Lead, University of Guelph": {
+    "message": "Líder del tema de informática, Universidad de Guelph"
+  },
+  "Postdoctoral Researcher, University of Guelph": {
+    "message": "Investigador Postdoctoral, Universidad de Guelph"
+  },
+  "Informatics Technical Manager, University of Guelph": {
+    "message": "Gerente Técnico de Informática, Universidad de Guelph"
+  },
+  "Postdoctoral Research Associate, University of Guelph": {
+    "message": "Investigador Postdoctoral Asociado, Universidad de Guelph"
+  },
+  "Postdoctoral Research Associate": {
+    "message": "Asociado de investigación posdoctoral"
+  },
+  "Informatics Software Developer, University of Guelph": {
+    "message": "Desarrollador de software informático, Universidad de Guelph"
+  },
+  "Research Assistant, University of Guelph": {
+    "message": "Asistente de investigación, Universidad de Guelph"
+  },
+  "From FAIR to FAIRS": {
+    "message": "De FERIA a FERIAS"
+  },
+  "New publication from GBADs Informatics": {
+    "message": "Nueva publicación de GBADs Informatics"
+  },
+  "Current GBADs Informatics team members Deborah Stacey and Theresa Bernardo and past team members Kenneth Wulff and Nidhip Chikhalla have recently published a paper titled \\\"From FAIR to FAIRS: Data security by design for the global burden of animal diseases\\\" in Agronomy Journal. Data and metadata should be FAIR - Findable, Accessible, Interoperable, and Reusable. This paper describes the need for GBADs to adopt an additional dimension, Security, taking FAIR to FAIRS. GBADs will need to securely manage an increasing amount of sensitive and private data. The Informatics team's plan for doing so is centered around data sharing in the cloud to \\\"facilitate our vision of a decentralized, nonhierarchical organization of data, tools, and models.\\\"": {
+    "message": "Los miembros actuales del equipo de informática de GBAD, Deborah Stacey y Theresa Bernardo, y los miembros anteriores del equipo, Kenneth Wulff y Nidhip Chikhalla, publicaron recientemente un artículo titulado \\\"From FAIR to FAIRS: Data security by design for the global load of animal diseases\\\" en Agronomy Journal. Los datos y los metadatos deben ser JUSTOS: localizables, accesibles, interoperables y reutilizables. Este documento describe la necesidad de que los GBADs adopten una dimensión adicional, la Seguridad, llevando FAIR a FAIRS. Los GBAD deberán gestionar de forma segura una cantidad cada vez mayor de datos confidenciales y privados. El plan del equipo de Informática para hacerlo se centra en el intercambio de datos en la nube para \"facilitar nuestra visión de una organización descentralizada y no jerárquica de datos, herramientas y modelos\"."
+  },
+  "To learn more, read the paper, which can be found at": {
+    "message": "Para obtener más información, lea el documento, que se puede encontrar en"
+  },
+  "this link": {
+    "message": "este enlace"
+  },
+  "Discussion of guidelines for data governance can also be found in our": {
+    "message": "La discusión de las pautas para el gobierno de datos también se puede encontrar en nuestro"
+  },
+  "Data Governance Handbook": {
+    "message": "Manual de Gobernanza de datos"
+  },
+  "GBADs Shout-Out at the Datasphere Initiative Launch": {
+    "message": "Grito de GBAD en el lanzamiento de la iniciativa Datasphere"
+  },
+  "GBADs at the launch of the Datasphere Initiative": {
+    "message": "GBADs en el lanzamiento de la Iniciativa Datasphere"
+  },
+  "GBADs Informatics Technical Manager Kassy Raymond (also a Datasphere Initiative Fellow) was a panelist at the recent launch event for the Datasphere Initiative, where she described her work with GBADs to highlight why data quality, sharing, interoperability, reusability, and discoverability are important.": {
+    "message": "La gerente técnica de informática de GBAD, Kassy Raymond (también miembro de la Iniciativa Datasphere), fue panelista en el reciente evento de lanzamiento de la Iniciativa Datasphere, donde describió su trabajo con GBAD para resaltar por qué la calidad de los datos, el intercambio, la interoperabilidad, la reutilización y la capacidad de descubrimiento son importantes."
+  },
+  "Watch Kassy's talk": {
+    "message": "Mira la charla de Kassy"
+  },
+  "here": {
+    "message": "aquí"
+  },
+  "from minutes 26-31, and learn more about the launch event": {
+    "message": "desde los minutos 26 al 31, y conozca más sobre el evento de lanzamiento"
+  },
+  "Graph Data in the Datasphere: How Graph Databases Can Help Us Understand the Data Connections in the Datasphere": {
+    "message": "Datos gráficos en la esfera de datos: cómo las bases de datos gráficas pueden ayudarnos a comprender las conexiones de datos en la esfera de datos"
+  },
+  "Explainer blog on Graph Databases": {
+    "message": "Blog explicativo sobre bases de datos gráficas"
+  },
+  "GBADs Informatics team member Kassy Raymond published a blog explaining how graph databases can help us visualize data, reveal trends and patterns in the data, and facilitate trust through understanding data flows. Graph databases are in integral part of the GBADs knowledge engine, and will help us maximize our use of identified data sources.": {
+    "message": "Kassy Raymond, miembro del equipo de informática de GBAD, publicó un blog en el que explica cómo las bases de datos gráficas pueden ayudarnos a visualizar datos, revelar tendencias y patrones en los datos y facilitar la confianza a través de la comprensión de los flujos de datos. Las bases de datos de gráficos son una parte integral del motor de conocimiento de GBAD y nos ayudarán a maximizar nuestro uso de las fuentes de datos identificadas."
+  },
+  "To learn more, read the blog": {
+    "message": "Para obtener más información, lea el blog"
+  },
+  "Information on how GBADs Informatics plans to use graph databses can be found in the": {
+    "message": "Puede encontrar información sobre cómo GBADs Informatics planea usar bases de datos de grafos en el"
+  },
+  "GBADs at the Annual Forum of the National Farmed Animal Health and Welfare Council": {
+    "message": "GBAD en el Foro Anual del Consejo Nacional de Salud y Bienestar de los Animales de Granja"
+  },
+  "Spreading the word about GBADs": {
+    "message": "Correr la voz sobre los GBAD"
+  },
+  "GBADs Informatics co-lead Theresa Bernardo, together with Liverpool colleague Ben Huntington, presented at the Annual Forum of the National Farmed Animal Health and Welfare Council (now known as Animal Health Canada). One of three invited talks at the forum, Theresa and Ben introduced the GBADs program, vision, and Informatics workflow to Canadian stakeholders.": {
+    "message": "La codirectora de GBADs Informatics, Theresa Bernardo, junto con su colega de Liverpool, Ben Huntington, hicieron una presentación en el Foro Anual del Consejo Nacional de Salud y Bienestar de los Animales de Granja (ahora conocido como Animal Health Canada). Una de las tres charlas invitadas en el foro, Theresa y Ben presentaron el programa, la visión y el flujo de trabajo de informática de GBAD a las partes interesadas canadienses."
+  },
+  "Watch their presentation": {
+    "message": "Mira su presentación"
+  },
+  "More details about the 2021 forum and future events can be found at the": {
+    "message": "Se pueden encontrar más detalles sobre el foro de 2021 y los eventos futuros en el"
+  },
+  "AHC website": {
+    "message": "sitio web de AHC"
+  },
+  "Find documentation for using our Data Portal, Knowledge Engine, and Software Tools": {
+    "message": "Encuentre documentación para usar nuestro portal de datos, motor de conocimiento y herramientas de software"
+  },
+  "Our site has manuals, tutorials, videos, and presentations that will help with using our data portal acess through APIs and Dashboards and software tools in Python and R.": {
+    "message": "Nuestro sitio tiene manuales, tutoriales, videos y presentaciones que ayudarán con el uso de nuestro acceso al portal de datos a través de API y paneles y herramientas de software en Python y R."
+  },
+  "Publications": {
+    "message": "Publicaciones"
+  },
+  "All papers, abstracts, and research presentations are found here as well as information on how to cite our work in formats that are friendly for many publishing software and platforms.": {
+    "message": "Todos los artículos, resúmenes y presentaciones de investigación se encuentran aquí, así como información sobre cómo citar nuestro trabajo en formatos compatibles con muchas plataformas y software de publicación."
+  },
+  "GBADs Media": {
+    "message": "Medios GBAD"
+  },
+  "Learn more about us through our Youtube channel, and Github account!": {
+    "message": "¡Aprenda más sobre nosotros a través de nuestro canal de Youtube y cuenta de Github!"
+  },
+  "Our": {
+    "message": "Nuestro"
+  },
+  "Team": {
+    "message": "Equipo"
+  },
+  "Create a doc!": {
+    "message": "¡Crea un documento!"
+  },
+  "GBADs at the Big Data in Animal Health Webinar": {
+    "message": "GBADs en el Big Data in Animal Health Webinar"
+  },
+  "Presentation at the Big Data in Animal Health Webinar": {
+    "message": "Presentación en el Webinar Big Data en Salud Animal"
+  },
+  "Explore our docs": {
+    "message": "Explora nuestros documentos"
+  },
+  "Check out our publications": {
+    "message": "Consulta nuestras publicaciones"
+  },
+  "Learn more about GBADs through our Youtube channel, and Github account!": {
+    "message": "¡Aprenda más sobre GBAD a través de nuestro canal de Youtube y cuenta de Github!"
+  },
+  "GBADs TV": {
+    "message": "GBADs TV"
+  },
+  "To learn more about this topic, you can watch the presentation here. More information about this event can be found in the Health for Animals website": {
+    "message": "To learn more about this topic, you can watch the presentation here. More information about this event can be found in the Health for Animals website"
+  },
+  "GBADs Informatics co-lead Theresa Bernardo presented at the Big Data in Animal Health webinar organised by the Health for Animals association. After providing an overview of the technologies and apps showing the potentials that could be unleashed from animal health data, Theresa presented the GBADs program, its goals and progress so far. She also highlighted the need for quality and reproducible data to better leverage their use when estimating animal health investments.": {
+    "message": "GBADs Informatics co-lead Theresa Bernardo presented at the Big Data in Animal Health webinar organised by the Health for Animals association. After providing an overview of the technologies and apps showing the potentials that could be unleashed from animal health data, Theresa presented the GBADs program, its goals and progress so far. She also highlighted the need for quality and reproducible data to better leverage their use when estimating animal health investments."
+  }
+}

@@ -1,0 +1,14 @@
+{
+    "title": {
+        "message": "Bloggen",
+        "description": "The title for the blog used in SEO"
+    },
+    "description": {
+        "message": "Bloggen",
+        "description": "The description for the blog used in SEO"
+    },
+    "sidebar.title": {
+        "message": "Kürzliche Posts",
+        "description": "The label for the left sidebar"
+    }
+}

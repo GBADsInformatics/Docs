@@ -1,0 +1,10 @@
+{
+  "version.label": {
+    "message": "Prochaîne",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Publications 2019 - 2022": {
+    "message": "Parutions 2019 - 2022",
+    "description": "The label for category Publications 2019 - 2022 in sidebar tutorialSidebar"
+  }
+}

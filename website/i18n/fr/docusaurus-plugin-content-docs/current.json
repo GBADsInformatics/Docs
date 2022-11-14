@@ -1,0 +1,18 @@
+{
+  "version.label": {
+    "message": "Prochaîne",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Data Governance Handbook for GBADs": {
+    "message": "Manuel de gouvernance des données pour les GBAD",
+    "description": "The label for category Data Governance Handbook for GBADs in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.GBADs Dashboard Tutorials": {
+    "message": "Tutoriels du tableau de bord GBADs",
+    "description": "The label for category GBADs Dashboard Tutorials in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Terms": {
+    "message": "Les conditions",
+    "description": "The label for category Terms in sidebar tutorialSidebar"
+  }
+}

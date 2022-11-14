@@ -1,0 +1,17 @@
+---
+id: Présentation-de-R-Shiny
+title: Présentation de R Shiny
+sidebar_position: 7
+---
+
+
+export default function App() {
+  let holdBaseURL = "http://gbadskedoc.org";
+  let rootPath =  ("//docs.google.com/gview?url=" + holdBaseURL + "/GBADs%20March%2016%20Pres.pptx");
+  return (
+    <>
+      <iframe src={rootPath} width="600px" height="500px" frameborder="0"></iframe>
+      <div><b>Introduction à la présentation de R Shiny. Avec l'aimable autorisation de Kurtis Sobkowich.</b></div>
+    </>
+  );
+}

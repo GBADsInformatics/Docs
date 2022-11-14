@@ -1,0 +1,30 @@
+{
+  "title": {
+    "message": "Informática",
+    "description": "The title in the navbar"
+  },
+  "item.label.Docs": {
+    "message": "Documentos",
+    "description": "Navbar item with label Docs"
+  },
+  "item.label.Presentations and Publications": {
+    "message": "Presentaciones y Publicaciones",
+    "description": "Navbar item with label Presentations and Publications"
+  },
+  "item.label.Blog": {
+    "message": "Blog",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.Highlights": {
+    "message": "Reflejos",
+    "description": "Navbar item with label Highlights"
+  },
+  "item.label.About": {
+    "message": "Sobre",
+    "description": "Navbar item with label About"
+  },
+  "item.label.Create Doc": {
+    "message": "Crear documento",
+    "description": "Navbar item with label Create Doc"
+  }
+}

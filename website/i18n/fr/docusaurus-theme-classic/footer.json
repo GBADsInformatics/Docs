@@ -1,0 +1,38 @@
+{
+  "link.title.Quick Links": {
+    "message": "Liens rapides",
+    "description": "The title of the footer links column with title=Quick Links in the footer"
+  },
+  "link.title.Community": {
+    "message": "Communauté",
+    "description": "The title of the footer links column with title=Community in the footer"
+  },
+  "link.title.More": {
+    "message": "Suite",
+    "description": "The title of the footer links column with title=More in the footer"
+  },
+  "link.item.label.GBADs Main Site": {
+    "message": "Site principal des GBAD",
+    "description": "The label of footer link with label=GBADs Main Site linking to https://animalhealthmetrics.org/"
+  },
+  "link.item.label.Knowledge Engine and Data Portal": {
+    "message": "Moteur de connaissances et portail de données",
+    "description": "The label of footer link with label=Knowledge Engine and Data Portal linking to http://gbadske.org:8051/dash/"
+  },
+  "link.item.label.GBADs-OIE": {
+    "message": "GBADs-OIE",
+    "description": "The label of footer link with label=GBADs-OIE linking to https://gbads-oie.com/"
+  },
+  "link.item.label.Blog": {
+    "message": "Blog",
+    "description": "The label of footer link with label=Blog linking to /blog"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/GBADsInformatics"
+  },
+  "copyright": {
+    "message": "Copyright © 2022 GBADs.",
+    "description": "The footer copyright"
+  }
+}

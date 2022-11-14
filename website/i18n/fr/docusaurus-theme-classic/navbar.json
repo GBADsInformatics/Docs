@@ -1,0 +1,30 @@
+{
+  "title": {
+    "message": "Informatique",
+    "description": "The title in the navbar"
+  },
+  "item.label.Docs": {
+    "message": "Documents",
+    "description": "Navbar item with label Docs"
+  },
+  "item.label.Presentations and Publications": {
+    "message": "Présentations et Publications",
+    "description": "Navbar item with label Presentations and Publications"
+  },
+  "item.label.Blog": {
+    "message": "Blog",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.Highlights": {
+    "message": "Points forts",
+    "description": "Navbar item with label Highlights"
+  },
+  "item.label.About": {
+    "message": "À propos de",
+    "description": "Navbar item with label About"
+  },
+  "item.label.Create Doc": {
+    "message": "Créer un document",
+    "description": "Navbar item with label Create Doc"
+  }
+}
