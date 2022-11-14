@@ -8,14 +8,15 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'GBADs Informatics',
   tagline: 'GBADs Informatics',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://GBADsInformatics.github.io',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'GBADsInformatics ', // Usually your GitHub org/user name.
-  projectName: 'Documentation-Server', // Usually your repo name.
 
+  organizationName: 'GBADsInformatics', // Usually your GitHub org/user name.
+  projectName: 'docs', // Usually your repo name.
+  trailingSlash: false,
 
   plugins: [
     '@docusaurus-terminology/parser',
