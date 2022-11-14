@@ -50,13 +50,6 @@ const Members = [
         imageLink:"https://i.imgur.com/vA8dDXb.jpg"
     },
     {
-        name:"Matthew Szurkowski",
-        title:(<><Translate>Informatics Software Developer, University of Guelph</Translate></>),
-        email:"mszurkow@gmail.com",
-        link:"https://mattszurkowski.com/",
-        imageLink:"https://i.imgur.com/zCtJJNM.jpg"
-    },
-    {
         name:"William Fitzjohn",
         title:(<><Translate>Informatics Software Developer, University of Guelph</Translate></>),
         email:"wfitzjoh@uoguelph.ca",
@@ -64,11 +57,32 @@ const Members = [
         imageLink:"https://i.imgur.com/TFuZPK4.jpg"
     },
     {
+        name:"Matthew Szurkowski",
+        title:(<><Translate>Informatics Software Developer, University of Guelph</Translate></>),
+        email:"mszurkow@gmail.com",
+        link:"https://mattszurkowski.com/",
+        imageLink:"https://i.imgur.com/zCtJJNM.jpg"
+    },
+    {
+        name:"Joshua Davidson",
+        title:(<><Translate>Informatics Software Developer, University of Guelph</Translate></>),
+        email:"joshuaidavidson2001@gmail.com",
+        link:"https://www.linkedin.com/in/joshua-davidson-55236820b/",
+        imageLink:"https://i.imgur.com/1s1KUer.jpg"
+    },
+    {
         name:"Amardeep Singh",
         title:(<><Translate>Informatics Software Developer, University of Guelph</Translate></>),
         email:"asingh80@uoguelph.ca",
         link:"https://www.linkedin.com/in/amardeep-/",
         imageLink:"https://ca.slack-edge.com/T01292WLJAK-U012PQR57QA-dbfcacd21d17-512"
+    },
+    {
+        name:"Ian McKechnie",
+        title:(<><Translate>Informatics Software Developer, University of Guelph</Translate></>),
+        email:"9.mckechnie@gmail.com",
+        link:"https://ianmckechnieca.wordpress.com/",
+        imageLink:"https://i.imgur.com/zUDIg6t.jpg"
     },
     {
         name:"Rehan Nagoor Mohideen",
