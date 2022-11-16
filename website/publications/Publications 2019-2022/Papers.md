@@ -43,7 +43,7 @@ Burden of Animal Diseases<br/>
 <b>Date: </b>April 2021<br/>
 <b>Authors: </b>Raymond K, Stacey D, Bernardo T<br/>
 <b>Source: </b>Technical Report<br/>
-<b><a href="http://gbadskedoc.org/20210418_AquacultureGBADsInformatics.pdf">Link to resource</a></b><br/><br/>
+<b><a href="https://gbads-documentation.s3.ca-central-1.amazonaws.com/20210418_AquacultureGBADsInformatics.pdf">Link to resource</a></b><br/><br/>
 
 <b>Title: </b>Roll-out of the Global Burden of Animal Diseases programme<br/>
 <b>Date: </b>February 2021<br/>
@@ -55,4 +55,4 @@ Burden of Animal Diseases<br/>
 <b>Date: </b>December 2019<br/>
 <b>Authors: </b>Raymond K and Stacey D<br/>
 <b>Source: </b>Technical Report<br/>
-<b><a href="http://gbadskedoc.org/GBADs_EthiopiaPilot_Report.pdf">Link to resource</a></b><br/><br/>
+<b><a href="https://gbads-documentation.s3.ca-central-1.amazonaws.com/GBADs_EthiopiaPilot_Report.pdf">Link to resource</a></b><br/><br/>
