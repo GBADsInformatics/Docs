@@ -1,12 +1,8 @@
 ---
 slug: genomics-and-gbads-how-ncbi-metadata-can-be-a-new-source-of-data-on-livestock production-and-health
 title: "Genomics & GBADs: How NCBI metadata can be a new source of data on livestock production and health"
-#output: html_document
-authors: Cassandre 
+authors: Cassandre
 tags: [metadata, genomics, NCBI]
-  #%output:
-  #html_document:
-    #keep_md: yes
 css: custom.css 
 ---
 
