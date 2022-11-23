@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocumentation_server=self.webpackChunkdocumentation_server||[]).push([[8516],{6271:e=>{e.exports=JSON.parse('{"label":"genomics","permalink":"/es/blog/tags/genomics","allTagsPath":"/es/blog/tags","count":1}')}}]);
