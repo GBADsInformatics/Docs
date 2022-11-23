@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocumentation_server=self.webpackChunkdocumentation_server||[]).push([[1417],{7497:e=>{e.exports=JSON.parse('{"label":"perspective","permalink":"/docs/es/blog/tags/perspective","allTagsPath":"/docs/es/blog/tags","count":1}')}}]);

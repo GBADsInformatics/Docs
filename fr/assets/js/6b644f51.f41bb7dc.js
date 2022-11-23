@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocumentation_server=self.webpackChunkdocumentation_server||[]).push([[8100],{8889:e=>{e.exports=JSON.parse('{"label":"animal welfare","permalink":"/fr/blog/tags/animal-welfare","allTagsPath":"/fr/blog/tags","count":1}')}}]);
