@@ -8,7 +8,7 @@ const config = {
   title: 'GBADs Informatics',
   tagline: 'GBADs Informatics',
   url: 'https://GBADsInformatics.github.io',
-  baseUrl: '/docs/',
+  baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -48,7 +48,7 @@ const config = {
       '@docusaurus/preset-classic',
       ({
         docs: {
-          routeBasePath: 'docs',
+          routeBasePath: '/',
           path: 'docs',
           sidebarPath: require.resolve('./sidebars.js'),
           lastVersion: 'current',
