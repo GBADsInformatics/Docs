@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'GBADs Informatics',
   tagline: 'GBADs Informatics',
-  url: 'https://GBADsInformatics.github.io',
+  url: 'https://gbadsinformatics.github.io',
   baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
@@ -24,7 +24,6 @@ const config = {
       '@docusaurus/plugin-content-docs',
       {
         id: 'publications',
-        path: 'publications',
         routeBasePath: 'publications',
         sidebarPath: require.resolve('./sidebars.js'),
         includeCurrentVersion: true,
@@ -48,8 +47,7 @@ const config = {
       '@docusaurus/preset-classic',
       ({
         docs: {
-          routeBasePath: '/',
-          path: 'docs',
+          routeBasePath: 'docs',
           sidebarPath: require.resolve('./sidebars.js'),
           lastVersion: 'current',
           onlyIncludeVersions: ['current'],
