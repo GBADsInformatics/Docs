@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocumentation_server=self.webpackChunkdocumentation_server||[]).push([[9298],{8102:e=>{e.exports=JSON.parse('{"label":"NCBI","permalink":"/docs/fr/blog/tags/ncbi","allTagsPath":"/docs/fr/blog/tags","count":1}')}}]);
