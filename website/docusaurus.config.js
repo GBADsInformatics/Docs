@@ -8,7 +8,7 @@ const config = {
   title: 'GBADs Informatics',
   tagline: 'GBADs Informatics',
   url: 'https://gbadsinformatics.github.io/',
-  baseUrl: '/',
+  baseUrl: '/docs/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
