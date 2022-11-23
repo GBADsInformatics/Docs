@@ -24,6 +24,7 @@ const config = {
       '@docusaurus/plugin-content-docs',
       {
         id: 'publications',
+        path: 'publications',
         routeBasePath: 'publications',
         sidebarPath: require.resolve('./sidebars.js'),
         includeCurrentVersion: true,
@@ -48,6 +49,7 @@ const config = {
       ({
         docs: {
           routeBasePath: 'docs',
+          path: 'docs',
           sidebarPath: require.resolve('./sidebars.js'),
           lastVersion: 'current',
           onlyIncludeVersions: ['current'],
@@ -58,6 +60,8 @@ const config = {
         },
         blog: {
           showReadingTime: true,
+          routeBasePath: 'blog',
+          path: 'blog',
           // Please change this to your repo.
         },
       }),
