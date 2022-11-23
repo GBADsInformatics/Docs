@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'GBADs Informatics',
   tagline: 'GBADs Informatics',
-  url: 'https://gbadsinformatics.github.io',
+  url: 'https://gbadsinformatics.github.io/docs',
   baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
