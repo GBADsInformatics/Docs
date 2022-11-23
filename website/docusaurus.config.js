@@ -8,7 +8,7 @@ const config = {
   title: 'GBADs Informatics',
   tagline: 'GBADs Informatics',
   url: 'https://gbadsinformatics.github.io',
-  baseUrl: '/docs',
+  baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -18,7 +18,11 @@ const config = {
   trailingSlash: false,
 
   plugins: [
+    [
     '@docusaurus-terminology/parser',
+    {
+      termsDir: './docs/terms/'
+    }],
     require.resolve("@cmfcmf/docusaurus-search-local"),
     [
       '@docusaurus/plugin-content-docs',
