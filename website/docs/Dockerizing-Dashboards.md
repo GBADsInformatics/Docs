@@ -5,7 +5,7 @@ author: "William Fitzjohn"
 sidebar_position: 12
 ---
 
-Author: [@WilliamFitzjohn](https://github.com/WilliamFitzjohn) - Contact me for assistance.\
+Author: [@WilliamFitzjohn](https://github.com/WilliamFitzjohn) - Contact me for assistance.<br/>
 This is a guide outlining the steps taken to create a Docker image from a plotly dashboard running through Flask.
 
 ## Table of Contents
@@ -18,7 +18,7 @@ This is a guide outlining the steps taken to create a Docker image from a plotly
 1. [Publishing the Dashboard](#publishing-the-dashboard)
 
 ## Prerequisites
-This guides assumes you already have a plotly dashboard established.\
+This guides assumes you already have a plotly dashboard established.<br/>
 You should have docker installed on your system too.
 
 ## Code Preparation
@@ -80,38 +80,38 @@ Add a `.dockerignore` file to your repo that includes the name of sensitive file
 We still need our confidential files (like `.env`) in the container to run the server, but we let the user add those sensitive files later when they start the container.
 
 ## Building the Image
-Now that we have our `Dockerfile` with instruction on building an image we can run a command to create our image.\
-`docker build -t gbadsinformatics/dashboardname-dash .`\
+Now that we have our `Dockerfile` with instruction on building an image we can run a command to create our image.<br/>
+`docker build -t gbadsinformatics/dashboardname-dash .`<br/>
 Run this command in the same directory as your `Dockerfile`. This tells docker to build our image and give it a username/tag: `gbadsinformatics/dashboardname-dash`. This step can be tedious if you get build errors. You might need to play around with your `requirements.txt` to get compatible python modules, or add apt package dependencies to your `Dockerfile`. Troubleshoot the issues as you go, this is usually the hardest step.
 
 ## Running the Dashboard
-Now that you finally have an image with no build errors, you can test it. You need to build a command to run your image that will look something like:\
+Now that you finally have an image with no build errors, you can test it. You need to build a command to run your image that will look something like:<br/>
 `docker run -d -p 9090:80 gbadsinformatics/dashboardname-dash`
 - `-d` tells docker to run the container detached
-- `-p 9090:80` tells docker to forward port 80 inside the container to 9090 on the host machine.\
+- `-p 9090:80` tells docker to forward port 80 inside the container to 9090 on the host machine.<br/>
     Here you can change 9090 to any port you desire to run the dashboard on, do not change 80.
 - `gbadsinformatics/dashboardname-dash` should be whatever you called your docker image.
 
-You might want to allow the user to add [Confidential Files](#confidential-files) like `.env`. You can do this in docker with the `-v` tag:\
+You might want to allow the user to add [Confidential Files](#confidential-files) like `.env`. You can do this in docker with the `-v` tag:<br/>
 `docker run -d -p 9090:80 -v /local/path/to/.env:/app/.env gbadsinformatics/dashboardname-dash`
 - The user will change `/local/path/to/.env` to the full path of the confidential file on their machine. 
 - You will change `/app/.env` to where the confidential file needs to be placed in the container.
 
 Once your container is up and running you should be able to go to your specified port on your web browser and see the dashboard. If you run into issues here are some helpful commands:
-- `docker ps --all`\
+- `docker ps --all`<br/>
 This shows stopped docker containers.
-- `docker logs XXXX`\
+- `docker logs XXXX`<br/>
 This shows the logs of a container with ID XXXX. You'll use the output from docker ps to get a container ID.
-- `docker exec -it XXXX /bin/bash`\
-This opens a shell inside the container so you can troubleshoot within the container.\
+- `docker exec -it XXXX /bin/bash`<br/>
+This opens a shell inside the container so you can troubleshoot within the container.<br/>
 **However**, changes made within a running container are temporary and will not be reflected in the image.  
 
 ## Publishing the Dashboard
 Once you have a working image, you can publish it to DockerHub through the command line.
 1. Create a DockerHub repo named `dashboardname-dash` with your dashboard name on the GBADsInformatics DockerHub account.
-2. Head back to the command line and Login to DockerHub:\
+2. Head back to the command line and Login to DockerHub:<br/>
 `docker login`
-3. Push the image to DockerHub:\
+3. Push the image to DockerHub:<br/>
 `docker puch gbadsinformatics/dashboardname-dash`
 
 You should now try to run a container using the public image just to check that it's working correctly. You can also try using GitHub Actions to build the image automatically when you push to your GitHub repo. That way you never need to go through these steps again!
