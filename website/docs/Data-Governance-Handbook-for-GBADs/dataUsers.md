@@ -4,9 +4,47 @@ sidebar_position: 8
 
 # Data User Guide	
 
-The [GBADs data portal](http://gbadske.org:8050/dash/page-1/) is a prototype dashboard that allows users to access datasets from [FAOSTAT](http://www.fao.org/faostat/en/) and [OIE WAHIS](https://wahis.oie.int/). The prototype allows you to select data of interest, visualize it on bar line graphs, download the data in `.csv` and `.json` format and see the Application Programming Interface (API) call. 
+## Overview 
 
-```{margin}
+The data user guide provides GBADs collaborators with an overview of how to access data in the knowledge engine. We have 3 main types of data: 
+
+1. Input data (or raw data)
+2. Output data from models 
+3. Intermediate data sets 
+
+Each type of data and their subsets are uniquely formatted and require specific storage requirements to ensure that the data can be findable, accessible, interoperable and reusable (FAIR); all data must be documented with metadata to ensure that the data is FAIR.
+
+### Input data
+
+Input, or raw data can come in two forms across the GBADs program: 
+
+* Data sets from sources such  as the Food and Agriculture Organization of the United Nations Statistical Database (FAOSTAT), the World Organization for Animal Health (WOAH), national statistics agencies, etc. 
+* Parameters obtained from meta-analyses from systematic reviews. 
+* Data sets produced from expert elicitation exercises.
+
+These data are the _inputs_ to the models and calculations that GBADs themes produce. Input data can come in different forms, use varying terminologies and standards for naming countries, species, or other classifications, and thus may have various interpretations of the meaning. 
+
+All themes and modellers should be using the same input data that has been cleaned only once to ensure that we are all using the same inputs to models. This ensures reproducibility and accuracy of data across the program. 
+
+### Output data from models
+
+When models or estimates are produced, they produce parameters and data sets that may be used in subsequent models or estimations. The output data from models and estimates therefore need to be stored in the Knowledge Engine alongside metadata to ensure that all users can understand how the data were populated and produced, including the model code and datasets that were used to populate this data. 
+
+### Intermediate data sets 
+
+Intermediate data sets may be data that were produced through a stage in modelling or imputation but are not considered an end product. Intermediate data, however, may be used for other modelling processes and may be important to ensure that the data processes are reproducible. 
+
+## Objectives of the Data Usage Guide: 
+
+* Understand how to access different types of data in the Knowledge Engine 
+* Understand the roles and responsibilities of individuals who have identified a new data set for the use of GBADs program, and how to get this data stored in the Knowledge Engine 
+* Understand how to store output data from models in the Knowledge Engine 
+* Understand how to search for data stored in the Knowledge Engine
+
+
+<!-- The [GBADs data portal](http://gbadske.org:8050/dash/page-1/) is a prototype dashboard that allows users to access datasets from [FAOSTAT](http://www.fao.org/faostat/en/) and [OIE WAHIS](https://wahis.oie.int/). The prototype allows you to select data of interest, visualize it on bar line graphs, download the data in `.csv` and `.json` format and see the Application Programming Interface (API) call.  -->
+
+<!-- ```{margin}
 **What is `.json`?**
 
 [JSON](https://en.wikipedia.org/wiki/JSON) stands for JavaScript Object Notation. JSON is a file format that stores data in a standard structured format, allowing data to be both human and machine readable. JSON data can be read into all programming languages, and can be parsed into `excel`. JSON data is readable and easier to parse than other file formats such as [XML](https://en.wikipedia.org/wiki/XML).
@@ -19,17 +57,17 @@ The [GBADs data portal](http://gbadske.org:8050/dash/page-1/) is a prototype das
 
 Please note that this page will be updated as we continue to improve our data portal, and gain access to more data sources. We welcome feedback on what you like about the system, what you'd like to see and anything that you think could be more clear! 
 ```
-````
+```` -->
 
-```{admonition} Learning Objectives 
+<!-- ```{admonition} Learning Objectives 
 * Readers should understand what an API is, how it works, and why GBADs is using APIs
 * Readers should understand how to use the GBADs API to get FAOSTAT and OIE WAHIS data 
 * Readers should understand how to use the GBADs API to read data into their `R` and `python` programs
-```
+``` -->
 
-## Getting started with our API
+<!-- ## Getting started with our API -->
 
-### What is an API? 
+<!-- ### What is an API? 
 
 An Application Programming Interface (API) is a machine-to-machine way to ask a server for data, get the server retrieve and interpret the data and return it to your machine. APIs are everywhere; they allow applications to 'talk' to each other. For example, when you check the weather on a weather app, the app is using an API to grab the data and present it in a usable and interpretable fashion on your phone. APIs provide the most up-to-date data without having to store data on your own machine. 
 
@@ -61,7 +99,7 @@ Instead of manually downloading data from a website each time, you can incorpora
 :name: APIcall
 
 Simple breakdown of how an API works. 
-```
+``` -->
 
 
 <!--If you have never used an Application Programming Interface (API) before, don't panic! You're in the right place. Before delving into how to use our API, we'll explain why we think people should adopt API use and what an API even is. 
@@ -241,7 +279,7 @@ class(data)
 head(data)
 ```
 
-## Creating a User Profile 
+<!-- ## Creating a User Profile 
 
-The guide above allows you to access the API, which allows access to open data. In the future, we anticipate private data sources which you will only have access to if you are given permissions. Our system will support the ability to create a verified user log in, which will give you access to the private sources you are granted access to via a personalized portal and API key. 
+The guide above allows you to access the API, which allows access to open data. In the future, we anticipate private data sources which you will only have access to if you are given permissions. Our system will support the ability to create a verified user log in, which will give you access to the private sources you are granted access to via a personalized portal and API key.  -->
 
