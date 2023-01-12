@@ -59,16 +59,15 @@ There are 2 main ways to access the data in the Knowledge Engine:
    For more information about APIs and how to use them visit the [GBADs API Tutorial](https://gbadskedoc.org/docs/GBADsAPITutorial).
    --- 
 
->>> 
-**What is an Amazon S3 Bucket?** 
-
-An Amazon S3 Bucket is 
-
->>>
+   ---
+   **What is an Amazon S3 Bucket?** 
+   An [Amazon Simple Storage Service (S3) Bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html) is a cloud object storage service that allows you to store data and other digital objects in the cloud. 
+   ---
 
 ## Searching for data in the Knowledge Engine 
 
-To use the data in the Knowledge Engine, you need to be able to find it. 
+To use the data in the Knowledge Engine, you need to be able to find it. The search functionality of the data is built using a metadata pipeline. Here's how it works: 
+
 
 
 
