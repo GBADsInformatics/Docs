@@ -108,6 +108,7 @@ You might have heard of an API before and thought, what even is an API? Oftentim
 
 <!--API calls are made using the API's Unique Resource Identifier (URI). Simply put, a URI is something that distinctly distinguishes the API from other APIs. You can think of a URI as anything that identifies something from all other things. For example, your Social Insurance Number is your URI that allows the government to identify you from other citizens. Similarly, you might notice that nobody else has the same email address as you. An email address is also a URI! -->
 
+<!-- 
 Once you have this 'API call' you can simply input into the program of your choice and automate your workflows and have access to the data without having to search through data catalogues each time. APIs are built on HTTP protocols, providing another plus: you can use APIs with virtually any programming language including R and Python, which are the most popular among our current users. This means that instead of loading data files into your R or python program each time, you can simply access the API right in your program. An added benefit is that this allows you to rerun your programs without having to download data from your sources each time that source is updated or modified.
 
 Some data sources that GBADs uses such as FAOSTAT and The World Bank have APIs that can be used to get data. However, GBADs is handling the API management by developing an API that can request data from other APIs ({numref}`GBADsAPI`).
@@ -277,7 +278,7 @@ class(data)
 
 # See what the first 5 rows of the data look like 
 head(data)
-```
+``` -->
 
 <!-- ## Creating a User Profile 
 
