@@ -7,9 +7,12 @@ sidebar_position: 7
 ## Objectives of the Data Usage Guide: 
 
 * Understand how to access different types of data in the Knowledge Engine 
-* Understand the roles and responsibilities of individuals who have identified a new data set for the use of GBADs program, and how to get this data stored in the Knowledge Engine 
-* Understand how to store output data from models in the Knowledge Engine 
 * Understand how to search for data stored in the Knowledge Engine
+
+For information about what to do when you identify new data sets of interest for use in the GBADs program visit the Data Contributor section of the Data Governance Handbook which outlines the following: 
+
+* Understand the roles and responsibilities of individuals who have identified a new data set for the use of GBADs program, and how to get this data stored in the Knowledge Engine 
+* Understand how Informatics stores data from models in the Knowledge Engine 
 
 ## Data types in the Knowledge Engine 
 
@@ -48,7 +51,7 @@ There are 2 main ways to access the data in the Knowledge Engine:
 1. Through the Application Programming Interface (API)
 2. Direct download through a URL from an Amazon S3 Bucket 
 
->>> 
+   ---
 **What is an API?**
 
 API stands for Application Programming Interface. It is a machine-to-machine way to ask a server for data, get the server retrieve and interpret the data and return it to your machine. APIs are everywhere; they allow applications to 'talk' to each other. For example, when you check the weather on a weather app, the app is using an API to grab the data and present it in a usable and interpretable fashion on your phone. APIs provide the most up-to-date data without having to store data on your own machine. 
@@ -60,7 +63,7 @@ For the data needs of GBADs, APIs work like this:
 4. The data is returned to you/your program
 
 For more information about APIs and how to use them visit the [GBADs API Tutorial](https://gbadskedoc.org/docs/GBADsAPITutorial).
->>>  
+   --- 
 
 >>> 
 **What is an Amazon S3 Bucket?** 
@@ -69,9 +72,13 @@ An Amazon S3 Bucket is
 
 >>>
 
-## Identifying and using new data 
-
 ## Searching for data in the Knowledge Engine 
+
+To use the data in the Knowledge Engine, you need to be able to find it. 
+
+
+
+
 
 <!-- The [GBADs data portal](http://gbadske.org:8050/dash/page-1/) is a prototype dashboard that allows users to access datasets from [FAOSTAT](http://www.fao.org/faostat/en/) and [OIE WAHIS](https://wahis.oie.int/). The prototype allows you to select data of interest, visualize it on bar line graphs, download the data in `.csv` and `.json` format and see the Application Programming Interface (API) call.  -->
 
