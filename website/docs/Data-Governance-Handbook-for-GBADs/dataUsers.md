@@ -52,17 +52,11 @@ There are 2 main ways to access the data in the Knowledge Engine:
 2. Direct download through a URL from an Amazon S3 Bucket 
 
    ---
-**What is an API?**
-
-API stands for Application Programming Interface. It is a machine-to-machine way to ask a server for data, get the server retrieve and interpret the data and return it to your machine. APIs are everywhere; they allow applications to 'talk' to each other. For example, when you check the weather on a weather app, the app is using an API to grab the data and present it in a usable and interpretable fashion on your phone. APIs provide the most up-to-date data without having to store data on your own machine. 
-
-For the data needs of GBADs, APIs work like this: 
-1. You/your program requests data through the API call
-2. The webserver looks through its internal database for the data that you asked for 
-3. The database gives the server the data that you asked for 
-4. The data is returned to you/your program
-
-For more information about APIs and how to use them visit the [GBADs API Tutorial](https://gbadskedoc.org/docs/GBADsAPITutorial).
+   **What is an API?**
+   
+   API stands for Application Programming Interface. It is a machine-to-machine way to ask a server for data, get the server retrieve and interpret the data and return it to your machine. APIs are everywhere; they allow applications to 'talk' to each other. For example, when you check the weather on a weather app, the app is using an API to grab the data and present it in a usable and interpretable fashion on your phone. APIs provide the most up-to-date data without having to store data on your own machine. 
+   
+   For more information about APIs and how to use them visit the [GBADs API Tutorial](https://gbadskedoc.org/docs/GBADsAPITutorial).
    --- 
 
 >>> 
