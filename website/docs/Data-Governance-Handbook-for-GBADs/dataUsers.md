@@ -66,10 +66,9 @@ There are 2 main ways to access the data in the Knowledge Engine:
 
 ## Searching for data in the Knowledge Engine 
 
-To use the data in the Knowledge Engine, you need to be able to find it. The search functionality of the data is built using a metadata pipeline. Here's how it works: 
+To use the data in the Knowledge Engine, you need to be able to find it. The search functionality of the data is built using a metadata pipeline. 
 
-
-
+Each type of data has unique metadata that describes it. For more information about the metadata please visit the [FIX ME UNDER REVIEW Metadata section] of the Handbook. 
 
 
 
