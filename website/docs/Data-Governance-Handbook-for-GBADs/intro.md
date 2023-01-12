@@ -16,13 +16,17 @@ The Data Governance Handbook (DGH) provides information about how GBADs manages 
 
 ### What is Data Governance? 
 
-> "Data governance is everything you do to ensure data is secure, private, accurate, available, and usable. It includes the actions people must take, the processes they must follow, and the technology that supports them throughout the data life cycle. [^1]" 
+>>>
+"Data governance is everything you do to ensure data is secure, private, accurate, available, and usable. It includes the actions people must take, the processes they must follow, and the technology that supports them throughout the data life cycle. [^1]" 
+>>>
 
-Data governance is important for GBADs because as a programme we are using data to create models and estimates, which in term produce more data. We have created data flows and practices to ensure that 
+As elucidated by the quote above, data governance encompasses the use and management of data as a program including the technological requirements for data to be stored, accessed, and found responsibly, and the processes that themes must follow to ensure that all data is usable, accessible, accurate, secure, and when applicable private.
 
-### The role of data in GBADs 
+The Data Governance Handbook provides these processes and practices for the program. We outline what the "Knowledge Engine" is, and how users of data and models can interact with it to ensure that data is managed in a transparent and responsible manner. 
 
-The GBADs data knowledge engine will be rooted in a standardized and well defined data governance and provenance strategy, allowing GBADs to act as a trusted data “broker” for all data artifacts moving through our system. “Brokering” data artifacts means that we will not own (or in many cases, store) data artifacts that are disseminated through the system but  will provide data that have been standardized and ‘FAIRified’ using our documented methods. The GBADs data governance and provenance strategy will ensure that data are standard, guarded against misuse and provide the ability to critically evaluate the quality and trust of data.  Specifically, this will include regimented metadata standards including controlled vocabularies, ontologies and structures that we will use as the backbone of our data engine. Adapting standardized metadata will allow data and metadata to be queried, practices to be audited, and provide an understanding of when data sources can be combined. Our emphasis on detailed metadata and data quality will highlight the need for detailed provenance for all data brokered by our system. 
+<!-- ### The role of data in GBADs 
+
+The GBADs data knowledge engine will be rooted in a standardized and well defined data governance and provenance strategy, allowing GBADs to act as a trusted data “broker” for all data artifacts moving through our system. “Brokering” data artifacts means that we will not own (or in many cases, store) data artifacts that are disseminated through the system but  will provide data that have been standardized and ‘FAIRified’ using our documented methods. The GBADs data governance and provenance strategy will ensure that data are standard, guarded against misuse and provide the ability to critically evaluate the quality and trust of data.  Specifically, this will include regimented metadata standards including controlled vocabularies, ontologies and structures that we will use as the backbone of our data engine. Adapting standardized metadata will allow data and metadata to be queried, practices to be audited, and provide an understanding of when data sources can be combined. Our emphasis on detailed metadata and data quality will highlight the need for detailed provenance for all data brokered by our system.  -->
 
 <!-- ## Data Governance and GBADs
 
@@ -54,7 +58,7 @@ This is a "living document"! As the GBADs Informatics theme learns more about th
 
 ## Navigating the Data Governance Handbook
 
-Getting you started
+### Getting Started 
 
 ````{panels}
 
