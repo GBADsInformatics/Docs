@@ -33,6 +33,16 @@ const config = {
         includeCurrentVersion: true,
       },
     ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'reports',
+        path: 'reports',
+        routeBasePath: 'reports',
+        sidebarPath: require.resolve('./sidebars.js'),
+        includeCurrentVersion: true,
+      },
+    ],
   ],
 
   i18n: {
@@ -93,6 +103,7 @@ const config = {
             className: "text-nav-item",
           },
           {to: '/publications/Intro', label: 'Presentations and Publications', className: "text-nav-item", position: 'left', activeBaseRegex: `/publications/`},
+          {to: '/reports/Intro', label: 'Reports', className: "text-nav-item", position: 'left', activeBaseRegex: `/reports/`},
           {to: '/blog', label: 'Blog', position: 'left', className: "text-nav-item"},
           {to: '/highlights', label:'Highlights', position:'left', className: "text-nav-item"},
           {to:'/about', label: 'About', position:'left', className: "text-nav-item"},
