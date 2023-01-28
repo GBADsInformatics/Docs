@@ -69,7 +69,7 @@ COPY . /app/dash
 # Keep 80 the same: this is just exposed inside the docker container. Later
 # you can map this to any port outside of the container. Change "wsgi" to the
 # name of the file you edited earlier in #code-preparation.2
-CMD ["waitress-serve","--port=80","--call","wsgi:returnApp"]
+CMD ["waitress-serve","--host=0.0.0.0","--port=80","--call","wsgi:returnApp"]
 ```
 
 ## Confidential Files
