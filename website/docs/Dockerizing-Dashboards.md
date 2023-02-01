@@ -69,7 +69,7 @@ COPY . /app/dash
 # Keep 80 the same: this is just exposed inside the docker container. Later
 # you can map this to any port outside of the container. Change "wsgi" to the
 # name of the file you edited earlier in #code-preparation.2
-CMD ["waitress-serve","--port=80","--call","wsgi:returnApp"]
+CMD ["waitress-serve","--host=0.0.0.0","--port=80","--call","wsgi:returnApp"]
 ```
 
 ## Confidential Files
@@ -112,6 +112,6 @@ Once you have a working image, you can publish it to DockerHub through the comma
 2. Head back to the command line and Login to DockerHub:<br/>
 `docker login`
 3. Push the image to DockerHub:<br/>
-`docker puch gbadsinformatics/dashboardname-dash`
+`docker push gbadsinformatics/dashboardname-dash`
 
 You should now try to run a container using the public image just to check that it's working correctly. You can also try using GitHub Actions to build the image automatically when you push to your GitHub repo. That way you never need to go through these steps again!
