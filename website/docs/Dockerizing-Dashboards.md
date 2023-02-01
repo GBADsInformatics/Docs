@@ -112,6 +112,6 @@ Once you have a working image, you can publish it to DockerHub through the comma
 2. Head back to the command line and Login to DockerHub:<br/>
 `docker login`
 3. Push the image to DockerHub:<br/>
-`docker puch gbadsinformatics/dashboardname-dash`
+`docker push gbadsinformatics/dashboardname-dash`
 
 You should now try to run a container using the public image just to check that it's working correctly. You can also try using GitHub Actions to build the image automatically when you push to your GitHub repo. That way you never need to go through these steps again!
