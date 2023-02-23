@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 
 ---
 # Data Licenses, Privacy and Security
 

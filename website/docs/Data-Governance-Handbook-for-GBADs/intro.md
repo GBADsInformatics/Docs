@@ -7,12 +7,16 @@ sidebar_position: 1
 **Please note that this document is currently being reviewed** 
 
 ## Overview of the Data Governance Handbook in the [Global Burden of Animal Diseases (GBADs)](https://animalhealthmetrics.org/)
+
+The [Global Burden of Animal Diseases (GBADs)](https://animalhealthmetrics.org/) is a data-driven program that aims to minimize the economic and health burden of animal diseases through the creation of models and estimates that inspire policy-making in livestock agriculture. The models and estimates that are created are informed by data from government sources, intergovernmental organizations, literature, and expert elicitation. The models and estimates in turn create new data sets, which may be used as inputs to other models, are displayed on dashboards, and are published in manuscripts. Given the plethora of data that is used and produced, the way that data is managed and governed is important to individuals in the GBADs program and to data users alike. 
+
+**The GBADs Data Governance Handbook (DGH) describes how we manage the data and metadata that is used across the program. The handbook documents the guidelines and standard practices and procedures related to the GBADs data governance strategy, including individual and group data management and governance responsibilities.**
  
-The overarching goal of the [Global Burden of Animal Diseases (GBADs)](https://animalhealthmetrics.org/) is to minimize the economic and health burden of animal disease by collecting, assessing and curating private and open data resources through the Knowledge Engine.
+<!-- The overarching goal of the [Global Burden of Animal Diseases (GBADs)](https://animalhealthmetrics.org/) is to minimize the economic and health burden of animal disease by collecting, assessing and curating private and open data resources through the Knowledge Engine. -->
 
-Data inspires decision making through models (as supplied by GBADs and others) which improve societal outcomes from livestock and aquaculture, positively impact Sustainable Development Goals (SDGs) and improve outcomes for livestock producers. **The overarching goal of GBADs is to improve methods to estimate the health and economic burden of animal disease, and human disease due to animal disease.** GBADs will collect, access, standardize and curate the plethora of available open and private data resources and will make these resources available through a knowledge engine. By making data related to the health and economics of animals available through one engine, data will be better used and compared, ultimately leading to better decisions and outcomes in both private and public sectors.
+<!-- Data inspires decision making through models (as supplied by GBADs and others) which improve societal outcomes from livestock and aquaculture, positively impact Sustainable Development Goals (SDGs) and improve outcomes for livestock producers. **The overarching goal of GBADs is to improve methods to estimate the health and economic burden of animal disease, and human disease due to animal disease.** GBADs will collect, access, standardize and curate the plethora of available open and private data resources and will make these resources available through a knowledge engine. By making data related to the health and economics of animals available through one engine, data will be better used and compared, ultimately leading to better decisions and outcomes in both private and public sectors.
 
-The Data Governance Handbook (DGH) provides information about how GBADs manages the data that flows in and out of the Knowledge Engine. 
+The Data Governance Handbook (DGH) provides information about how GBADs manages the data that flows in and out of the Knowledge Engine.  -->
 
 ### What is Data Governance? 
 
@@ -22,7 +26,7 @@ The Data Governance Handbook (DGH) provides information about how GBADs manages 
 
 As elucidated by the quote above, data governance encompasses the use and management of data as a program including the technological requirements for data to be stored, accessed, and found responsibly, and the processes that themes must follow to ensure that all data is usable, accessible, accurate, secure, and when applicable private.
 
-The Data Governance Handbook provides these processes and practices for the program. We outline what the "Knowledge Engine" is, and how users of data and models can interact with it to ensure that data is managed in a transparent and responsible manner. 
+The Data Governance Handbook provides these processes and practices for the program through outlining the data flows in the GBADs Knowledge Engine, outlining the program's Data Governance Operating Model, 
 
 <!-- ### The role of data in GBADs 
 
@@ -60,7 +64,7 @@ This is a "living document"! As the GBADs Informatics theme learns more about th
 
 ### Getting Started 
 
-````{panels}
+<!-- ````{panels}
 
 For information about our data sharing principles: 
 [Data Sharing Principles](#dataSharing)
@@ -80,16 +84,22 @@ Learn how to use our Application Programming Interface (API) here:
 Learn more about 'tidy data' (organizing your spreadsheets in a way that supports FAIR principles) here: 
 [Organizing Data in Spreadsheets](#dataBestPractices)
 
-```` 
+````  -->
 
 This document is organized to reflect the main components of data governance from the GBADs perspective: 
 
-1. What is data governance from a GBADs perspective? This includes an overview of what data governance and provenance is, our data sharing principles and why data governance is pivotal in the overall GBADs perspective.
+* Our core data principles 
+* Overview of Data Flows in GBADs 
+* Roles and Responsibilities in the Data Governance Operating Model
+* Data Governance Strategy 
+* Educational materials 
+
+<!-- 1. What is data governance from a GBADs perspective? This includes an overview of what data governance and provenance is, our data sharing principles and why data governance is pivotal in the overall GBADs perspective.
 2. Metadata standards and best practices we plan to adopt. 
 3. Data privacy and security
 4. Data management including an overview of the system and how metadata storage, APIs and other data storage works 
 5. Data usage guide 
-6. Data contributor guide 
+6. Data contributor guide  -->
 
 [^1]: https://cloud.google.com/learn/what-is-data-governance
 

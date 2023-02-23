@@ -1,74 +1,223 @@
 ---
-sidebar_position: 11
+sidebar_position: 5
 ---
+# Best Practices for Coding
+
+GBADs members most commonly use R and Python for coding cleaning and organizing data, and constructing their models. Best practices for coding conventions allow code to be readable and reusable. These are the best practices that GBADs Informatics and modellers suggest to ensure that we can understand and use code.
+
+
+<!---
+
+	James and Gemma - this area is commented out in the markdown file. When you see 'admonition' in the text, it just means that a little not box comes up! 
+
+·         Comment with name of creator, date (in ISO 8601 format? E.g. 20210729), what the script contains (e.g. principal component analysis)?
+
+·         Libraries loaded in the R script
+
+·         Set working directory?
+
+·         Data should be ‘tidy’ at the end of the cleaning process (see Data Governance Handbook or R for Data Science)
+
+·         Organise data from left to right with categorical variables and then continuous variables. Variables should be grouped together where relevant (e.g. stocking density at thinning, weight at thinning, date of thinning etc.)?
+
+·         Remove irrelevant columns from the dataset (e.g. longitude and latitude)
+
+·         Code well documented
+
+·         Use standard file naming convention (e.g. 20210617_FAO_ProductionPrices_Poultry_Ethiopia_metadata.csv, NOT FAO Production Prices - downloaded by Kassy on April 25.csv)
+
+·         Snake for naming objects in R (e.g. Majority_Parent_Flock_Old)
+
+·         Objects should have meaningful name
+
+
+--->
+
+## R Coding Best Practices 
+
+### 1. Naming Conventions 
+
+**File naming**
+
+Standard naming conventions are used for the file name, and for all variables and functions defined in your code. 
+
+File names should follow the `dateOfCreation_meaningfulCodeName.R` format. 
+
+For example, if my code cleans and reformats livestock data, I might call my script `20210703_faoLivestockProductionDataCleaning.R`
+
+**Variable naming** 
+
+Use `snake_case` for naming variables and functions in your code. Using a standardized naming convention improves code readability and interpretability. 
+
+<!--Naming conventions should also be used when declaring variables or creating functions. While there are multiple popular naming conventions including camelCase, PascalCase and snake_case, for example, the agreed upon convention for GBADs is the use of snake_case. -->
+
+Use meaningful names when naming variables and functions. The name of the object should reflect its utility or characteristics. For example, if you are reading in a livestock production dataframe: 
+
+```
+livestock_df <- read_csv('path/to/my/important/file.csv')
+```
+
+```{admonition} Be careful when setting working directory
+Remember that when you use `setwd()` to set the working directory for your project or script, the working directory is distinct to your computer and may decrease the level of reproducibility of your code. 
+```
+
+### 2. Organize the format of your code 
+
+Start your script with the name of the creator, date that the script was last edited (in ISO 8601), and a brief description of the purpose of the script. 
+
+```
+####################################
+# Creator: Kassy Raymond 
+# Email: kraymond@uoguelph.ca
+# Date last edited: 20210803
+# 
+# This program contains code that performs principal component analysis (PCA)
+# on livestock production data from Ethiopia. The data that was used in this
+# program is from the FAOSTAT production dataset and was downloaded on
+# 2021-08-03. The output data from this script will be used in a model that 
+# calculates biomass. 
+#
+####################################
+```
+
+Document your code with comments so that the reader of your code (or future you) can follow each step that you took in your script. 
+
+Load in all libraries at the beginning of your program. In R, this might look like this: 
+
+```
+## 0 - Load in all libraries 
+
+library(tidyverse)
+library(ggplot2)
+library(knitr)
+library(readr)
+library(forcats)
+library(dplyr)
+```
+
+When possible, segment your code into sections. This helps with reproducibility and makes code more readable. 
+
+```
+## 0 - Load in all libraries 
+
+library(tidyverse)
+library(ggplot2)
+library(knitr)
+library(readr)
+library(forcats)
+library(dplyr)
+
+## 1 - Source files 
+
+data_path <- 'path/to/my/important/file.csv'
+livestock_df <- read_csv(data_path)
+
+## 2 - Data cleaning 
+
+# Drop unneeded columns 
+
+# Check for NAs
+
+# Explore data and check for outliers or errors in data 
+
+## 3 - Modeling 
+
+```
+
+### 3. Data cleaning 
+
+#### 3.1 Drop unneeded columns early on in your code 
+
+If you are not using a column in further analysis, drop it in the data cleaning and exploration phase of your script. This will improve interpretability of your code and increase the processing speed of your program. 
+
+#### 3.2 Remember data provenance 
+
+It is important that the estimates, models, graphics and output datasets created by models can be reproduced. It is therefore important to include the original dataset used, or when APIs are used, the ability to trace back to original dataset. 
+
+If you downloaded your data, make sure you save a copy of the original dataset and **do not overwrite** this in your workflow.
+
+If an API call was made to get the data, ensure that the date stamp of that call is provided in the name of your output dataset, models, or graphics that are created. You may also again, choose, to save a copy of the original dataset. 
+
+#### 3.3 Ensure data is in a 'tidy' format at the end of the data cleaning phase 
+
+See also Organizing Spreadsheets in these educational materials and [R for Data Science](https://r4ds.had.co.nz/) by Hadley Wickham. 
+
+#### 3.4 Organize data
+
+Organize data from left to right with categorical variables and then continuous variables. Variables should be grouped together where relevant (e.g. stocking density at thinning, weight at thinning, date of thinning etc.)
+
+### 4. Other recommendations 
+
+- Try RStudio for your IDE!
+
+
 # Organizing Data in Spreadsheets
 
-```{epigraph}
-"Garbage in, Garbage out"
-```
+> "Garbage in, Garbage out"
 
 If you are reading this, you probably spend a lot of timing dealing with data. You might collect it, clean it, model it, share it, attempt to interpret it and then do the whole thing over again. When you recieve data from a collegue, you might try to clean it again (even if it's already been cleaned), try to interpret it and might even have to write several emails to interpret the data. 
 
 **In this part of the handbook, we tell you how you can better organize your data in spreadsheets to create higher quality data, leading to higher quality models. We also define some standard practices for inputting data of specific types including dates and long numbers.**
 
-### Spreadsheets and datasets 
+## Spreadsheets and datasets 
 
 Spreadsheets, such as those made in Microsoft Excel and Google Sheets are common for storing, entering, sharing and manipulating data from research. Spreadsheets are commonly shared to communicate research results and used as input data for models or statistical analysis. While spreadsheets are an integral part of the data lifecycle, they must be structured properly to ensure that mistakes are not made that lead to data being unable to be reused or interpreted. Small mistakes in spreadsheets can leave us in situations where data are hard to understand, hard to analyze and time consuming to clean.
 
-```{warning} Contact the GBADs Informatics team if...
+---
+**NOTE**
+
 Please contact the GBADs Informatics team if you are a GBADs member who has many spreadsheets of 'untidy' data! We can consult, and think about how to create a program that will wrangle and transform your data into a tidy format! 
-```
+
+---
 
 Structuring data properly in spreadsheets leads to data being more reusable and interoperable (FAIR), leading to higher quality data and ultimately better research. By setting up spreadsheets to be ingested in statistical softwares or libraries from the get-go we can minimize confusion and simplify our workflows. 
 
-```{admonition} Learning Objectives 
+---
+
+ Learning Objectives 
 * Readers should understand how to structure a dataset in a spreadsheet in a manner that supports FAIR data principles
 * Readers should understand how to structure their dataset to preserve the semantics (underlying meaning) of the data 
 * Readers should understand how to structure dates and long numbers in spreadsheets and why it is important that these data are machine readable 
 * Readers should understand common mistakes that make messy datasets and how to avoid them 
-```
 
-### Data structure
-
-```{epigraph}
-"Tidy datasets are all alike, but every messy dataset is messy in its own way." 
-
--- [Hadley Wickham](http://hadley.nz/)
-```
-
-In general, a tidy or clean dataset is made up of the following ({numref}`tidyData`) {cite}`wickham_R4DS_2017`: 
-
-````{panels}
-:column: col-4
-:card: border-2
-Columns (Variables)
-^^^
-Columns are a group of cells aligned vertically. In datasets, columns are variables, where each cell holds a piece of information about a given attribute. 
 ---
-Rows (Observations)
-^^^
-Rows are a group of cells that are aligned horizontally, where each row is an observation. 
----
-Cells (Values)
-^^^
-In datasets, each row is an observation and each cell in that row holds the value of the column where it falls. 
-````
 
-```{figure} /images/tidyDataWickham.png
-:name: tidyData
+## Data structure
 
-Rules that make a tidy dataset: columns are variables, observations are rows and values are cells. Image and caption from {cite}`wickham_R4DS_2017`. 
-```
+
+> "Tidy datasets are all alike, but every messy dataset is messy in its own way." 
+> 
+> -- [Hadley Wickham](http://hadley.nz/)
+
+
+In general, a tidy or clean dataset is made up of the following [^1]: 
+
+
+**Columns (Variables)**
+
+* Columns are a group of cells aligned vertically. In datasets, columns are variables, where each cell holds a piece of information about a given attribute. 
+
+**Rows (Observations)**
+
+* Rows are a group of cells that are aligned horizontally, where each row is an observation. 
+
+**Cells (Values)**
+
+* In datasets, each row is an observation and each cell in that row holds the value of the column where it falls. 
+
+
+[!tidyData](http://gbadske.org/Documentation/DataGovernanceHandbook/_images/tidyDataWickham.png)
+Rules that make a tidy dataset: columns are variables, observations are rows and values are cells. Image and caption from [^1]. 
 
 Sticking to a tidy data format enables data reusability, ensures consistancy (which improves data quality), and helps to understand the underlying meaning (semantics) of each of the values in the spreadsheet. Having columns as variables and rows as observations allows us to know what a value means based on it's relation to the variables and observations.
 
-FAIR data is tidy data - tidy data is reusable and interoperable by nature. Tidy data is more findable, because headers are well defined making metadata creation easier. Fundamentally, we can draw more information from tidy data. 
+FAIR data is tidy data - tidy data is reusable and interoperable by nature. Tidy data is more findable, because headers are well defined, making metadata creation easier. Fundamentally, we can draw more information from tidy data. 
 
-### Saving spreadsheets
+## Saving spreadsheets
 
 Datasets in spreadsheets can be saved as an excel file or in `.csv` (comma separated value) or `.txt` format. The latter two are preferred as they are easier to read into programming libraries in R and python. 
 
-### Standard date and time convention
+## Standard date and time convention
 
 Without a standard convention, dates can present a lot of ambiguity. For example, 01/11 could be interpreted as January 2011, November 2001 or November 1st. For this reason, it is important to use an internationally accepted date standard so we can relabily understand our data. 
 
@@ -94,15 +243,17 @@ Since GBADs is a global organization, it is important to specify time zones ente
 For example: 
 Saturday 10 July 2021 at 13:48 EDT is written as 2021-07-10T13:48-4:00
 
-```{admonition} Different calendars for different countries
-:class: tip
+
+--- 
+**Different calendars for different countries**
 
 When analyzing datasets from different countries be aware that not all parts of the world use the Gregorian calendar. 
 
 For example, Ethiopia uses the Ethiopian calendar, which is different from the Gregorian calendar. This puts Ethiopia 7 years behind the calendar used in Europe and North America. [Here](https://melaku.ml/) is a tool that allows you to convert from the Gregorian to the Ethiopian calendar. 
-```
 
-### Large number conventions 
+---
+
+## Large number conventions 
 
 Depending on the country, there are different conventions for large numbers. 
 
@@ -119,14 +270,14 @@ So - the same number but represented 3 different ways. This leaves a lot up to i
 To keep things clear we should structure our large numbers **without** commas, and reserve periods to specify a decimal place. 
 
 
-```{admonition} If you see a comma where you think it shouldn't be... 
-:class: tip
+---
+If you see a comma where you think it shouldn't be... 
 
 If the formatting of large numbers is unclear to you, ask the data owner for clarification! If the data owner is part of the GBADs programme, gently suggest that they use the standards used and set forth by the program (you could even send this chapter along). 
 
-```
+---
 
-### File naming convention
+## File naming convention
 
 When naming files you should be consistent, be descriptive, avoid characters and spaces, and include the date (preferably using a standard such as [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html). For the purposes of file naming convention, we will omit the dashes between YYYY-MM-DD. 
 
@@ -149,18 +300,19 @@ If it is a metadata file, you should name the file with 'metadata' and the file 
 * Ethiopian production prices from the fao stat website.csv
 * ETHPRODPRICES_GOODCOPY.csv
 
-```{admonition} Dates first
-:class: tip
+
+---
+**Dates first**
 
 Putting the date first in a file allows you to easily organize files in a directory or folder by ascending or descending date. 
 
-```
+---
 
-### Common Errors
+## Common Errors
 
 Formatting, highlighting and bolding should be avoided. Here's why making spreadsheets pretty causes headaches in the data analysis lifecycle: 
 
-#### 7 common errors that make spreadsheets messy
+### 7 common errors that make spreadsheets messy
 
 1. Multiple tables in one spreadsheet
 2. Bad null values (a zero does not mean null)
@@ -235,3 +387,6 @@ Also - when using dates be sure to specify what the date means. A column header 
 [R for Data Science by Hadley Wickham](https://r4ds.had.co.nz/)
 
 Authors: Kassy Raymond and K. Marie McIntyre
+
+## Bibliography
+[^1]: https://www.jstatsoft.org/article/view/v059i10
