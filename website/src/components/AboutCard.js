@@ -54,7 +54,7 @@ const Members = [
         title:(<><Translate>Informatics Software Developer, University of Guelph</Translate></>),
         email:"wfitzjoh@uoguelph.ca",
         link:"https://fitzjohn.dev/",
-        imageLink:"https://i.imgur.com/TFuZPK4.jpg"
+        imageLink:"https://ca.slack-edge.com/T01292WLJAK-U03BV1J62UQ-f51998eaab2d-512"
     },
     {
         name:"Matthew Szurkowski",
