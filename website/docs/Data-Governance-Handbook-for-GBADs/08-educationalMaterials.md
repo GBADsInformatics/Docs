@@ -1,7 +1,9 @@
 ---
 sidebar_position: 8
 ---
-# Best Practices for Coding
+# Educational Materials and Best Practices 
+
+## Best Practices for Coding
 
 GBADs members most commonly use R and Python for coding cleaning and organizing data, and constructing their models. Best practices for coding conventions allow code to be readable and reusable. These are the best practices that GBADs Informatics and modellers suggest to ensure that we can understand and use code.
 
@@ -33,9 +35,9 @@ GBADs members most commonly use R and Python for coding cleaning and organizing 
 
 --->
 
-## R Coding Best Practices 
+### R Coding Best Practices 
 
-### 1. Naming Conventions 
+#### 1. Naming Conventions 
 
 **File naming**
 
@@ -61,7 +63,7 @@ livestock_df <- read_csv('path/to/my/important/file.csv')
 Remember that when you use `setwd()` to set the working directory for your project or script, the working directory is distinct to your computer and may decrease the level of reproducibility of your code. 
 ```
 
-### 2. Organize the format of your code 
+#### 2. Organize the format of your code 
 
 Start your script with the name of the creator, date that the script was last edited (in ISO 8601), and a brief description of the purpose of the script. 
 
@@ -124,13 +126,13 @@ livestock_df <- read_csv(data_path)
 
 ```
 
-### 3. Data cleaning 
+#### 3. Data cleaning 
 
-#### 3.1 Drop unneeded columns early on in your code 
+##### 3.1 Drop unneeded columns early on in your code 
 
 If you are not using a column in further analysis, drop it in the data cleaning and exploration phase of your script. This will improve interpretability of your code and increase the processing speed of your program. 
 
-#### 3.2 Remember data provenance 
+##### 3.2 Remember data provenance 
 
 It is important that the estimates, models, graphics and output datasets created by models can be reproduced. It is therefore important to include the original dataset used, or when APIs are used, the ability to trace back to original dataset. 
 
@@ -138,20 +140,20 @@ If you downloaded your data, make sure you save a copy of the original dataset a
 
 If an API call was made to get the data, ensure that the date stamp of that call is provided in the name of your output dataset, models, or graphics that are created. You may also again, choose, to save a copy of the original dataset. 
 
-#### 3.3 Ensure data is in a 'tidy' format at the end of the data cleaning phase 
+##### 3.3 Ensure data is in a 'tidy' format at the end of the data cleaning phase 
 
 See also Organizing Spreadsheets in these educational materials and [R for Data Science](https://r4ds.had.co.nz/) by Hadley Wickham. 
 
-#### 3.4 Organize data
+##### 3.4 Organize data
 
 Organize data from left to right with categorical variables and then continuous variables. Variables should be grouped together where relevant (e.g. stocking density at thinning, weight at thinning, date of thinning etc.)
 
-### 4. Other recommendations 
+#### 4. Other recommendations 
 
 - Try RStudio for your IDE!
 
 
-# Organizing Data in Spreadsheets
+## Organizing Data in Spreadsheets
 
 > "Garbage in, Garbage out"
 
@@ -159,7 +161,7 @@ If you are reading this, you probably spend a lot of timing dealing with data. Y
 
 **In this part of the handbook, we tell you how you can better organize your data in spreadsheets to create higher quality data, leading to higher quality models. We also define some standard practices for inputting data of specific types including dates and long numbers.**
 
-## Spreadsheets and datasets 
+### Spreadsheets and datasets 
 
 Spreadsheets, such as those made in Microsoft Excel and Google Sheets are common for storing, entering, sharing and manipulating data from research. Spreadsheets are commonly shared to communicate research results and used as input data for models or statistical analysis. While spreadsheets are an integral part of the data lifecycle, they must be structured properly to ensure that mistakes are not made that lead to data being unable to be reused or interpreted. Small mistakes in spreadsheets can leave us in situations where data are hard to understand, hard to analyze and time consuming to clean.
 
@@ -182,7 +184,7 @@ Structuring data properly in spreadsheets leads to data being more reusable and 
 
 ---
 
-## Data structure
+### Data structure
 
 
 > "Tidy datasets are all alike, but every messy dataset is messy in its own way." 
@@ -213,11 +215,11 @@ Sticking to a tidy data format enables data reusability, ensures consistancy (wh
 
 FAIR data is tidy data - tidy data is reusable and interoperable by nature. Tidy data is more findable, because headers are well defined, making metadata creation easier. Fundamentally, we can draw more information from tidy data. 
 
-## Saving spreadsheets
+### Saving spreadsheets
 
 Datasets in spreadsheets can be saved as an excel file or in `.csv` (comma separated value) or `.txt` format. The latter two are preferred as they are easier to read into programming libraries in R and python. 
 
-## Standard date and time convention
+### Standard date and time convention
 
 Without a standard convention, dates can present a lot of ambiguity. For example, 01/11 could be interpreted as January 2011, November 2001 or November 1st. For this reason, it is important to use an internationally accepted date standard so we can relabily understand our data. 
 
@@ -253,7 +255,7 @@ For example, Ethiopia uses the Ethiopian calendar, which is different from the G
 
 ---
 
-## Large number conventions 
+### Large number conventions 
 
 Depending on the country, there are different conventions for large numbers. 
 
@@ -308,11 +310,11 @@ Putting the date first in a file allows you to easily organize files in a direct
 
 ---
 
-## Common Errors
+### Common Errors
 
 Formatting, highlighting and bolding should be avoided. Here's why making spreadsheets pretty causes headaches in the data analysis lifecycle: 
 
-### 7 common errors that make spreadsheets messy
+#### 7 common errors that make spreadsheets messy
 
 1. Multiple tables in one spreadsheet
 2. Bad null values (a zero does not mean null)
@@ -383,10 +385,10 @@ When inputting dates, use a standard such as [ISO 8601](https://www.iso.org/iso-
 
 Also - when using dates be sure to specify what the date means. A column header simply entitled 'date' does not provide much context. For example, does date mean the date the data was entered into the spreadsheet? The date a sample was collected? The date a sample was run in the lab? Be sure that other researchers (and future you) know what you were talking about! 
 
-### Further reading recommendations
+#### Further reading recommendations
 [R for Data Science by Hadley Wickham](https://r4ds.had.co.nz/)
 
 Authors: Kassy Raymond and K. Marie McIntyre
 
-## Bibliography
+### Bibliography
 [^1]: https://www.jstatsoft.org/article/view/v059i10
