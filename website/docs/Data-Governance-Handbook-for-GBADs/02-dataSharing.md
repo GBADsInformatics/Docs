@@ -1,7 +1,7 @@
 ---
-sidebar_position: 
+sidebar_position: 2
 ---
-# Data Principles and Governance 
+<!-- # Data Principles and Governance 
 
 ## Data Governance 
 
@@ -29,11 +29,10 @@ Data governance terms you should know:
 
 #### More reading on data governance
 **Blog Posts**
-- https://towardsdatascience.com/what-we-got-wrong-about-data-governance-365555993048
+- https://towardsdatascience.com/what-we-got-wrong-about-data-governance-365555993048 -->
 
 
-
-## Data Principles 
+# Data Principles 
 
 To provide and create data that can be used to it's fullest potential, GBADs strives to provide data and metadata that are **F**indable, **A**ccessible, **I**nteroperable, **R**eusable and **S**ecure (FAIR(S)). 
 
@@ -52,11 +51,8 @@ In 2020, GBADs informatics proposed ‘FAIR(S)’ data to add an element of Secu
 
 While initially created for the reuse of research data, the idea of FAIR has grown and can be applied to Open and private data sources. GBADs will adapt FAIR data as a system concept, and to create FAIR data objects. The FAIR data ecosystem (Figure 1) will be used as the skeletal structure of our data ecosystem. This document will act as a Data Management Plan where each component of the FAIR data ecosystem will be addressed and discussed in terms of structuring FAIR data objects and defining the use of data flowing through our system. 
 
+![fairDataObj](http://gbadske.org/Documentation/DataGovernanceHandbook/_images/fairDataObj.png)
 
-```{figure} /images/fairDataObj.png
-:name: fairDataObj
-
-```
 
 A popular misconception in the adoption of FAIR sharing principles is that FAIR suggests that data should be ‘Open’ by default; however, FAIR actually suggests that data should be “As open as possible, as closed as necessary” [Jones et al, 2018]. For GBADs, this means supplementing FAIR principles with CARE, which is discussed in more depth later in this document. A key component in this will be identifying different types of data users and contributors. 
 
