@@ -1,6 +1,8 @@
 ---
 sidebar_position: 2
 ---
+
+# Data Principles 
 <!-- # Data Principles and Governance 
 
 ## Data Governance 
@@ -31,8 +33,6 @@ Data governance terms you should know:
 **Blog Posts**
 - https://towardsdatascience.com/what-we-got-wrong-about-data-governance-365555993048 -->
 
-
-# Data Principles 
 
 To provide and create data that can be used to it's fullest potential, GBADs strives to provide data and metadata that are **F**indable, **A**ccessible, **I**nteroperable, **R**eusable and **S**ecure (FAIR(S)). 
 
