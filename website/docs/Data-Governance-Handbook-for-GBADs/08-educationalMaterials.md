@@ -208,7 +208,7 @@ In general, a tidy or clean dataset is made up of the following [^1]:
 * In datasets, each row is an observation and each cell in that row holds the value of the column where it falls. 
 
 
-[!tidyData](http://gbadske.org/Documentation/DataGovernanceHandbook/_images/tidyDataWickham.png)
+![tidyData](http://gbadske.org/Documentation/DataGovernanceHandbook/_images/tidyDataWickham.png)
 Rules that make a tidy dataset: columns are variables, observations are rows and values are cells. Image and caption from [^1]. 
 
 Sticking to a tidy data format enables data reusability, ensures consistancy (which improves data quality), and helps to understand the underlying meaning (semantics) of each of the values in the spreadsheet. Having columns as variables and rows as observations allows us to know what a value means based on it's relation to the variables and observations.
