@@ -390,5 +390,5 @@ Also - when using dates be sure to specify what the date means. A column header 
 
 Authors: Kassy Raymond and K. Marie McIntyre
 
-### Bibliography
+### References
 [^1]: https://www.jstatsoft.org/article/view/v059i10

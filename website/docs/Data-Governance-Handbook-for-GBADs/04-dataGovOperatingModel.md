@@ -32,6 +32,16 @@ The main data goals for GBADs can be broken down into the following:
 7. Trace data lineage to ensure that all data procedures are replicable, to ensure that data is not replicated, to help with data quality and updates, and to keep track of which versions of data are used in publications
 8. Dashboards are deployed on GBADs servers 
 
+<!-- 
+From FAIR to FAIRS
+    Data that can be used in a timely manner for decision making.
+    Data that have been analyzed for quality, and these metrics are available as part of the meta-data.
+    As complete a data collection as possible for all its stakeholders. This will include data that GBADs redirects from other organizations and data that GBADs stores for associated projects and partners.
+    Data that are relevant to the modelling, decision support, and other purposes important to the aims of GBADs and its users.
+    Data that are easily accessible to appropriate users (both machine and human).
+    Data that are interpretable—the semantics to be encoded in meta-data and other semantic systems.
+    Access to technology and products that are innovative and advance the state-of-the-art.
+    A system that allows for the customization of information through mechanisms and processing that adjusts the granularity of the data to the user's needs. -->
 
 
 <!-- * Assess the quality of all input data according to quality metrics established by the Informatics team and communicate the quality via data quality reports or dashboards 

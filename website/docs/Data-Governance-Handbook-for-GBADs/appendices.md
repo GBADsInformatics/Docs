@@ -2,20 +2,16 @@
 sidebar_position: 16
 ---
 
-Appendices
-==========
+# Appendices
 
-Appendix A: FAIRS(S) Data Sharing Principles
-============================================
+
+## Appendix A: FAIRS(S) Data Sharing Principles
 
 FAIR Principles, as described in [https://www.go-fair.org/fair-principles/](https://www.go-fair.org/fair-principles/).
 
-Findable
---------
+**Findable**
 
-The first step in (re)using data is to find them. Metadata and data should be easy to find for both humans and 
-computers. Machine-readable metadata are essential for automatic discovery of datasets and services, so this is 
-an essential component of the FAIRification process.
+The first step in (re)using data is to find them. Metadata and data should be easy to find for both humans and computers. Machine-readable metadata are essential for automatic discovery of datasets and services, so this is an essential component of the FAIRification process.
 
     F1. (Meta)data are assigned a globally unique and persistent identifier
 
@@ -25,8 +21,7 @@ an essential component of the FAIRification process.
 
     F4. (Meta)data are registered or indexed in a searchable resource
 
-Accessible
-----------
+**Accessible**
 
 Once the user finds the required data, she/he needs to know how can they be accessed, possibly including 
 authentication and authorisation.
@@ -39,11 +34,9 @@ authentication and authorisation.
 
     A2. Metadata are accessible, even when the data are no longer available
 
-Interoperable
--------------
+**Interoperable**
 
-The data usually need to be integrated with other data. In addition, the data need to interoperate with applications 
-or workflows for analysis, storage, and processing.
+The data usually need to be integrated with other data. In addition, the data need to interoperate with applications or workflows for analysis, storage, and processing.
 
     I1. (Meta)data use a formal, accessible, shared, and broadly applicable language for knowledge representation.
 
@@ -51,8 +44,7 @@ or workflows for analysis, storage, and processing.
 
     I3. (Meta)data include qualified references to other (meta)data
 
-Reusable
---------
+**Reusable**
 
 The ultimate goal of FAIR is to optimise the reuse of data. To achieve this, metadata and data should be well-described so that they can be replicated and/or combined in different settings.
 
@@ -64,16 +56,13 @@ The ultimate goal of FAIR is to optimise the reuse of data. To achieve this, met
 
         R1.3. (Meta)data meet domain-relevant community standards
 
-Appendix B: CARE Data Sharing Principles
-========================================
+## Appendix B: CARE Data Sharing Principles
 
-CARE principles are grounded in “people and purpose” while FAIR principles are “data focused”. This means that CARE 
-principles address the gaps in FAIR principles in terms of the rights and interest of Indigenous peoples and their world views. 
+CARE principles are grounded in “people and purpose” while FAIR principles are “data focused”. This means that CARE principles address the gaps in FAIR principles in terms of the rights and interest of Indigenous peoples and their world views. 
 
 The CARE principles by GIDA are as follows (ref):
 
-Collective Benefit
-------------------
+**Collective Benefit**
 
 Data ecosystems should be designed and function in ways that enable Indigenous Peoples to derive benefit from the data.
 
@@ -99,13 +88,9 @@ Data ecosystems should be designed and function in ways that enable Indigenous P
         created from Indigenous data should benefit Indigenous communities in an equitable manner and 
         contribute to Indigenous aspirations for wellbeing.
 
-Authority to Control
---------------------
+**Authority to Control**
 
-Indigenous Peoples’ rights and interests in Indigenous data must be recognised and their authority to control such data 
-be empowered. Indigenous data governance enables Indigenous Peoples and governing bodies to determine how Indigenous Peoples, 
-as well as Indigenous lands, territories, resources, knowledges and geographical indicators, are represented and identified 
-within data.
+Indigenous Peoples’ rights and interests in Indigenous data must be recognised and their authority to control such data be empowered. Indigenous data governance enables Indigenous Peoples and governing bodies to determine how Indigenous Peoples, as well as Indigenous lands, territories, resources, knowledges and geographical indicators, are represented and identified within data.
 
     A1: Recognizing rights and interests
 
@@ -126,11 +111,9 @@ within data.
         and be active leaders in the stewardship of, and access to, Indigenous data especially in the 
         context of Indigenous Knowledge.
 
-Responsibility
---------------
+**Responsibility**
 
-Those working with Indigenous data have a responsibility to share how data is used to support Indigenous Peoples’ 
-self-determination and collective benefit.
+Those working with Indigenous data have a responsibility to share how data is used to support Indigenous Peoples’ self-determination and collective benefit.
 
     R1: For positive relationships
 
@@ -152,11 +135,9 @@ self-determination and collective benefit.
         Resources must be provided to generate data grounded in the languages, worldviews, and 
         lived experiences (including values and principles) of Indigenous Peoples.
 
-Ethics
-------
+**Ethics**
 
-Indigenous Peoples’ rights and well-being should be the primary concern at all stages of the data life cycle and 
-across the data ecosystem.
+Indigenous Peoples’ rights and well-being should be the primary concern at all stages of the data life cycle and across the data ecosystem.
  
     E1: For minimizing harm and maximizing benefit
 
@@ -180,21 +161,16 @@ across the data ecosystem.
         any limitations or obligations in secondary use inclusive of issues of consent.
  
 
-Appendix C: GATHER
-==================
+## Appendix C: Metadata Terms
+
+GBADs uses schema.org for metadata. A complete list of metadata terms can be found in Table 1: 
 
 
-Appendix D: Metadata Terms
-==========================
-
-Metadata terms are adapted from AGRIS AP, AgMES and DCMI (See Technical Data Standards). Terms are presented in 
-Table #FIXME. The terms can also be downloaded in JSON format.
 
  
-Appendix E: JSON Metadata Template
-==================================
+## Appendix D: JSON Metadata Template
 
-This section contains a JSON metadata template, with all metadata terms (Table #FIXME). Note that some metadata terms are ... to be continued.
+This section contains a JSON metadata template, with all metadata terms (Table 1).
 
 ```
 {
@@ -269,12 +245,11 @@ This section contains a JSON metadata template, with all metadata terms (Table #
 }
 ```
 
+## Appendix E: Licensing Agreements
 
-Appendix F: Common Licensing Agreements
-=======================================
+We have curated a list of data licensing agreements for reference: 
 
-Creative Commons (CC) 
----------------------
+### Creative Commons (CC)
 
 CC offers 6 different types of licenses: CC-BY, CC BY-SA, CC BY-NC, CC BY-NC,SA, CC BY-ND, CC BY-NC-ND
 
@@ -290,15 +265,11 @@ Each license as defined by CC:
 | CC BY-NC-ND | This license allows reusers to copy and distribute the material in any medium or format in unadapted form only, for noncommercial purposes only, and only so long as attribution is given to the creator. |
 | | |
 
-Including the aforementioned licenses, creative commons offers a public domain dedication tool, CC0. In this, a 
-creator forfeits their rights to their work and allows “reusers to distribute, remix, adapt, and build upon the 
-material in any medium or format, with no conditions.”  
+Including the aforementioned licenses, creative commons offers a public domain dedication tool, CC0. In this, a creator forfeits their rights to their work and allows “reusers to distribute, remix, adapt, and build upon the material in any medium or format, with no conditions.”  
 
-Any individual with original content can use CC licenses simply by including copyright text and licensing information, 
-with a link to the license that the work is protected by. 
+Any individual with original content can use CC licenses simply by including copyright text and licensing information, with a link to the license that the work is protected by. 
 
-Open Data Commons Open Database Licenses (ODbL)
------------------------------------------------
+### Open Data Commons Open Database Licenses (ODbL)
 
 ```{admonition} To Be Added
 The full ODbL 1.0 here, and a summary here.
@@ -307,8 +278,7 @@ In general, it is very similar to the CC BY-SA license, but it requires that you
 “If you redistribute the database, or an adapted version of it, then you may use technological measures that restrict 
 the work (such as DRM) as long as you also redistribute a version without such measures.”
 
-FAO Licensing 
--------------
+### FAO Licensing 
 
 FAO data licensing information is included in the “Open Data Licensing for Statistical Databases Policy” document 
 [reference to be added: FAO Data Licensing Information], which builds upon the CC BY-NC-SA 3.0 IGO. 
@@ -321,22 +291,19 @@ The following corporate databases are under this license:
 - Gender and lands rights database 
 - Food Price Monitoring and Analysis Tool 
 - Global Individual Food Consumption 
-- SDG Data Portal. 
+- SDG Data Portal 
 
-World Bank Licensing 
---------------------
+### World Bank Licensing
 
 Similar to the FAO, the World Bank is licensed under a CC license (CC BY 4.0) with additional terms and conditions, 
 which can be found here [reference to be added].  
 
-Open Government License
------------------------
+### Open Government Licenses
 
 - [Canada](https://open.canada.ca/en/open-government-licence-canada)
 
 
-Appendix G: Data Standards 
-==========================
+## Appendix G: Data Standards 
 
 - [FAIR Sharing Standards](https://fairsharing.org/standards/?q=&selected_facets=expanded_onto_domains_exact:%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Resource%20metadata)
 
@@ -360,13 +327,7 @@ adopted or developed by GBADs.
 | | |
 
 
-Appendix H: Organizations 
-=========================
-
-
-
-Appendix I: GATHER checklist
-============================
+## Appendix H: GATHER checklist
 
 | GATHER Checklist Item | GBADs Comments and Refinements |
 | :-------------------- | -----------------------------: |
