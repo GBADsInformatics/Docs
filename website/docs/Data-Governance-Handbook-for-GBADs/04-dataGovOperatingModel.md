@@ -18,19 +18,27 @@ A data governance operating model is a an operating model that defines an organi
 
 ## Goals
 
-The main data goals for GBADs can be broken down into the following: 
+The main data goals for GBADs can be broken down into the following.
 
-1. Identification of data sources 
-    * Identify data sources that are needed for GBADs modelling purposes
-    * Where necessary, create data alliances with private and public data holders 
-2. Improve accessibility to data 
-    * Improve accessibility to identified data sources by creating channel of access for data sources of interest. This may include scraping documents or webpages, reformatting and storing downloaded data, or creating tools that can operate with Application Programming Interfaces of interest. 
-3. Quality and semantics 
-4. Reduce replication of data sources and data cleaning 
-5. Modelling procedures are reproducible
-6. Data is discoverable (a.k.a. Findable) to data users
-7. Trace data lineage to ensure that all data procedures are replicable, to ensure that data is not replicated, to help with data quality and updates, and to keep track of which versions of data are used in publications
-8. Dashboards are deployed on GBADs servers 
+**General**
+1. Access to technology and products that are innovative and advance the state-of-the-art.
+
+**Data**
+2. Identify data sources that are required for GBADs modeeling purposes 
+    * When necessary, create data allicances with private and public data holders
+3. Data is accessible for users (both humans and machines) and can be used in a timely matter for decision making [^1]
+    * This includes data that GBADs redirects from other organizations and data that GBADs stores for associated projects and partners [^1]. 
+4. Data have been analyzed for quality, and these metrics are available as part of the metadata [^1]
+5. Data is cleaned only once - reduce replication of data sources and cleaning
+6. Data is findable to data users [^1]
+7. A system that allows for the customization of information through mechanisms and processing that adjusts the granularity of the data to the user's needs[^1]
+8. Data that are interpretable—the semantics to be encoded in meta-data and other semantic systems [^1]
+
+**Models and Data Visualizations**
+9. Modelling procedures are reproducible
+10. Data lineage is traced to ensure that all data procedures are replicable, to ensure that data is not replicated, to help with data quality and updates, and to keep track of which versions of data are used in publications
+
+
 
 <!-- 
 From FAIR to FAIRS
@@ -61,3 +69,6 @@ The governance structure of GBADs is split into three main Working Groups, each 
     * WG2 subgroup farm-level 
     * WG3 subgroup societal burden
 * Working Group 3 (WG3) - Informatics 
+
+## References: 
+[^1] https://acsess.onlinelibrary.wiley.com/doi/full/10.1002/agj2.21017?af=R

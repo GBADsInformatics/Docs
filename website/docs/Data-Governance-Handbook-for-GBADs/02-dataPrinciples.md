@@ -6,7 +6,7 @@ sidebar_position: 2
 
 As a program, we have core data principles that our [Data Governance Operating Model](https://gbadskedoc.org/docs/Data-Governance-Handbook-for-GBADs/dataGovOperatingModel) is based on. 
 
-We have adopted the FAIR(S)[^1][^2] guiding principles to ensure that data, metadata, and modelling processes are **F**indable, **A**ccessibile, **I**nteroperabile, **R**eusable, and **S**ecure. 
+We have adopted the FAIR(S)[^1],[^2] guiding principles to ensure that data, metadata, and modelling processes are **F**indable, **A**ccessibile, **I**nteroperabile, **R**eusable, and **S**ecure. 
 
 ## FAIR Principles and Data Culture
 
