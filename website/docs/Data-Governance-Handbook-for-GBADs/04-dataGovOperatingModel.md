@@ -21,9 +21,11 @@ A data governance operating model is a an operating model that defines an organi
 The main data goals for GBADs can be broken down into the following.
 
 **General**
+
 1. Access to technology and products that are innovative and advance the state-of-the-art.
 
 **Data**
+
 2. Identify data sources that are required for GBADs modeeling purposes 
     * When necessary, create data allicances with private and public data holders
 3. Data is accessible for users (both humans and machines) and can be used in a timely matter for decision making [^1]
@@ -35,10 +37,12 @@ The main data goals for GBADs can be broken down into the following.
 8. Data that are interpretable—the semantics to be encoded in meta-data and other semantic systems [^1]
 
 **Models and Data Visualizations**
+
 9. Modelling procedures are reproducible
 10. Data lineage is traced to ensure that all data procedures are replicable, to ensure that data is not replicated, to help with data quality and updates, and to keep track of which versions of data are used in publications
+11. Data visualizations and dashboards are served on GBADs servers, use data from the GBADs Knowledge Engine (GBADs data sources), and link to metadata and methods
 
-
+Data governance procedures and processes are crucial to fulfill the goals, to create a system that is FAIR(S), and to ensure that data processes, publications, and models are reproducible. Each goal has its own processes that require unique technological tools and individual (human) responsibilities from the Informatics theme, and others using and creating data models in GBADs. The GBADs governance structure (Working Groups) provide a vantage point for understanding where responsibility lies in the data governance operating structure. 
 
 <!-- 
 From FAIR to FAIRS
@@ -64,11 +68,17 @@ The goals were drafted using the 2023 Investment Document.  -->
 ## People and Processes
 
 The governance structure of GBADs is split into three main Working Groups, each with unique, but overlapping responsibilities: 
-* Working Group 1 (WG1) - Data alliances, Communication of information and Adoption and uptake
-* Working Group 2 (WG2) - Methods and Analytics
-    * WG2 subgroup farm-level 
-    * WG3 subgroup societal burden
-* Working Group 3 (WG3) - Informatics 
+
+
+| Working Group | Description |
+| ------------- | ----------- |
+| Working Group 1 (WG1)- Data alliances, Communication of information and Adoption and uptake | Drive effective research translation and will build on the work of the disease prioritization theme in the global context, and on the engagement work with stakeholders of the Indonesian and Ethiopian case studies in a local context. Translate research into valuable products in order to access further resources be they data, finance or in-kind contributions from other programmes. Responsible for combining and organizing analytical results for consistency and comprehension by the users and will be accountable for ensuring user and expert reference group feedback is incorporated into dashboards. |
+| Working Group 2 (WG2) - Methods and Analytics | Methods and Analytics |
+| Working Group 3 (WG3) - Informatics | |
+
+![GBADsWGStruct](./images/GBADsWGStruct.png)
+
+Each working group has a unique set of responsibilites, each which build on each other to create models and estimates build upon the `foundation' which is governed data. 
 
 ## References: 
 [^1] https://acsess.onlinelibrary.wiley.com/doi/full/10.1002/agj2.21017?af=R
