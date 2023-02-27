@@ -416,7 +416,7 @@ GitHub is where GBADs stores all code that is produced in GBADs including softwa
 * [Beginners: Contributing to a GitHub project with GitHub Desktop](https://medium.com/nerd-for-tech/contributing-to-a-github-project-with-github-desktop-57514f640aa1)
 * [2 Minutes to Set Up Git, GitHub and GitHub Desktop on Mac](https://medium.com/swlh/2-minutes-to-set-up-git-github-and-github-desktop-on-mac-b10267003d77)
 
-### Tutorial/Overview 
+<!-- ### Tutorial/Overview 
 
 In this tutorial, you will learn how to use GitHub Desktop to work collaboratively on coding projects and reap the benefits of version control. 
 
@@ -535,4 +535,4 @@ Then, you will open GitHub Desktop, and clone the repository:
 <INSERT IMAGE HERE >
 
 Now, if you open your file browser, you will see the 
-
+ -->
