@@ -77,10 +77,15 @@ The governance structure of GBADs is split into three main Working Groups, each 
 
 ![GBADsWGStruct](./images/GBADsWGStruct.png)
 
-Each working group has a unique set of responsibilites, each which build on each other to create models and estimates build upon the `foundation' which is governed data. 
+Each working group has a unique set of responsibilites, each which build on each other to create models and estimates build upon the 'foundation' which is governed data. 
 
+## Non-Invasive Data Governance Operating Model of Roles and Responsibilities 
 
+The Non-Invasive Data Governance Operating Model of Roles and Responsibilities 
+
+![seinerTdanDGOperating](./images/seinerTdanDGOperating.gif)
 
 ## References: 
 [^1] https://acsess.onlinelibrary.wiley.com/doi/full/10.1002/agj2.21017?af=R
 [^2] Working groups and description of responsibilites taken from the GBADs Bill and Melinda Gates Investment Document 2022
+[^3] https://tdan.com/the-non-invasive-data-governanceo-operating-model/12210
