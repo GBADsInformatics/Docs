@@ -429,12 +429,11 @@ In the first part of this tutorial, we will create a new GitHub repository and u
 * Clone repositories to your local machine 
 * Create changes and commit and push changes to GitHub 
 * Fetch and pull new changes to update your local repository
-* Understand what branches are and how to use them
 
 **Modelling in GBADs:**
 
 * Clone the AHLE repository
-* Make changes and commit them to the development branch
+* Make changes and commit them 
 * Pull changes that your collaborators are making on the repository
 
 ---
@@ -515,9 +514,16 @@ To commit your changes you can add a title. In this case, my title might be some
 
 The next thing you have to do is 'push' your changes to the remote GitHub repository. This makes your changes available on the remote repository so that your collaborators can see the changes you made and work on the most up-to-date version of your code. 
 
+![Push](./images/push.png)
+
 #### Fetching and pulling new changes 
 
 When you are working on the same project with collaborators and they push new changes to GitHub, those changes are stored in the remote repository. To work on the latest version of the code you have to fetch and pull the new changes in the GitHub repository. 
+
+To get the new changes, press the 'fetch' button on the top of the GitHub Desktop window: 
+
+![fetch](./images/fetch.png)
+
 
 ### Collaborating on AHLE GitHub 
 
@@ -527,11 +533,9 @@ First, you will want to clone the AHLE GitHub repository.
 
 So, you are going to go to the AHLE GitHub repository: https://github.com/GBADsInformatics/GBADsLiverpool and copy the URL (or just copy it from this tutorial.)
 
-Then, you will open GitHub Desktop, and clone the repository: 
+Then, you will open GitHub Desktop, and clone the repository, just as we did in the previous section. 
 
-<INSERT IMAGE HERE >
-
-Now, if you open your file browser, you will see the 
+Now, if you open your file browser, you will see the the AHLE GitHub repository. You can make changes to any file by opening it. When you make a change you can commit and push your changes for your collaborators to see. To get all changes from your collaborators you can fetch and pull changes! 
 
 ### References
 [^1]: https://www.jstatsoft.org/article/view/v059i10
