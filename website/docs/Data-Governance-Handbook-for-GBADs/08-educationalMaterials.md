@@ -461,11 +461,11 @@ Now you are ready to start using GitHub!
 
 Create a new repository on GitHub by navigating to your profile on https://github.com and selecting the green 'new' button the right side of your screen: 
 
-![alt text](./images/newRepo.png)
+![newRepo](./images/newRepo.png)
 
 Name your repository `GitHubTutorial`. Add a description like: "A place for me to learn how to use GitHub".
 
-![alt text](./images/createRepo.png)
+![createRepo](./images/createRepo.png)
 
 Scroll to the bottom of the screen and select 'create repository'. 
 
@@ -478,17 +478,17 @@ The word 'clone' means to get a copy of the repository on GitHub on your local m
 1. Open the GitHub Desktop App.
 2. Select the pane on the left the application window and press the 'add' button. 
 
-![alt text](./images/cloneRepo1.png)
+![cloneRepo1](./images/cloneRepo1.png)
 
 3. Press 'clone repository' 
 
-![alt text](./images/cloneRepo2.png)
+![cloneRepo2](./images/cloneRepo2.png)
 
 4. Copy and paste the URL to the repository that you made on GitHub and specify the path where you would like to put it.
 
     I put the repository in my Tutorials folder in a folder I called LearnGitHub. Then select 'Clone'. 
 
-![alt text](./cloneRepo3.png)
+![cloneRepo3](./cloneRepo3.png)
 
 Now you have a copy of your GitHub repository on your local machine! The next thing you will learn to do is add files to your repository. 
 
@@ -498,13 +498,41 @@ Create a file to add to your GitHub repository.
 
 For example, you can add an R script. Open RStudio and create a new file. Save your file in the directory where you your GitHub repository is. For example, I would save mine in /Users/kassyraymond/PhD/trunk/Tutorials/LearnGithub
 
-![alt text](./images/saveFile.png)
+![saveFile](./images/saveFile.png)
 
 Now when I open the GitHub Desktop application I will see that the file I created called test.R appears on the left pane of the window. 
 
-![alt text](./images/saveFileGitHub.png)
+![saveFileGitHub](./images/saveFileGitHub.png)
 
 This file is only saved locally, so to get the file in GitHub (the remote repository), I have to commit my changes and push them to the remote repository.
 
 #### Committing and pushing changes 
+
+**Git Commit**
+
+To commit your changes you can add a title. In this case, my title might be something like "Created test.R". Then you can add a description about what you did, what changes you made to your script, or what you are adding to the repository. 
+
+![Commit](./images/commit.png)
+
+**Git Push**
+
+The next thing you have to do is 'push' your changes to the remote GitHub repository. This makes your changes available on the remote repository so that your collaborators can see the changes you made and work on the most up-to-date version of your code. 
+
+#### Fetching and pulling new changes 
+
+When you are working on the same project with collaborators and they push new changes to GitHub, those changes are stored in the remote repository. To work on the latest version of the code you have to fetch and pull the new changes in the GitHub repository. 
+
+### Collaborating on AHLE GitHub 
+
+Now that you know the basics of GitHub you are ready to start collaborating on the AHLE GitHub. 
+
+First, you will want to clone the AHLE GitHub repository. 
+
+So, you are going to go to the AHLE GitHub repository: https://github.com/GBADsInformatics/GBADsLiverpool and copy the URL (or just copy it from this tutorial.)
+
+Then, you will open GitHub Desktop, and clone the repository: 
+
+<INSERT IMAGE HERE >
+
+Now, if you open your file browser, you will see the 
 
