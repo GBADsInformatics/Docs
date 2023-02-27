@@ -390,16 +390,15 @@ Also - when using dates be sure to specify what the date means. A column header 
 
 Authors: Kassy Raymond and K. Marie McIntyre
 
-### References
-[^1]: https://www.jstatsoft.org/article/view/v059i10
-
-## GitHub
+## GitHub Tutorial
 
 ![githubBanner](./images/githubprbanner.JPG)
 
 GitHub is where GBADs stores all code that is produced in GBADs including software development code, data cleaning and reformatting, API development, modelling, dashboard development, and data access code. Here we provide a brief tutorial on the basics of GitHub and a list of educational resources for those who will be using GitHub on a more regular basis. 
 
 ### List of Resources 
+
+Here is a list of some of our favourite resources for getting started with GitHub: 
 
 #### Useful YouTube tutorial
 
@@ -416,7 +415,7 @@ GitHub is where GBADs stores all code that is produced in GBADs including softwa
 * [Beginners: Contributing to a GitHub project with GitHub Desktop](https://medium.com/nerd-for-tech/contributing-to-a-github-project-with-github-desktop-57514f640aa1)
 * [2 Minutes to Set Up Git, GitHub and GitHub Desktop on Mac](https://medium.com/swlh/2-minutes-to-set-up-git-github-and-github-desktop-on-mac-b10267003d77)
 
-<!-- ### Tutorial/Overview 
+### Tutorial/Overview 
 
 In this tutorial, you will learn how to use GitHub Desktop to work collaboratively on coding projects and reap the benefits of version control. 
 
@@ -432,7 +431,7 @@ In the first part of this tutorial, we will create a new GitHub repository and u
 * Fetch and pull new changes to update your local repository
 * Understand what branches are and how to use them
 
-Animal Health Loss Envelope: 
+**Modelling in GBADs:**
 
 * Clone the AHLE repository
 * Make changes and commit them to the development branch
@@ -449,25 +448,23 @@ To follow this tutorial you must:
 
 **Register for a GitHub account**
 
-If you don't already have an account on GitHub, you can make one by visiting https://github.com/ and clicking the 'sign up' button the right hand side of the screen.
+If you don't already have an account on GitHub, you can make one by visiting [GitHub](https://github.com/) and clicking the 'sign up' button the right hand side of the screen.
 
 **Install GitHub Desktop**
 
-You can install GitHub Desktop from https://desktop.github.com/. Make sure to select the Windows version if you are using Windows or MacOS if you are using a Mac. Follow the installation instructions on the link provided. 
+You can install GitHub Desktop from [https://desktop.github.com/](https://desktop.github.com/). Make sure to select the Windows version if you are using Windows or MacOS if you are using a Mac. Follow the installation instructions on the link provided. 
 
 Now you are ready to start using GitHub! 
 
 #### Create a repository on GitHub
 
-Create a new repository on GitHub by navigating to your profile on https://github.com and selecting the green 'new' button the right side of your screen: 
+Create a new repository on GitHub by navigating to your profile on [https://github.com](https://github.com) and selecting the green 'new' button the right side of your screen: 
 
 ![newRepo](./images/newRepo.png)
 
 Name your repository `GitHubTutorial`. Add a description like: "A place for me to learn how to use GitHub".
 
 ![createRepo](./images/createRepo.png)
-
-Scroll to the bottom of the screen and select 'create repository'. 
 
 Now you have a repository on GitHub! Now we have to set it up on your local machine. 
 
@@ -488,7 +485,7 @@ The word 'clone' means to get a copy of the repository on GitHub on your local m
 
     I put the repository in my Tutorials folder in a folder I called LearnGitHub. Then select 'Clone'. 
 
-![cloneRepo3](./cloneRepo3.png)
+![cloneRepo3](./images/cloneRepo3.png)
 
 Now you have a copy of your GitHub repository on your local machine! The next thing you will learn to do is add files to your repository. 
 
@@ -535,4 +532,6 @@ Then, you will open GitHub Desktop, and clone the repository:
 <INSERT IMAGE HERE >
 
 Now, if you open your file browser, you will see the 
- -->
+
+### References
+[^1]: https://www.jstatsoft.org/article/view/v059i10
