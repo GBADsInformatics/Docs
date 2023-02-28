@@ -17,29 +17,29 @@ A data governance operating model is a an operating model that defines an organi
 
 ## Goals
 
-The main data goals for GBADs can be broken down into the following.
+The main data goals for GBADs can be broken down into the following:
 
 **General**
 
-1. Access to technology and products that are innovative and advance the state-of-the-art.
+<a name="Data Goal 1"></a>Data Goal 1. Access to technology and products that are innovative and advance the state-of-the-art.
 
 **Data**
 
-2. Identify data sources that are required for GBADs modelling purposes 
+<a name="Data Goal 2"></a>. Identify data sources that are required for GBADs modelling purposes 
     * When necessary, create data allicances with private and public data holders
-3. Data is accessible for users (both humans and machines) and can be used in a timely matter for decision making [^1]
+<a name="Data Goal 3"></a>. Data is accessible for users (both humans and machines) and can be used in a timely matter for decision making [^1]
     * This includes data that GBADs redirects from other organizations and data that GBADs stores for associated projects and partners [^1]. 
-4. Data have been analyzed for quality, and these metrics are available as part of the metadata [^1]
-5. Data is cleaned only once - reduce replication of data sources and cleaning
-6. Data is findable to data users [^1]
-7. A system that allows for the customization of information through mechanisms and processing that adjusts the granularity of the data to the user's needs[^1]
-8. Data that are interpretable—the semantics to be encoded in meta-data and other semantic systems [^1]
+<a name="Data Goal 4"></a>. Data have been analyzed for quality, and these metrics are available as part of the metadata [^1]
+<a name="Data Goal 5"></a>. Data is cleaned only once - reduce replication of data sources and cleaning
+<a name="Data Goal 6"></a>. Data is findable to data users [^1]
+<a name="Data Goal 7"></a>. A system that allows for the customization of information through mechanisms and processing that adjusts the granularity of the data to the user's needs[^1]
+<a name="Data Goal 8"></a>. Data that are interpretable—the semantics to be encoded in meta-data and other semantic systems [^1]
 
 **Models and Data Visualizations**
 
-9. Modelling procedures are reproducible
-10. Data lineage is traced to ensure that all data procedures are replicable, to ensure that data is not replicated, to help with data quality and updates, and to keep track of which versions of data are used in publications
-11. Data visualizations and dashboards are served on GBADs servers, use data from the GBADs Knowledge Engine (GBADs data sources), and link to metadata and methods
+<a name="Data Goal 9"></a>. Modelling procedures are reproducible
+<a name="Data Goal 10"></a>. Data lineage is traced to ensure that all data procedures are replicable, to ensure that data is not replicated, to help with data quality and updates, and to keep track of which versions of data are used in publications
+<a name="Data Goal 11"></a>. Data visualizations and dashboards are served on GBADs servers, use data from the GBADs Knowledge Engine (GBADs data sources), and link to metadata and methods
 
 Data governance procedures and processes are crucial to fulfill the goals, to create a system that is FAIR(S), and to ensure that data processes, publications, and models are reproducible. Each goal has its own processes that require unique technological tools and individual (human) responsibilities from the Informatics theme, and others using and creating data models in GBADs. The GBADs governance structure (Working Groups) provide a vantage point for understanding where responsibility lies in the data governance operating structure. 
 
@@ -75,7 +75,7 @@ Each working group has a set of responsibilities as outlined by GBADs to fulfill
 
 | Working Group | Description of Responsibilities[^2] | Overlap with Goals |
 | ------------- | ----------- | ----------- |
-| Working Group 1 (WG1)- Data alliances, Communication of information and Adoption and uptake | <ul><li>Drive effective research translation and will build on the work of the disease prioritization theme in the global context, and on the engagement work with stakeholders of the Indonesian and Ethiopian case studies in a local context.</li><li>Translate research into valuable products in order to access further resources be they data, finance or in-kind contributions from other programmes.</li><li>Responsible for combining and organizing analytical results for consistency and comprehension by the users and will be accountable for ensuring user and expert reference group feedback is incorporated into dashboards.</li></ul>| <ul><li>Identify data sources that are required for GBADs modeeling purposes and when necessary, create data alliances with data holders</li></ul>|
+| Working Group 1 (WG1)- Data alliances, Communication of information and Adoption and uptake | <ul><li>Drive effective research translation and will build on the work of the disease prioritization theme in the global context, and on the engagement work with stakeholders of the Indonesian and Ethiopian case studies in a local context.</li><li>Translate research into valuable products in order to access further resources be they data, finance or in-kind contributions from other programmes.</li><li>Responsible for combining and organizing analytical results for consistency and comprehension by the users and will be accountable for ensuring user and expert reference group feedback is incorporated into dashboards.</li></ul>| <ul><li>[Data Goal 2](#Data Goal 2)</li></ul>|
 | Working Group 2 (WG2)  Methods and Analytics | <ul><li>Responsible for the refinement of the GBADs methods delivering high quality data analysis and scientific modelling, using scenario analysis to address data availability constraints and sensitivity analysis to incorporate data quality limitations, a critical foundation for the knowledge engine and valid disease burden estimations.</li><li>Use subsets of data from the superset built by the Informatics Working Group (WG3) with transformations and calculations required for specific analysis.</li><li>Accountable for assessing the technical feasibility of GBADs by testing its methods’ scientific relevance and robustness.</li></ul> | <ul><li>Identify data sources that are required for GBADs modelling purposes</li><li>Modelling procedures are reproducible</li><li>Data lineage is traced to ensure that all data procedures are replicable, to ensure that data is not replicated, to help with data quality and updates, and to keep track of which versions of data are used in publications</li></ul>|
 | Working Group 3 (WG3) - Informatics | <ul><li>Responsible for the prototype build of the knowledge engine, delivering a foundation of governed data – a superset of data with governance rules and standard cleaning processes.</li></ul> | <ul><li> Access to technology and products that are innovative and advance the state-of-the-art.</li><li>Data is accessible for users (both humans and machines) and can be used in a timely matter for decision making</li><li>Data have been analyzed for quality, and these metrics are available as part of the metadata</li><li>Data is cleaned only once - reduce replication of data sources and cleaning</li><li>Data is findable to data users</li><li>A system that allows for the customization of information through mechanisms and processing that adjusts the granularity of the data to the user's needs</li><li>Data that are interpretable—the semantics to be encoded in meta-data and other semantic systems</li><li>Data lineage is traced to ensure that all data procedures are replicable, to ensure that data is not replicated, to help with data quality and updates, and to keep track of which versions of data are used in publications</li><li>Data visualizations and dashboards are served on GBADs servers, use data from the GBADs Knowledge Engine (GBADs data sources), and link to metadata and methods</li></ul>|
 
@@ -85,11 +85,15 @@ The data governance operating model uses the working group governance structure 
 
 ---
 
-## Non-Invasive Data Governance Operating Model of Roles and Responsibilities 
+## Data Governance Operating Model
+
+
+
+<!-- ## Non-Invasive Data Governance Operating Model of Roles and Responsibilities 
 
 The Non-Invasive Data Governance Operating Model of Roles and Responsibilities 
 
-![seinerTdanDGOperating](./images/seinerTdanDGOperating.gif)
+![seinerTdanDGOperating](./images/seinerTdanDGOperating.gif) -->
 
 ## References: 
 [^1] https://acsess.onlinelibrary.wiley.com/doi/full/10.1002/agj2.21017?af=R
