@@ -11,7 +11,6 @@ A data governance operating model is a an operating model that defines an organi
 **In this section:** 
 
 * We outline the data goals for GBADs
-* We outline the key data processes for GBADs based on the data flows
 * We outline the data governance operating model for GBADs using the GBADs' governance structure (Working Groups) to understand the roles and responsibilities for each of the tasks involved to fulfill the data goals
 
 ---
@@ -26,7 +25,7 @@ The main data goals for GBADs can be broken down into the following.
 
 **Data**
 
-2. Identify data sources that are required for GBADs modeeling purposes 
+2. Identify data sources that are required for GBADs modelling purposes 
     * When necessary, create data allicances with private and public data holders
 3. Data is accessible for users (both humans and machines) and can be used in a timely matter for decision making [^1]
     * This includes data that GBADs redirects from other organizations and data that GBADs stores for associated projects and partners [^1]. 
@@ -67,17 +66,24 @@ The goals were drafted using the 2023 Investment Document.  -->
 
 ## People and Processes - GBADs Working Groups 
 
-The governance structure of GBADs is split into three main Working Groups, each with unique, but overlapping responsibilities: 
-
-| Working Group | Description[^2] |
-| ------------- | ----------- |
-| Working Group 1 (WG1)- Data alliances, Communication of information and Adoption and uptake | <ul><li>Drive effective research translation and will build on the work of the disease prioritization theme in the global context, and on the engagement work with stakeholders of the Indonesian and Ethiopian case studies in a local context.</li><li>Translate research into valuable products in order to access further resources be they data, finance or in-kind contributions from other programmes.</li><li>Responsible for combining and organizing analytical results for consistency and comprehension by the users and will be accountable for ensuring user and expert reference group feedback is incorporated into dashboards.</li></ul>|
-| Working Group 2 (WG2)  Methods and Analytics | <ul><li>Responsible for the refinement of the GBADs methods delivering high quality data analysis and scientific modelling, using scenario analysis to address data availability constraints and sensitivity analysis to incorporate data quality limitations, a critical foundation for the knowledge engine and valid disease burden estimations.</li><li>Use subsets of data from the superset built by the Informatics Working Group (WG3) with transformations and calculations required for specific analysis.</li><li>Accountable for assessing the technical feasibility of GBADs by testing its methods’ scientific relevance and robustness.</li></ul> |
-| Working Group 3 (WG3) - Informatics | <ul><li>Responsible for the prototype build of the knowledge engine, delivering a foundation of governed data – a superset of data with governance rules and standard cleaning processes.</li></ul> |
+The governance structure of GBADs is split into three main Working Groups, each with unique, but overlapping responsibilities. Working Groups are organized with each building on each other, where the data lies as the backbone structure (Figure 1).
 
 ![GBADsWGStruct](./images/GBADsWGStruct.png)
+Figure 1: GBADs Governance Structure
 
-Each working group has a unique set of responsibilites, each which build on each other to create models and estimates build upon the 'foundation' which is governed data. 
+Each working group has a set of responsibilities as outlined by GBADs to fulfill the goal of estimating the economic and health burden of animal diseases through modelling efforts. The responsibilities outlined overlap with the GBADs data goals through interactions with obtaining, using, and managing data. The table below outlines the description of responsibilities for each working group and which goals pertain to each working group:  
+
+| Working Group | Description of Responsibilities[^2] | Overlap with Goals |
+| ------------- | ----------- | ----------- |
+| Working Group 1 (WG1)- Data alliances, Communication of information and Adoption and uptake | <ul><li>Drive effective research translation and will build on the work of the disease prioritization theme in the global context, and on the engagement work with stakeholders of the Indonesian and Ethiopian case studies in a local context.</li><li>Translate research into valuable products in order to access further resources be they data, finance or in-kind contributions from other programmes.</li><li>Responsible for combining and organizing analytical results for consistency and comprehension by the users and will be accountable for ensuring user and expert reference group feedback is incorporated into dashboards.</li></ul>| <ul><li>Identify data sources that are required for GBADs modeeling purposes and when necessary, create data alliances with data holders</li></ul>|
+| Working Group 2 (WG2)  Methods and Analytics | <ul><li>Responsible for the refinement of the GBADs methods delivering high quality data analysis and scientific modelling, using scenario analysis to address data availability constraints and sensitivity analysis to incorporate data quality limitations, a critical foundation for the knowledge engine and valid disease burden estimations.</li><li>Use subsets of data from the superset built by the Informatics Working Group (WG3) with transformations and calculations required for specific analysis.</li><li>Accountable for assessing the technical feasibility of GBADs by testing its methods’ scientific relevance and robustness.</li></ul> | <ul><li>Identify data sources that are required for GBADs modelling purposes</li><li>Modelling procedures are reproducible</li><li>Data lineage is traced to ensure that all data procedures are replicable, to ensure that data is not replicated, to help with data quality and updates, and to keep track of which versions of data are used in publications</li></ul>|
+| Working Group 3 (WG3) - Informatics | <ul><li>Responsible for the prototype build of the knowledge engine, delivering a foundation of governed data – a superset of data with governance rules and standard cleaning processes.</li></ul> | <ul><li> Access to technology and products that are innovative and advance the state-of-the-art.</li><li>Data is accessible for users (both humans and machines) and can be used in a timely matter for decision making</li><li>Data have been analyzed for quality, and these metrics are available as part of the metadata</li><li>Data is cleaned only once - reduce replication of data sources and cleaning</li><li>Data is findable to data users</li><li>A system that allows for the customization of information through mechanisms and processing that adjusts the granularity of the data to the user's needs</li><li>Data that are interpretable—the semantics to be encoded in meta-data and other semantic systems</li><li>Data lineage is traced to ensure that all data procedures are replicable, to ensure that data is not replicated, to help with data quality and updates, and to keep track of which versions of data are used in publications</li><li>Data visualizations and dashboards are served on GBADs servers, use data from the GBADs Knowledge Engine (GBADs data sources), and link to metadata and methods</li></ul>|
+
+---
+
+The data governance operating model uses the working group governance structure to allocate roles and responsibilities related to the data goals. 
+
+---
 
 ## Non-Invasive Data Governance Operating Model of Roles and Responsibilities 
 
