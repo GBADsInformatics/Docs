@@ -47,6 +47,12 @@ File names should follow the `dateOfCreation_meaningfulCodeName.R` format.
 
 For example, if my code cleans and reformats livestock data, I might call my script `20210703_faoLivestockProductionDataCleaning.R`
 
+---
+
+More on our standard date and time convention is covered in [standard date and time convention](https://gbadskedoc.org/docs/Data-Governance-Handbook-for-GBADs/educationalMaterials#standard-date-and-time-convention)
+
+---
+
 **Variable naming** 
 
 Use `snake_case` for naming variables and functions in your code. Using a standardized naming convention improves code readability and interpretability. 
