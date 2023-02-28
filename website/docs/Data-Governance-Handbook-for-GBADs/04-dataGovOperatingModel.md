@@ -21,37 +21,48 @@ The main data goals for GBADs can be broken down into the following:
 
 **General**
 
-<a name="Data-Goal-1"></a>Data Goal 1. Access to technology and products that are innovative and advance the state-of-the-art.
+<a name="Data-Goal-1"></a>`Data Goal 1.` 
+Access to technology and products that are innovative and advance the state-of-the-art.
 
 
 **Data**
 
-<a name="Data-Goal-2"></a>Data Goal 2. Identify data sources that are required for GBADs modelling purposes 
+<a name="Data-Goal-2"></a>`Data Goal 2.` 
+Identify data sources that are required for GBADs modelling purposes 
 
-    * When necessary, create data allicances with private and public data holders
+* When necessary, create data allicances with private and public data holders
 
 
-<a name="Data-Goal-3"></a>Data Goal 3. Data is accessible for users (both humans and machines) and can be used in a timely matter for decision making [^1]
+<a name="Data-Goal-3"></a>`Data Goal 3. `
+Data is accessible for users (both humans and machines) and can be used in a timely matter for decision making [^1]
 
-    * This includes data that GBADs redirects from other organizations and data that GBADs stores for associated projects and partners [^1]. 
+* This includes data that GBADs redirects from other organizations and data that GBADs stores for associated projects and partners [^1]. 
 
-<a name="Data-Goal-4"></a>Data Goal 4. Data have been analyzed for quality, and these metrics are available as part of the metadata [^1]
+<a name="Data-Goal-4"></a>`Data Goal 4.` 
+Data have been analyzed for quality, and these metrics are available as part of the metadata [^1]
 
-<a name="Data-Goal-5"></a>Data Goal 5. Data is cleaned only once - reduce replication of data sources and cleaning
+<a name="Data-Goal-5"></a>`Data Goal 5.` 
+Data is cleaned only once - reduce replication of data sources and cleaning
 
-<a name="Data-Goal-6"></a>Data Goal 6. Data is findable to data users [^1]
+<a name="Data-Goal-6"></a>`Data Goal 6.` 
+Data is findable to data users [^1]
 
-<a name="Data-Goal-7"></a>Data Goal 7. A system that allows for the customization of information through mechanisms and processing that adjusts the granularity of the data to the user's needs[^1]
+<a name="Data-Goal-7"></a>`Data Goal 7.` 
+A system that allows for the customization of information through mechanisms and processing that adjusts the granularity of the data to the user's needs[^1]
 
-<a name="Data-Goal-8"></a>Data Goal 8. Data that are interpretable—the semantics to be encoded in meta-data and other semantic systems [^1]
+<a name="Data-Goal-8"></a>`Data Goal 8.` 
+Data that are interpretable—the semantics to be encoded in meta-data and other semantic systems [^1]
 
 **Models and Data Visualizations**
 
-<a name="Data-Goal-9"></a>Data Goal 9. Modelling procedures are reproducible
+<a name="Data-Goal-9"></a>`Data Goal 9.` 
+Modelling procedures are reproducible
 
-<a name="Data-Goal-10"></a>Data Goal 10. Data lineage is traced to ensure that all data procedures are replicable, to ensure that data is not replicated, to help with data quality and updates, and to keep track of which versions of data are used in publications
+<a name="Data-Goal-10"></a>`Data Goal 10. `
+Data lineage is traced to ensure that all data procedures are replicable, to ensure that data is not replicated, to help with data quality and updates, and to keep track of which versions of data are used in publications
 
-<a name="Data-Goal-11"></a>Data Goal 11. Data visualizations and dashboards are served on GBADs servers, use data from the GBADs Knowledge Engine (GBADs data sources), and link to metadata and methods
+<a name="Data-Goal-11"></a>`Data Goal 11.` 
+Data visualizations and dashboards are served on GBADs servers, use data from the GBADs Knowledge Engine (GBADs data sources), and link to metadata and methods
 
 Data governance procedures and processes are crucial to fulfill the goals, to create a system that is FAIR(S), and to ensure that data processes, publications, and models are reproducible. Each goal has its own processes that require unique technological tools and individual (human) responsibilities from the Informatics theme, and others using and creating data models in GBADs. The GBADs governance structure (Working Groups) provide a vantage point for understanding where responsibility lies in the data governance operating structure. 
 
