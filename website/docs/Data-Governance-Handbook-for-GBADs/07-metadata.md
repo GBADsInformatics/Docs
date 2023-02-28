@@ -1,10 +1,13 @@
 ---
 sidebar_position: 7
 ---
-Technical Data Standards
-========================
 
-Technical data standards are an important element of the data governance strategy, as they ensure that data are Findable 
+# Metadata 
+
+Metadata is used to store information about data assets that are stored in the GBADs knowledge engine. We strive for metadata to be FAIR (Findable, Accessible, Interoperable, and Reusable) 
+
+
+<!-- Technical data standards are an important element of the data governance strategy, as they ensure that data are Findable 
 and Interoperable and that comparisons and mappings between different data sources can be established.
  
 Standards for data, including metadata terms, attributes, structure and standardized naming conventions, enables data to 
@@ -14,9 +17,13 @@ standard vocabularies between data sources, mappings between sources can be crea
 between data sources and provide insight on the quality and trustworthiness of these data sources. 
  
 Technical data standards exist in each of the following categories: (meta)data structure, (meta)data content (vocabularies) 
-and meta(data) format. 
+and meta(data) format.  -->
 
-Metadata Content
+## Metadata Standards 
+
+
+
+<!-- Metadata Content
 ----------------
 
 To annotate metadata terms, standard vocabularies are employed (see Appendix D). For example, all dates reported in the metadata are...
@@ -34,32 +41,23 @@ An index of metadata standards can be found at the [Metadata Standards Catalog](
 
 GBADs will further extend and refine terms to fulfill specific needs for the governance and provenance of data collected by or 
 handled by the GBADs data portal system. 
- 
-Metadata Structure
-------------------
+  -->
+## Metadata Structure
 
-Metadata schemas will be stored in the [JSON-LD](https://json-ld.org/) format. JSON-LD is a structured data format that supports the 
-implementation of linked data. Google’s [structured metadata tool](https://search.google.com/structured-data/testing-tool/) will be 
-used as metadata is created, revised and edited through our data lifecycle.
+Metadata schemas will be stored in the [JSON-LD](https://json-ld.org/) format. JSON-LD is a structured data format that supports the implementation of linked data. Google’s [structured metadata tool](https://search.google.com/structured-data/testing-tool/) will be used as metadata is created, revised and edited through our data lifecycle.
 
-There are 3 main types of metadata, each serving a specific purpose in the lifecycle of the data (Riley, 2017) (Table 1).  Descriptive 
-metadata includes information about the data source used for finding and understanding a resource. This includes information about the 
-context of the data, including information about provenance, if applicable. Descriptive metadata provides information that will allow 
-for the data to be Findable and Interoperable. Administrative metadata includes two subsets of metadata: technical and rights metadata. 
-Riley (2017) describes administrative metadata as metadata that are used for the management of a given data resource. Rights metadata 
-provides information about the licensing and copyright information of a given source while technical metadata provides information about 
-the file type and size of the data. Structural metadata describes the relationships between parts of resources to others. This might 
-include information about how data are arranged or viewed, hierarchical relationships or the sequence of data objects. For the contexts 
-of GBADs, structural metadata is also important in storing information about the Accessibility of private data sources. This is discussed 
-in section [FIXME ADD SECTION] of the Handbook. 
+There are 3 main types of metadata, each serving a specific purpose in the lifecycle of the data (Riley, 2017) (Table 1). 
+
+Descriptive metadata includes information about the data source used for finding and understanding a resource. This includes information about the context of the data, including information about provenance, if applicable. Descriptive metadata provides information that will allow for the data to be Findable and Interoperable. 
+
+Administrative metadata includes two subsets of metadata: technical and rights metadata. Riley (2017) describes administrative metadata as metadata that are used for the management of a given data resource. Rights metadata provides information about the licensing and copyright information of a given source while technical metadata provides information about the file type and size of the data. Structural metadata describes the relationships between parts of resources to others. This might include information about how data are arranged or viewed, hierarchical relationships or the sequence of data objects. For the contexts of GBADs, structural metadata is also important in storing information about the Accessibility of private data sources.
 
 Table 1: Types of metadata and definitions. Table adapted from Riley, 2017. 
 | Type of Metadata | Definition | Example Properties | Primary Uses |
-| :--------------- | ---------- | ------------------ | ------------ |
+| --------------- | ---------- | ------------------ | ------------ |
 | Descriptive metadata | For finding and understanding a resource; for data quality. | Title, Author, Subject, Genre, Publication Date | Findability, Display, Interoperability |
 | - Administrative metadata- Technical metadata - Rights metadata | - For decoding and rendering files - Long term management of files - Intellectual property rights attached to content | Technical: file type, file size, creation date/time Rights: Copyright status, License terms, Rights holder | Interoperability, Digital object management, Preservation |
 | Structural metadata | Relationships of parts of resources to one another. | Sequence, Place in hierarchy | Navigation |
-| | | | |
 
 Metadata can include different terms depending on the context of the source. Table 2 has a list of all possible terms that metadata 
 could include as well as their URIs. When a metadata term is used, the URI of that term must be accounted for in the `@ context` section 
@@ -133,16 +131,16 @@ Table 2: All possible metadata terms and respective URIs.
   }
 ```
 
-Rich metadata with terms describing the process of how the original data was obtained, recorded and collected provides context 
-about the data quality and which data sources can be combined with others. Table 3 provides metadata terms that were adapted 
+<!-- Rich metadata with terms describing the process of how the original data was obtained, recorded and collected provides context  -->
+<!-- about the data quality and which data sources can be combined with others. Table 3 provides metadata terms that were adapted 
 from GATHER guidelines. When a data contributor provides a data source, they will be required to fill out a form to provide 
 context about the data provided. The responses on the form will generate the descriptive metadata for that data source. The 
 terms that are used to describe data assets will depend on the nature of the data source; for example, not all data sources 
 will contain information about disease. 
 
-As more metadata is created, controlled vocabularies will be created or adapted for each term. 
+As more metadata is created, controlled vocabularies will be created or adapted for each term.  -->
 
-Table 3: Metadata terms and definitions adapted from GATHER guidelines
+<!-- Table 3: Metadata terms and definitions adapted from GATHER guidelines
 
 | Term | Definition |
 | :--- | ---------: |
@@ -160,5 +158,39 @@ Table 3: Metadata terms and definitions adapted from GATHER guidelines
 | fileFormat | Format of data file (csv, json etc.)  |
 | analysisMethod | How the outcome of interest was analyzed - should also provide link to GitHub if applicable  |
 | studyDesign | Information about research design. Terms such as cohort study, randomized trial, cost benefit analysis, descriptive study, diagnostic study etc. are expected.  |
-| | |
+| | | -->
 
+## Metadata Storage and Management 
+
+> "All the knowledge is in connections"
+>
+> -- [David Rumelhart](https://en.wikipedia.org/wiki/David_Rumelhart) 
+
+GBADs Informatics uses [neo4j](https://neo4j.com/), a graph database management system, to manage and storage metadata and information about individuals and groups involved in the project. As you will learn in this section, a graph database is a type of database that leverages the idea of connections between entites as a method to derive insights and new knowledge from otherwise disconnected data.  
+
+### What is a graph database? 
+
+A graph database is a type of database that stores data using relationships between main ideas or entities. The relationships between different entities show connectedness, allowing for more insights to be drawn than a traditional relational database. Because data is highly complex and multidimensional in terms of structure, provenance, governance, security and semantics, GBADs uses graph databases for master metadata management and data cataloguing. By leveraging the dynamic nature of the graph database and structuring our **graph model** in a way that enables improved understanding of the many dimensions of data, we can both visualize and understand how data flows outside and inside our organization. Graph databases also allow us to add and change the structure as the structure of the information about data changes. This will become more clear as we introduce the preliminary GBADs graph data model. 
+
+---
+ 
+Traditionally, data are organized into a series of tables. Each of the tables have columns, and some tables have common columns. With these common columns you can specify joins between tables, resulting in a new table. 
+
+The biggest advantage of relational databases is the ability to join common tables to derive insights. On the other hand, relational databases require rigid schemas which require database engineers to structure their data to fit the schema. This comes with the assumption that we know what all of our data already looks like, which isn't always the case for research.  
+
+---
+
+
+### Parts of a graph database
+
+Graph databases are made up of **nodes** (entities) and **edges** (relationships). Nodes can have properties and labels while edges serve as the connection, or relationship between nodes. 
+
+A graph model is a model of what kinds of nodes you are representing and how they are connected (what relationships you will have).
+
+![Graph Model](http://gbadske.org/Documentation/DataGovernanceHandbook/_images/20210719_GBADs_GraphModel.png)
+  d
+<!---## GBADs graph database use cases--->
+
+<!---GBADs uses graph databases for 2 main purposes:
+1. Master metadata management
+2. Management information system (MIS) --->
