@@ -44,10 +44,38 @@ In this subject-predicate-object statement the FAO is the creator of the FAOSTAT
 
 Based on this model, we can craete a metadata schema that defines the predicates (also called elements) that we would like to use to describe a resource. Metadata vocabularies such as [Dublin Core](https://www.dublincore.org/), [schema.org](https://schema.org/), [PROV-DM](https://www.w3.org/TR/prov-dm/), and [DCAT](https://www.w3.org/TR/vocab-dcat-2/) , provide metadata elements that can be used to describe data. There is not a 'one-size-fits-all' when it comes to metadata. Several standard metadata element sets exist because what you will include in metadata depends on what your use case is. 
 
-We have selected metadata elements from DCAT, schema.org, and PROV-DM to describe data and trace data lineage in the knowledge engine (see Figure below).
+We have selected metadata elements from schema.org and PROV-DM to describe data and trace data lineage in the knowledge engine (see Figure below). 
 
 ![metadataModel](./images/metadataModel.drawio.png)
 
+## Encoding Schema
+
+Each metadata element should have instructions on the expected values expected for each element. For example, there are many different ways to specify a date: 01/04/23 could mean January 4th, 2023 or April 1st, 2023. Therefore, any values for any element specifying a date  should use [ISO-8601](https://www.iso.org/iso-8601-date-and-time-format.html) to ensure that all dates are formatted in a standard fashion. 
+
+The encoding schema for each metadata element used in the metadataModel is found below: 
+
+| Element | Encoding Scheme | Expected Type | 
+| ------- | --------------- | --------------- |
+| [name](https://schema.org/name) | N/A | str |
+| [codeRepository](https://schema.org/codeRepository) | link to GitHub repo | str |
+| [runtimePlatform](https://schema.org/runtimePlatform) |  | str |
+| [dateCreated](https://schema.org/dateCreated) |[ISO-8601](https://www.iso.org/iso-8601-date-and-time-format.html) | datetime |
+| [startTime](https://schema.org/startTime) |[ISO-8601](https://www.iso.org/iso-8601-date-and-time-format.html)| datetime  |
+| [endTime](https://schema.org/endTime) |[ISO-8601](https://www.iso.org/iso-8601-date-and-time-format.html)| datetime |
+| prov:type | Controlled vocabulary to be built for use case (*i.e* ingestionEvent, dataCleaning etc.)| str | 
+| [description](https://schema.org/description) | free text | str| 
+| [url](https://schema.org/url) | url | str | 
+| [identifier](https://schema.org/identifier) | url, doi, or uri | str | 
+| [license](https://schema.org/license) | url | str | 
+| [temporalCoverage](https://schema.org/temporalCoverage) |[ISO-8601](https://www.iso.org/iso-8601-date-and-time-format.html) | datetime |
+| [creator](https://schema.org/creator) | free text | str | 
+| [inDefinedTermSet](https://schema.org/inDefinedTermSet) | url | str | 
+| [termCode](https://schema.org/termCode) | code from defined term set | str | 
+| [Place](https://schema.org/Place) | [GeoNames](https://www.geonames.org/)| str | 
+| [contentSize](https://schema.org/contentSize) | File size in megabytes | float | 
+| [fileFormat](https://schema.org/fileFormat) | File format. One of: csv, json, dbtable etc. (controlled vocabulary required) | str |
+| [contentUrl](https://schema.org/contentUrl) | url | url | 
+| [uploadDate](https://schema.org/uploadDate) | [ISO-8601](https://www.iso.org/iso-8601-date-and-time-format.html) | datetime |
 
 --- 
 
@@ -58,10 +86,6 @@ Currently, keywords for metadata are created through extracting terms (like spec
 A controlled vocabulary needs to be created to link keywords to. We have begun to do this by collecting all species classifications and definitions from data sources, however, synonyms have not yet been identified. 
 
 ---
-
-## Encoding Schema
-
-An encoding schema 
 
 <!-- Metadata Content
 ----------------
@@ -80,8 +104,8 @@ Metadata terms are adapted from the
 An index of metadata standards can be found at the [Metadata Standards Catalog](https://rdamsc.bath.ac.uk/scheme-index).
 
 GBADs will further extend and refine terms to fulfill specific needs for the governance and provenance of data collected by or 
-handled by the GBADs data portal system. 
-  -->
+handled by the GBADs data portal system. -->
+
 <!-- ## Metadata Structure
 
 Metadata schemas will be stored in the [JSON-LD](https://json-ld.org/) format. JSON-LD is a structured data format that supports the implementation of linked data. Google’s [structured metadata tool](https://search.google.com/structured-data/testing-tool/) is used to test whether the output metadata is valid.
@@ -234,3 +258,7 @@ A graph model is a model of what kinds of nodes you are representing and how the
 <!---GBADs uses graph databases for 2 main purposes:
 1. Master metadata management
 2. Management information system (MIS) --->
+
+## Graph Database and Metadata API 
+
+**To be updated when API is launched**
