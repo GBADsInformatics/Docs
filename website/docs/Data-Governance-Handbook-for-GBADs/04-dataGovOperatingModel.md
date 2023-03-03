@@ -92,10 +92,10 @@ The goals were drafted using the 2023 Investment Document.  -->
 
 ## People and Processes - GBADs Working Groups 
 
-The governance structure of GBADs is split into three main Working Groups, each with unique, but overlapping responsibilities. Working Groups are organized with each building on each other, where the data lies as the backbone structure (Figure 1).
+GBADs is split into three main Working Groups, each with unique, but overlapping responsibilities. Working Groups are organized with each building on each other, where the data lies as the backbone structure (Figure 1).
 
 ![GBADsWGStruct](./images/GBADsWGStruct.png)
-Figure 1: GBADs Governance Structure
+Figure 1: GBADs Working Groups
 
 Each working group has a set of responsibilities as outlined by GBADs to fulfill the goal of estimating the economic and health burden of animal diseases through modelling efforts. The responsibilities outlined overlap with the GBADs data goals through interactions with obtaining, using, and managing data. The table below outlines the description of responsibilities for each working group and which goals pertain to each working group:  
 
@@ -107,11 +107,10 @@ Each working group has a set of responsibilities as outlined by GBADs to fulfill
 
 ---
 
-The data governance operating model uses the working group governance structure to allocate roles and responsibilities related to the data goals. 
+The data governance operating model uses the working group structure to allocate roles and responsibilities related to the data goals. 
 
 ---
 
-## Data Governance Operating Model
 
 
 

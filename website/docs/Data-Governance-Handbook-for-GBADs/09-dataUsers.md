@@ -51,25 +51,31 @@ There are 2 main ways to access the data in the Knowledge Engine:
 1. Through the Application Programming Interface (API)
 2. Direct download through a URL from an Amazon S3 Bucket 
 
-   ---
-   **What is an API?**
-   
-   API stands for Application Programming Interface. It is a machine-to-machine way to ask a server for data, get the server retrieve and interpret the data and return it to your machine. APIs are everywhere; they allow applications to 'talk' to each other. For example, when you check the weather on a weather app, the app is using an API to grab the data and present it in a usable and interpretable fashion on your phone. APIs provide the most up-to-date data without having to store data on your own machine. 
-   
-   For more information about APIs and how to use them visit the [GBADs API Tutorial](https://gbadskedoc.org/docs/GBADsAPITutorial).
-   --- 
+---
 
-   ---
-   **What is an Amazon S3 Bucket?** 
-   An [Amazon Simple Storage Service (S3) Bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html) is a cloud object storage service that allows you to store data and other digital objects in the cloud. 
-   ---
+**What is an API?**
+   
+API stands for Application Programming Interface. It is a machine-to-machine way to ask a server for data, get the server retrieve and interpret the data and return it to your machine. APIs are everywhere; they allow applications to 'talk' to each other. For example, when you check the weather on a weather app, the app is using an API to grab the data and present it in a usable and interpretable fashion on your phone. APIs provide the most up-to-date data without having to store data on your own machine. 
+   
+For more information about APIs and how to use them visit the [GBADs API Tutorial](https://gbadskedoc.org/docs/GBADsAPITutorial).
+
+--- 
+
+---
+
+**What is an Amazon S3 Bucket?** 
+
+An [Amazon Simple Storage Service (S3) Bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html) is a cloud object storage service that allows you to store data and other digital objects in the cloud. 
+
+---
 
 ## Searching for data in the Knowledge Engine 
 
 To use the data in the Knowledge Engine, you need to be able to find it. The search functionality of the data is built using a metadata pipeline. 
 
-Each type of data has unique metadata that describes it. For more information about the metadata please visit the [FIX ME UNDER REVIEW Metadata section] of the Handbook. 
+Each type of data has unique metadata that describes it. For more information about the metadata please visit the [Metadata](https://gbadskedoc.org/docs/Data-Governance-Handbook-for-GBADs/metadata) section of the Handbook. 
 
+**The metadata API will be published soon with information about how to discover data sources stored in the GBADs KE based on descriptive information that describes data**
 
 
 <!-- The [GBADs data portal](http://gbadske.org:8050/dash/page-1/) is a prototype dashboard that allows users to access datasets from [FAOSTAT](http://www.fao.org/faostat/en/) and [OIE WAHIS](https://wahis.oie.int/). The prototype allows you to select data of interest, visualize it on bar line graphs, download the data in `.csv` and `.json` format and see the Application Programming Interface (API) call.  -->
