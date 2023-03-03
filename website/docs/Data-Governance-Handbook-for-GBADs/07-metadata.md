@@ -4,7 +4,14 @@ sidebar_position: 7
 
 # Metadata 
 
-Metadata is used to store information about data assets that are stored in the GBADs knowledge engine. We strive for metadata to be FAIR (Findable, Accessible, Interoperable, and Reusable) 
+Metadata is "data about data".
+
+Metadata is used to store information about data assets that are stored in the GBADs knowledge engine. We strive for metadata to be FAIR (Findable, Accessible, Interoperable, and Reusable). 
+
+In addition, we collect metadata on the processes in ingesting data into the Knowledge Engine to ensure that all data lineage is tracked. 
+
+
+
 
 
 <!-- Technical data standards are an important element of the data governance strategy, as they ensure that data are Findable 
@@ -19,9 +26,42 @@ between data sources and provide insight on the quality and trustworthiness of t
 Technical data standards exist in each of the following categories: (meta)data structure, (meta)data content (vocabularies) 
 and meta(data) format.  -->
 
-## Metadata Standards 
+## Metadata Schema 
+
+"A metadata schema is a set of rules about what sorts of subject-predicate-object statements one is allowed to make, and how one is allowed to make them." - Jeffery Pomerantz
+
+A subject-predicate-object statement consists of: 
+* Subject = the thing being described
+* Object = the thing describing the subject
+* Predicate = relationship between the subject and object
+
+For example: 
+* Subject = FAOSTAT QCL dataset
+* Object = FAO 
+* Predicate = creator 
+
+In this subject-predicate-object statement the FAO is the creator of the FAOSTAT QCL dataset. 
+
+Based on this model, we can craete a metadata schema that defines the predicates (also called elements) that we would like to use to describe a resource. Metadata vocabularies such as [Dublin Core](https://www.dublincore.org/), [schema.org](https://schema.org/), [PROV-DM](https://www.w3.org/TR/prov-dm/), and [DCAT](https://www.w3.org/TR/vocab-dcat-2/) , provide metadata elements that can be used to describe data. There is not a 'one-size-fits-all' when it comes to metadata. Several standard metadata element sets exist because what you will include in metadata depends on what your use case is. 
+
+We have selected metadata elements from DCAT, schema.org, and PROV-DM to describe data and trace data lineage in the knowledge engine (see Figure below).
+
+![metadataModel](./images/metadataModel.drawio.png)
 
 
+--- 
+
+Decision needed: 
+
+Currently, keywords for metadata are created through extracting terms (like species), from data sets.
+
+A controlled vocabulary needs to be created to link keywords to. We have begun to do this by collecting all species classifications and definitions from data sources, however, synonyms have not yet been identified. 
+
+---
+
+## Encoding Schema
+
+An encoding schema 
 
 <!-- Metadata Content
 ----------------
@@ -42,9 +82,9 @@ An index of metadata standards can be found at the [Metadata Standards Catalog](
 GBADs will further extend and refine terms to fulfill specific needs for the governance and provenance of data collected by or 
 handled by the GBADs data portal system. 
   -->
-## Metadata Structure
+<!-- ## Metadata Structure
 
-Metadata schemas will be stored in the [JSON-LD](https://json-ld.org/) format. JSON-LD is a structured data format that supports the implementation of linked data. Google’s [structured metadata tool](https://search.google.com/structured-data/testing-tool/) will be used as metadata is created, revised and edited through our data lifecycle.
+Metadata schemas will be stored in the [JSON-LD](https://json-ld.org/) format. JSON-LD is a structured data format that supports the implementation of linked data. Google’s [structured metadata tool](https://search.google.com/structured-data/testing-tool/) is used to test whether the output metadata is valid.
 
 There are 3 main types of metadata, each serving a specific purpose in the lifecycle of the data (Riley, 2017) (Table 1). 
 
@@ -70,9 +110,9 @@ temporal, title, type, subjectThesaurus, subjectClassification.
 When data are modified by GBADs or are from the output of a model, this must be accredited in the metadata. In these cases, the following 
 terms may be used: modified, alternative, replaces, isPartof, isFormat, hasFormat, hasPart, isRequiredBy, isVersionOf, hasVersion, provenance, 
 requires. For example, in the scenario that GBADs has acquired a data asset that was changed from one vocabulary to another metadata terms 
-isVersionOf, provenance, requires and modified would be used to reflect the changes. 
+isVersionOf, provenance, requires and modified would be used to reflect the changes.  -->
 
-Table 2: All possible metadata terms and respective URIs. 
+<!-- Table 2: All possible metadata terms and respective URIs. 
 
 ```json
 {
@@ -129,7 +169,7 @@ Table 2: All possible metadata terms and respective URIs.
     "subject": "http://purl.org/dc/terms/subject",
     "tableOfContents": "http://purl.org/dc/terms/tableOfContents"
   }
-```
+``` -->
 
 <!-- Rich metadata with terms describing the process of how the original data was obtained, recorded and collected provides context  -->
 <!-- about the data quality and which data sources can be combined with others. Table 3 provides metadata terms that were adapted 
