@@ -56,9 +56,9 @@ The encoding schema for each metadata element used in the metadataModel is found
 
 | Element | Encoding Scheme | Expected Type | 
 | ------- | --------------- | --------------- |
-| [name](https://schema.org/name) | N/A | str |
+| [name](https://schema.org/name) | free text | str |
 | [codeRepository](https://schema.org/codeRepository) | link to GitHub repo | str |
-| [runtimePlatform](https://schema.org/runtimePlatform) |  | str |
+| [runtimePlatform](https://schema.org/runtimePlatform) | name of programming language or platform used at runtime (need controlled vocabulary) | str |
 | [dateCreated](https://schema.org/dateCreated) |[ISO-8601](https://www.iso.org/iso-8601-date-and-time-format.html) | datetime |
 | [startTime](https://schema.org/startTime) |[ISO-8601](https://www.iso.org/iso-8601-date-and-time-format.html)| datetime  |
 | [endTime](https://schema.org/endTime) |[ISO-8601](https://www.iso.org/iso-8601-date-and-time-format.html)| datetime |
@@ -88,12 +88,12 @@ A controlled vocabulary needs to be created to link keywords to. We have begun t
 ---
 
 <!-- Metadata Content
-----------------
+
 
 To annotate metadata terms, standard vocabularies are employed (see Appendix D). For example, all dates reported in the metadata are...
 
 Metadata Terms 
---------------
+
 
 Metadata terms are adapted from the 
 - [International System for Agricultural Science and Technology (AGRIS) Application Profile (AP)](http://www.fao.org/3/ae909e/ae909e05.htm#P460_23819)
@@ -104,9 +104,8 @@ Metadata terms are adapted from the
 An index of metadata standards can be found at the [Metadata Standards Catalog](https://rdamsc.bath.ac.uk/scheme-index).
 
 GBADs will further extend and refine terms to fulfill specific needs for the governance and provenance of data collected by or 
-handled by the GBADs data portal system. -->
-
-<!-- ## Metadata Structure
+handled by the GBADs data portal system. 
+## Metadata Structure
 
 Metadata schemas will be stored in the [JSON-LD](https://json-ld.org/) format. JSON-LD is a structured data format that supports the implementation of linked data. Google’s [structured metadata tool](https://search.google.com/structured-data/testing-tool/) is used to test whether the output metadata is valid.
 
