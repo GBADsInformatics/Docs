@@ -8,12 +8,20 @@ As a program, we have core data principles that our [Data Governance Operating M
 
 Our core principles include: 
 
-* Adhere to the FAIR(S)[^1],[^2] guiding principles to the best of our abilities
-* Be a "trusted" data broker and a federated data source
-* Consider the CARE principles when using data from marginalized groups and private data
-* Ensure that all processes that use data (including data cleaning, modelling, reformatting etc.) are replicable and reproducible
+1. Adhere to the FAIR(S)[^1],[^2] guiding principles to the best of our abilities
+2. Be a "trusted" data broker and a federated data source
+3. Consider the CARE principles when using data from marginalized groups and private data
+4. Ensure that all processes that use data (including data cleaning, modelling, reformatting etc.) are replicable and reproducible
 
-## FAIR Principles and Data Culture
+---
+
+In this chapter of the handbook we outline the principles that we intend to follow in our data governance framework and an overview of the processes involved in each.
+
+Other chapters in the handbook will provide more detail on the processes, technological tools, and human responsibilities involved in each of the principles, and will refer back to these principles when outlining the processes involved in each of our data goals.
+
+---
+
+## 1. FAIR Principles and Data Culture
 
 We have adopted the FAIR(S)[^1],[^2] guiding principles to ensure that data, metadata, and modelling processes are **F**indable, **A**ccessibile, **I**nteroperabile, **R**eusable, and **S**ecure. 
 
@@ -49,7 +57,7 @@ Ensuring that metadata are in a standard form will allow GBADs to comply to FAIR
 
 GBADs strives to not only adapt FAIR in the system, but also create a culture with our enterprise that inspires the use of FAIR in the research data of the academics involved in the greater GBADs project. We believe that this shift will enable better use and re-use of data, allowing for collaboration and better allocation of resources.
 
-## A "Trusted" Data Broker
+2. ## A "Trusted" Data Broker
 
 There are many ways to technically facilitate data sharing such as file downloads, APIs, etc.  This section explains the principles behind being a “trusted” data broker and a federated data source.
 
@@ -60,6 +68,8 @@ Specifically, this relies on the ability to categorize users and create system *
 
 Data that are deemed ‘Open by default’ will be available publicly to any user that enters the data portal and will be available without restriction to download directly.  
 
+![sysView](http://gbadske.org/Documentation/DataGovernanceHandbook/_images/systemView.png)
+
 #### User Authentification
 
 Users wishing to access private data sources will be required to categorize themselves using GBADs predefined data user identifications. This will consist of creating a user profile, identifying what type of user you are and entering a verification method to do so. The verification method may consist of an ORCHID ID if an academic user. However, the mechanisms behind user verification are still under stipulation (we are still trying to figure out how we verify the identity of users from marginalized groups, private stakeholders etc).  These authorizations, both in terms of user information and the access rights of a data asset will be included in the metadata. 
@@ -68,7 +78,6 @@ Once the identity of a user can be verified, that user will be granted a view of
 
 In general, each dataset brokered by GBADs will be equipped with a unique identifier which links it to its metadata. When a user accesses the data in some way (such as through an API call or direct download), the unique identifier and URL to the metadata portal will be returned. The user can then access the metadata easily. Likewise, users can begin their data search with the metadata search tool. The data API call will be provided somewhere on the metadata search engine (i.e. if you select a data set of interest, you will be provided with the metadata). 
 
-
 ### Challenges in Mechanisms for Data Sharing
 
 A challenge in the system view design is licensing difficulties in addressing the **R**eusability of a data resource. 
@@ -76,13 +85,47 @@ Concerns that arise are with the publication and reporting of results inspired b
 
 Another difficulty or possible limitation is that users with specific views will be unaware that certain data assets even exist. 
 
-## CARE Principles 
+3. ## CARE Principles 
 
 CARE principles include: Collective Benefit, Authority to Control, Responsibility and Ethics. Each principle pertains to the use and governance of data owned by or related to Indigenous Peoples, their land, cultural property and practices [refs] and is broken down into categories in Appendix B. CARE principles will be considered in each step of the GBADs data governance strategy and data portal design. 
 
 We acknowledge that our interpretations of the CARE principles may not completely reflect the true interests of Indigenous Peoples and groups, as the GBADs Informatics team does not currently have Indigenous employees or partnerships with Indigenous Peoples. When official collaborations with Indigenous Peoples and groups have been created, strategies and designs will be developed and further refined to ensure that all Indigenous data is being governed, managed and used for the collective benefit of Indigenous Peoples.
 
-## GATHER Statement
+## 4. Reproducibility  
+
+### Data Provenance 
+
+How information about data will be collected or accessed from donors and how this information will be evaluated, stored, and provide the basis for generating provenance information about all data brokered by GBADs.
+ 
+Data contributors will be required to provide provenance information.
+ 
+Providing detailed provenance information to data users is an essential element of providing FAIR data. Provenance information 
+should at minimum cover: 
+
+1. Who or what created the data? This would include information about the methodology used to create the original data 
+(either through a citation or providing information in the metadata). Information about whether the data has been 
+transformed in some way (such as through a change in vocabulary/ontology, imputation techniques, estimations, dropping rows etc.) 
+should also be provided through references to and descriptions of programs or techniques used to complete these transformations.
+
+2. When was the data produced and when changes were last made to the data? 
+
+3. Context of data creation. Why was the data created or produced? This provides information to potential data users about 
+whether using the data fulfills their needs and conforms to their potential practices, models or other statistical techniques.
+
+Of interest to this discussion are the metrics designed for FAIR: 
+[FAIR Metric FM-R1.2](https://github.com/FAIRMetrics/Metrics/blob/master/Distributions/FM_R1.2.pdf)
+ 
+Data access is in part governed by the provenance of the data. For example, it is important to understand who created and owns the data to determine whether the data are Reusable (FAIR principle 4). There may be specific restrictions to data access under licensing agreements that could determine how data can be used, and by whom.
+
+---
+
+Metadata should acknowledge the provenance and purpose and any limitations or obligations in secondary use inclusive of issues of consent.
+
+---
+
+Provenance information for each data set will be stored in metadata, which will be made available to and searchable by all users of GBADs. A recognized provenance standard will be used to ensure that provenance information is Findable and Reusable.
+
+###  GATHER Statement
 
 The GATHER Statement, or the **G**uidelines for **A**ccurate and **T**ransparent **H**ealth **E**stimates **R**eporting, defines best reporting practices for studies that calculate health estimates [^4]. 
 
@@ -151,7 +194,7 @@ Data governance terms you should know:
 **Blog Posts**
 - https://towardsdatascience.com/what-we-got-wrong-about-data-governance-365555993048 -->
 
-### References
+## References
 [^1]: https://www.nature.com/articles/sdata201618
 [^2]: https://acsess.onlinelibrary.wiley.com/doi/full/10.1002/agj2.21017?af=R
 [^3]: https://learn.microsoft.com/en-us/sql/relational-databases/views/views?view=sql-server-ver16

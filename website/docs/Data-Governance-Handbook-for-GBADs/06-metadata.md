@@ -1,5 +1,5 @@
 ---
-sidebar_position: 7
+sidebar_position: 6
 ---
 
 # Metadata 
@@ -222,6 +222,25 @@ As more metadata is created, controlled vocabularies will be created or adapted 
 | analysisMethod | How the outcome of interest was analyzed - should also provide link to GitHub if applicable  |
 | studyDesign | Information about research design. Terms such as cohort study, randomized trial, cost benefit analysis, descriptive study, diagnostic study etc. are expected.  |
 | | | -->
+
+## Vocabularies and Ontologies 
+
+Pre-existing vocabularies and ontologies will be accessed, refined, compared and extended upon to create a 
+controlled vocabulary for GBADs.  Semantics will be accessed for each data source to ensure that the words 
+used to describe data are consistent between data sources. 
+
+- Vocabularies for data sources that don’t cite vocabulary standards will be obtained and words will be 
+compared to pre-existing data standards such as AGROVOC (FAO’s controlled vocabulary) 
+- Collected vocabularies will be compared for all data sources, to see how the description of terms compares to each other.
+- Goal is to provide a standard for GBADs, increasing interoperability and quality of data, ultimately leading to 
+superior models and estimates 
+    - Also controlled vocabularies lead to better systems and allow for automation of tasks 
+
+Agroportal is an ontology mapping tool that will allow GBADs to determine suitable ontologies and mapping between 
+standardized vocabularies related to the agricultural sector.
+- We also acknowledge that we cannot expect data contributors to change their vocabularies to follow that of GBADs 
+(and if we did ask, it may discourage people from contributing data). This underlines the importance of vocabulary 
+mappings.
 
 ## Metadata Storage and Management 
 
