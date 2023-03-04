@@ -57,7 +57,7 @@ Ensuring that metadata are in a standard form will allow GBADs to comply to FAIR
 
 GBADs strives to not only adapt FAIR in the system, but also create a culture with our enterprise that inspires the use of FAIR in the research data of the academics involved in the greater GBADs project. We believe that this shift will enable better use and re-use of data, allowing for collaboration and better allocation of resources.
 
-2. ## A "Trusted" Data Broker
+## 2. A "Trusted" Data Broker
 
 There are many ways to technically facilitate data sharing such as file downloads, APIs, etc.  This section explains the principles behind being a “trusted” data broker and a federated data source.
 
@@ -85,7 +85,7 @@ Concerns that arise are with the publication and reporting of results inspired b
 
 Another difficulty or possible limitation is that users with specific views will be unaware that certain data assets even exist. 
 
-3. ## CARE Principles 
+## 3. CARE Principles 
 
 CARE principles include: Collective Benefit, Authority to Control, Responsibility and Ethics. Each principle pertains to the use and governance of data owned by or related to Indigenous Peoples, their land, cultural property and practices [refs] and is broken down into categories in Appendix B. CARE principles will be considered in each step of the GBADs data governance strategy and data portal design. 
 
