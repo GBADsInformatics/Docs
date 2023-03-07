@@ -23,16 +23,14 @@ sidebar_position: 12
 
 ## Chapter 5: Data Quality 
 
-## Chapter 6: 
+## Chapter 6: Metadata 
 
-## Chapter 7: Metadata 
-
-## Chapter 8: Educational Materials
+## Chapter 7: Educational Materials
 [^1]: https://www.jstatsoft.org/article/view/v059i10
 
-## Chapter 9: Data Access
+## Chapter 8: Data Access
 
-## Chapter 10: Licenses, Security, and Privacy
+## Chapter 9: Licenses, Security, and Privacy
 
 
 <!-- Bibliography
