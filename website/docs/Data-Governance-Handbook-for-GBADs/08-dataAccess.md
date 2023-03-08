@@ -1,10 +1,10 @@
 ---
-sidebar_position: 9
+sidebar_position: 8
 ---
 
-# Data User Guide	
+# Accessing Data in the Knowledge Engine
 
-## Objectives of the Data Usage Guide: 
+## Objectives: 
 
 * Understand how to access different types of data in the Knowledge Engine 
 * Understand how to search for data stored in the Knowledge Engine
@@ -13,6 +13,14 @@ For information about what to do when you identify new data sets of interest for
 
 * Understand the roles and responsibilities of individuals who have identified a new data set for the use of GBADs program, and how to get this data stored in the Knowledge Engine 
 * Understand how Informatics stores data from models in the Knowledge Engine 
+
+---
+
+The ways to access data consider the findability, accessibility, interoperability, and reusability of data for both **humans** and **machines**. 
+
+---
+
+
 
 ## Data types in the Knowledge Engine 
 
@@ -51,25 +59,72 @@ There are 2 main ways to access the data in the Knowledge Engine:
 1. Through the Application Programming Interface (API)
 2. Direct download through a URL from an Amazon S3 Bucket 
 
-   ---
-   **What is an API?**
-   
-   API stands for Application Programming Interface. It is a machine-to-machine way to ask a server for data, get the server retrieve and interpret the data and return it to your machine. APIs are everywhere; they allow applications to 'talk' to each other. For example, when you check the weather on a weather app, the app is using an API to grab the data and present it in a usable and interpretable fashion on your phone. APIs provide the most up-to-date data without having to store data on your own machine. 
-   
-   For more information about APIs and how to use them visit the [GBADs API Tutorial](https://gbadskedoc.org/docs/GBADsAPITutorial).
-   --- 
+### APIs 
 
-   ---
-   **What is an Amazon S3 Bucket?** 
-   An [Amazon Simple Storage Service (S3) Bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html) is a cloud object storage service that allows you to store data and other digital objects in the cloud. 
-   ---
+---
+
+**What is an API?**
+   
+API stands for Application Programming Interface. It is a machine-to-machine way to ask a server for data, get the server retrieve and interpret the data and return it to your machine. APIs are everywhere; they allow applications to 'talk' to each other. For example, when you check the weather on a weather app, the app is using an API to grab the data and present it in a usable and interpretable fashion on your phone. APIs provide the most up-to-date data without having to store data on your own machine. 
+   
+For more information about APIs and how to use them visit the [GBADs API Tutorial](https://gbadskedoc.org/docs/GBADsAPITutorial).
+
+--- 
+
+Input and output data are stored in [Amazon RDS](https://aws.amazon.com/rds/) tables. The current functionality of the API includes:
+
+* Provides access to data contained in the public databases 
+* Provides a list of all tables contained in the public databases
+* For a given table, provides names of all fields and data types of those fields
+
+While there may be a learning curve for human users of the API, APIs are important for providing machine-to-machine access to data (ensuring interoperability (exchange of information) between systems). 
+
+Documentation about how to build API calls is available at the [GBADs Data Portal Documentation Page](http://gbadske.org:9000/dataportal/).
+
+![GBADsAPI](./images/GBADsAPI.png)
+
+To improve the ease of use for human users, [Kurtis Sobkowich](https://www.linkedin.com/in/kurtis-sobkowich/?originalSubdomain=ca) created a dashboard to view and download data from the GBADs API. The URL will be linked in the Handbook when the dashboard is served on the GBADs server. For now, the dashboard is available on Kurtis' R shiny server: (GBADs API User Interface)[https://kurtissobkowich.shinyapps.io/GBADs_API_UI/]. Please expect delays - the dashboard will be slow until it is served on the GBADs' servers. 
+
+![GBADsUI](./images/gbadsDataPortalUI.png)
+
+We have also developed a tutorial for using the GBADs API in R: [Accessing the GBADs API in R](https://gbadskedoc.org/docs/GBADsAPITutorial)
+
+### S3 Buckets 
+
+---
+
+**What is an Amazon S3 Bucket?** 
+
+An [Amazon Simple Storage Service (S3) Bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html) is a cloud object storage service that allows you to store data and other digital objects in the cloud. 
+
+---
+
+Data from the API is also available via Amazon S3 buckets. Using the S3 URL, users can download csv versions of the data. In addition, we will store files that are used by GBADs that cannot be stored in RDS tables such as shapefiles, images, intermediate data files produced by models, data from meta-analyses and any other data that cannot be structured into an RDs table. 
+
+The S3 URL will be used as a unique identifier for the data, and will be available in a dataset's metadata. The S3 URL will then be discoverable through the GBADs metadata API, and eventually the data catalogue user interface (coming soon).
+
+Ethiopia CSA S3 Files: 
+
+| Species | S3 link to instructions | 
+| ------- | ----------------------- |
+| Camels | https://gbads-eth.s3.ca-central-1.amazonaws.com/CSA/camels-region-instructions.pdf | 
+| Cattle | https://gbads-eth.s3.ca-central-1.amazonaws.com/CSA/cattle-region-instructions.pdf | 
+| Donkeys| https://gbads-eth.s3.ca-central-1.amazonaws.com/CSA/donkeys-region-instructions.pdf |
+| Goats | https://gbads-eth.s3.ca-central-1.amazonaws.com/CSA/goats-region-instructions.pdf |
+| Horses | https://gbads-eth.s3.ca-central-1.amazonaws.com/CSA/horses-region-instructions.pdf |
+| Mules | https://gbads-eth.s3.ca-central-1.amazonaws.com/CSA/mules-region-instructions.pdf |
+| Poultry | https://gbads-eth.s3.ca-central-1.amazonaws.com/CSA/poultry-region-instructions.pdf |
+| Sheep | https://gbads-eth.s3.ca-central-1.amazonaws.com/CSA/sheep-region-instructions.pdf |
+
+### GBADs Data Portal Interface 
 
 ## Searching for data in the Knowledge Engine 
 
 To use the data in the Knowledge Engine, you need to be able to find it. The search functionality of the data is built using a metadata pipeline. 
 
-Each type of data has unique metadata that describes it. For more information about the metadata please visit the [FIX ME UNDER REVIEW Metadata section] of the Handbook. 
+Each type of data has unique metadata that describes it. For more information about the metadata please visit the [Metadata](https://gbadskedoc.org/docs/Data-Governance-Handbook-for-GBADs/metadata) section of the Handbook. 
 
+**The metadata API will be published soon with information about how to discover data sources stored in the GBADs KE based on descriptive information that describes data**
 
 
 <!-- The [GBADs data portal](http://gbadske.org:8050/dash/page-1/) is a prototype dashboard that allows users to access datasets from [FAOSTAT](http://www.fao.org/faostat/en/) and [OIE WAHIS](https://wahis.oie.int/). The prototype allows you to select data of interest, visualize it on bar line graphs, download the data in `.csv` and `.json` format and see the Application Programming Interface (API) call.  -->

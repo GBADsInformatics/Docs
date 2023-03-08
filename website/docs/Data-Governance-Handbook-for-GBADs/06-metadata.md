@@ -1,10 +1,17 @@
 ---
-sidebar_position: 7
+sidebar_position: 6
 ---
 
 # Metadata 
 
-Metadata is used to store information about data assets that are stored in the GBADs knowledge engine. We strive for metadata to be FAIR (Findable, Accessible, Interoperable, and Reusable) 
+Metadata is "data about data".
+
+Metadata is used to store information about data assets that are stored in the GBADs knowledge engine. We strive for metadata to be FAIR (Findable, Accessible, Interoperable, and Reusable). 
+
+In addition, we collect metadata on the processes in ingesting data into the Knowledge Engine to ensure that all data lineage is tracked. 
+
+
+
 
 
 <!-- Technical data standards are an important element of the data governance strategy, as they ensure that data are Findable 
@@ -19,17 +26,74 @@ between data sources and provide insight on the quality and trustworthiness of t
 Technical data standards exist in each of the following categories: (meta)data structure, (meta)data content (vocabularies) 
 and meta(data) format.  -->
 
-## Metadata Standards 
+## Metadata Schema 
 
+"A metadata schema is a set of rules about what sorts of subject-predicate-object statements one is allowed to make, and how one is allowed to make them." - Jeffery Pomerantz
 
+A subject-predicate-object statement consists of: 
+* Subject = the thing being described
+* Object = the thing describing the subject
+* Predicate = relationship between the subject and object
+
+For example: 
+* Subject = FAOSTAT QCL dataset
+* Object = FAO 
+* Predicate = creator 
+
+In this subject-predicate-object statement the FAO is the creator of the FAOSTAT QCL dataset. 
+
+Based on this model, we can craete a metadata schema that defines the predicates (also called elements) that we would like to use to describe a resource. Metadata vocabularies such as [Dublin Core](https://www.dublincore.org/), [schema.org](https://schema.org/), [PROV-DM](https://www.w3.org/TR/prov-dm/), and [DCAT](https://www.w3.org/TR/vocab-dcat-2/) , provide metadata elements that can be used to describe data. There is not a 'one-size-fits-all' when it comes to metadata. Several standard metadata element sets exist because what you will include in metadata depends on what your use case is. 
+
+We have selected metadata elements from schema.org and PROV-DM to describe data and trace data lineage in the knowledge engine (see Figure below). 
+
+![metadataModel](./images/metadataModel.drawio.png)
+
+## Encoding Schema
+
+Each metadata element should have instructions on the expected values expected for each element. For example, there are many different ways to specify a date: 01/04/23 could mean January 4th, 2023 or April 1st, 2023. Therefore, any values for any element specifying a date  should use [ISO-8601](https://www.iso.org/iso-8601-date-and-time-format.html) to ensure that all dates are formatted in a standard fashion. 
+
+The encoding schema for each metadata element used in the metadataModel is found below: 
+
+| Element | Encoding Scheme | Expected Type | 
+| ------- | --------------- | --------------- |
+| [name](https://schema.org/name) | free text | str |
+| [codeRepository](https://schema.org/codeRepository) | link to GitHub repo | str |
+| [runtimePlatform](https://schema.org/runtimePlatform) | name of programming language or platform used at runtime (need controlled vocabulary) | str |
+| [dateCreated](https://schema.org/dateCreated) |[ISO-8601](https://www.iso.org/iso-8601-date-and-time-format.html) | datetime |
+| [startTime](https://schema.org/startTime) |[ISO-8601](https://www.iso.org/iso-8601-date-and-time-format.html)| datetime  |
+| [endTime](https://schema.org/endTime) |[ISO-8601](https://www.iso.org/iso-8601-date-and-time-format.html)| datetime |
+| prov:type | Controlled vocabulary to be built for use case (*i.e* ingestionEvent, dataCleaning etc.)| str | 
+| [description](https://schema.org/description) | free text | str| 
+| [url](https://schema.org/url) | url | str | 
+| [identifier](https://schema.org/identifier) | url, doi, or uri | str | 
+| [license](https://schema.org/license) | url | str | 
+| [temporalCoverage](https://schema.org/temporalCoverage) |[ISO-8601](https://www.iso.org/iso-8601-date-and-time-format.html) | datetime |
+| [creator](https://schema.org/creator) | free text | str | 
+| [inDefinedTermSet](https://schema.org/inDefinedTermSet) | url | str | 
+| [termCode](https://schema.org/termCode) | code from defined term set | str | 
+| [Place](https://schema.org/Place) | [GeoNames](https://www.geonames.org/)| str | 
+| [contentSize](https://schema.org/contentSize) | File size in megabytes | float | 
+| [fileFormat](https://schema.org/fileFormat) | File format. One of: csv, json, dbtable etc. (controlled vocabulary required) | str |
+| [contentUrl](https://schema.org/contentUrl) | url | url | 
+| [uploadDate](https://schema.org/uploadDate) | [ISO-8601](https://www.iso.org/iso-8601-date-and-time-format.html) | datetime |
+
+--- 
+
+Decision needed: 
+
+Currently, keywords for metadata are created through extracting terms (like species), from data sets.
+
+A controlled vocabulary needs to be created to link keywords to. We have begun to do this by collecting all species classifications and definitions from data sources, however, synonyms have not yet been identified. 
+
+---
 
 <!-- Metadata Content
-----------------
+
 
 To annotate metadata terms, standard vocabularies are employed (see Appendix D). For example, all dates reported in the metadata are...
 
 Metadata Terms 
---------------
+
 
 Metadata terms are adapted from the 
 - [International System for Agricultural Science and Technology (AGRIS) Application Profile (AP)](http://www.fao.org/3/ae909e/ae909e05.htm#P460_23819)
@@ -41,10 +105,9 @@ An index of metadata standards can be found at the [Metadata Standards Catalog](
 
 GBADs will further extend and refine terms to fulfill specific needs for the governance and provenance of data collected by or 
 handled by the GBADs data portal system. 
-  -->
 ## Metadata Structure
 
-Metadata schemas will be stored in the [JSON-LD](https://json-ld.org/) format. JSON-LD is a structured data format that supports the implementation of linked data. Google’s [structured metadata tool](https://search.google.com/structured-data/testing-tool/) will be used as metadata is created, revised and edited through our data lifecycle.
+Metadata schemas will be stored in the [JSON-LD](https://json-ld.org/) format. JSON-LD is a structured data format that supports the implementation of linked data. Google’s [structured metadata tool](https://search.google.com/structured-data/testing-tool/) is used to test whether the output metadata is valid.
 
 There are 3 main types of metadata, each serving a specific purpose in the lifecycle of the data (Riley, 2017) (Table 1). 
 
@@ -70,9 +133,9 @@ temporal, title, type, subjectThesaurus, subjectClassification.
 When data are modified by GBADs or are from the output of a model, this must be accredited in the metadata. In these cases, the following 
 terms may be used: modified, alternative, replaces, isPartof, isFormat, hasFormat, hasPart, isRequiredBy, isVersionOf, hasVersion, provenance, 
 requires. For example, in the scenario that GBADs has acquired a data asset that was changed from one vocabulary to another metadata terms 
-isVersionOf, provenance, requires and modified would be used to reflect the changes. 
+isVersionOf, provenance, requires and modified would be used to reflect the changes.  -->
 
-Table 2: All possible metadata terms and respective URIs. 
+<!-- Table 2: All possible metadata terms and respective URIs. 
 
 ```json
 {
@@ -129,7 +192,7 @@ Table 2: All possible metadata terms and respective URIs.
     "subject": "http://purl.org/dc/terms/subject",
     "tableOfContents": "http://purl.org/dc/terms/tableOfContents"
   }
-```
+``` -->
 
 <!-- Rich metadata with terms describing the process of how the original data was obtained, recorded and collected provides context  -->
 <!-- about the data quality and which data sources can be combined with others. Table 3 provides metadata terms that were adapted 
@@ -159,6 +222,25 @@ As more metadata is created, controlled vocabularies will be created or adapted 
 | analysisMethod | How the outcome of interest was analyzed - should also provide link to GitHub if applicable  |
 | studyDesign | Information about research design. Terms such as cohort study, randomized trial, cost benefit analysis, descriptive study, diagnostic study etc. are expected.  |
 | | | -->
+
+## Vocabularies and Ontologies 
+
+Pre-existing vocabularies and ontologies will be accessed, refined, compared and extended upon to create a 
+controlled vocabulary for GBADs.  Semantics will be accessed for each data source to ensure that the words 
+used to describe data are consistent between data sources. 
+
+- Vocabularies for data sources that don’t cite vocabulary standards will be obtained and words will be 
+compared to pre-existing data standards such as AGROVOC (FAO’s controlled vocabulary) 
+- Collected vocabularies will be compared for all data sources, to see how the description of terms compares to each other.
+- Goal is to provide a standard for GBADs, increasing interoperability and quality of data, ultimately leading to 
+superior models and estimates 
+    - Also controlled vocabularies lead to better systems and allow for automation of tasks 
+
+Agroportal is an ontology mapping tool that will allow GBADs to determine suitable ontologies and mapping between 
+standardized vocabularies related to the agricultural sector.
+- We also acknowledge that we cannot expect data contributors to change their vocabularies to follow that of GBADs 
+(and if we did ask, it may discourage people from contributing data). This underlines the importance of vocabulary 
+mappings.
 
 ## Metadata Storage and Management 
 
@@ -194,3 +276,7 @@ A graph model is a model of what kinds of nodes you are representing and how the
 <!---GBADs uses graph databases for 2 main purposes:
 1. Master metadata management
 2. Management information system (MIS) --->
+
+## Graph Database and Metadata API 
+
+**To be updated when API is launched**
