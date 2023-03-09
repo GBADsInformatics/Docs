@@ -3,10 +3,9 @@ import Layout from '@theme/Layout';
 
 import "./styles/OurApi.css";
 
-export default function OurApi() {
+function OurApi() {
   return (
     <Layout>
-      <main className='api-main'>
           <div className="api-container">
             <br/>
             <center>
@@ -189,7 +188,8 @@ export default function OurApi() {
             </li></ul>
             <p></p>
           </div>
-      </main>
     </Layout>
   );
 }
+
+export default OurApi;

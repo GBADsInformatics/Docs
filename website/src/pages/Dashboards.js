@@ -6,7 +6,7 @@ import Layout from '@theme/Layout';
 
 import "./styles/Dashboards.css";
 
-export default function Dashboards() {
+function Dashboards() {
   const DashInfo = [
     {
       piclink: "http://gbadske.org/images/gbadsImage1.png",
@@ -62,7 +62,6 @@ export default function Dashboards() {
 
   return (
     <Layout>
-      <main className="dashboards-main">
           <div className='lower-container'>
             <br/>
             <center>
@@ -74,7 +73,8 @@ export default function Dashboards() {
                 ))}
             </div>
           </div>
-    </main>
     </Layout>
   )
 }
+
+export default Dashboards;
