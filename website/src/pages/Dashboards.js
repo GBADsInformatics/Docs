@@ -4,6 +4,8 @@ import DashboardCard from '../components/DashboardCard';
 import Translate, {translate} from '@docusaurus/Translate';
 import Layout from '@theme/Layout';
 
+import "./styles/Dashboards.css";
+
 export default function Dashboards() {
   const DashInfo = [
     {
@@ -60,8 +62,8 @@ export default function Dashboards() {
 
   return (
     <Layout>
-      <main>
-          <div className='container'>
+      <main className="dashboards-main">
+          <div className='lower-container'>
             <br/>
             <center>
                 <h1><u>The Knowledge Engine Dashboards</u></h1>

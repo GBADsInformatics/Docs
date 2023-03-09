@@ -1,11 +1,13 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 
+import "./styles/OurApi.css";
+
 export default function OurApi() {
   return (
     <Layout>
-      <main>
-          <div className="container">
+      <main className='api-main'>
+          <div className="api-container">
             <br/>
             <center>
             <h1><u>GBADs Data Portal Documentation</u></h1>

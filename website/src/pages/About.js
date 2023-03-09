@@ -10,7 +10,7 @@ import Translate, {translate} from '@docusaurus/Translate';
 function About(){
     const {siteConfig} = useDocusaurusContext();
     return (
-        <Layout description="Homepage">
+        <Layout description="About">
         <main className="about-section">
           <div className="about-title">
             <h1 id="specialTitle"><Translate>Our</Translate></h1>
