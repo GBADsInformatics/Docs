@@ -64,7 +64,6 @@ export default function Dashboards() {
       ]
 
   return (
-    <Layout description="Homepage">
       <main>
           <div className='container'>
             <br/>
@@ -78,6 +77,5 @@ export default function Dashboards() {
             </div>
           </div>
     </main>
-    </Layout>
   )
 }

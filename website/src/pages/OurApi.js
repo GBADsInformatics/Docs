@@ -1,14 +1,10 @@
 import React from 'react';
-import Layout from '@theme/Layout';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 import HighlightCard from '../components/HighlightCard';
-import clsx from 'clsx';
 
 export default function OurApi() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <Layout description="Our Api's">
       <main>
           <div className="container">
             <br/>
@@ -193,6 +189,5 @@ export default function OurApi() {
             <p></p>
           </div>
       </main>
-    </Layout>
   );
 }
