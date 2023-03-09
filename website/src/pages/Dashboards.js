@@ -66,7 +66,7 @@ export default function Dashboards() {
   return (
     <Layout description="Homepage">
       <main>
-          <div className={clsx('container')}>
+          <div className='container'>
             <br/>
             <center>
                 <h1><u>The Knowledge Engine Dashboards</u></h1>

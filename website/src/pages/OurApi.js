@@ -10,7 +10,7 @@ export default function OurApi() {
   return (
     <Layout description="Our Api's">
       <main>
-          <div className={clsx('container')}>
+          <div className="container">
             <br/>
             <center>
             <h1><u>GBADs Data Portal Documentation</u></h1>
