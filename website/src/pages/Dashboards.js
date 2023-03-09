@@ -1,15 +1,10 @@
 import React from 'react';
-import Layout from '@theme/Layout';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
-import HighlightCard from '../components/HighlightCard';
-import clsx from 'clsx';
 import DashboardCard from '../components/DashboardCard';
 import Translate, {translate} from '@docusaurus/Translate';
+import Layout from '@theme/Layout';
 
 export default function Dashboards() {
-  const {siteConfig} = useDocusaurusContext();
-
   const DashInfo = [
     {
       piclink: "http://gbadske.org/images/gbadsImage1.png",
@@ -64,6 +59,7 @@ export default function Dashboards() {
       ]
 
   return (
+    <Layout>
       <main>
           <div className='container'>
             <br/>
@@ -77,5 +73,6 @@ export default function Dashboards() {
             </div>
           </div>
     </main>
+    </Layout>
   )
 }
