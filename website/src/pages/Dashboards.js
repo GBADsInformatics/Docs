@@ -34,6 +34,30 @@ function Dashboards() {
       link: "http://gbadske.org:8052/"
     },
     {
+      title: (
+        <>
+        <Translate>Laying Hens Dashboard</Translate>
+        </>
+        ),
+        dolu: (
+            <Translate>
+              Date of Last Update: 2023-03-14
+            </Translate>
+          ),
+      desc: (
+        <Translate>
+          The Laying Hens dashboard displays data on the welfare of laying hens from the European Commission.
+        </Translate>
+      ),
+      listitems:[],
+      linkText: (
+        <Translate>
+            Laying Hens Dashboard
+        </Translate>
+      ),
+      link: "http://35.182.244.40:8050/dash/"
+    },
+    {
         piclink: "http://gbadske.org/images/marketing_img.png",
         title: (
           <>
@@ -67,7 +91,7 @@ function Dashboards() {
             <center>
                 <h1><u>The Knowledge Engine Dashboards</u></h1>
             </center>
-            <div style={{display:"flex", flexDirection:"column", alignContent:"center", justifyContent:"center"}}>
+            <div className="row homepage-highligh-row">
                 {DashInfo.map((props, idx) => (
                 <DashboardCard key={idx} {...props} />
                 ))}
