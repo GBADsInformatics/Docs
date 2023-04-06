@@ -6,6 +6,7 @@ import Layout from '@theme/Layout';
 import "./styles/About.css";
 import AboutCard from "../components/AboutCard";
 import Translate, {translate} from '@docusaurus/Translate';
+import Alumni from "../components/Alumni";
 
 function About(){
     const {siteConfig} = useDocusaurusContext();
@@ -19,6 +20,14 @@ function About(){
           <hr id="aboutHr"/>
             <div className={clsx('container')}>
                 <AboutCard/>
+            </div>
+            <div className="about-title">
+              <h1 id="specialTitle"><Translate>Past</Translate></h1>
+              <h1 id="specialTitle" className="team"><Translate>Members</Translate></h1>
+            </div>
+            <hr id="aboutHr"/>
+            <div className={clsx('container')}>
+              <Alumni/>
             </div>
         </main>
         </Layout>

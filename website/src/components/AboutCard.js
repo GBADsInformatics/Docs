@@ -36,20 +36,6 @@ const Members = [
         imageLink:"https://ca.slack-edge.com/T01292WLJAK-U012PQR8HL2-786d6d1b082f-512"
     },
     {
-        name:"Grace Patterson",
-        title:(<><Translate>Postdoctoral Research Associate, University of Guelph</Translate></>),
-        email:"thaxton.grace@gmail.com",
-        link:"https://www.linkedin.com/in/gracetpatterson/",
-        imageLink:"https://ca.slack-edge.com/T01292WLJAK-U0257RGS596-7089c11c7bd4-512"
-    },
-    {
-        name:"Neila Ben Sassi",
-        title:(<><Translate>Postdoctoral Research Associate</Translate></>),
-        email:"nbensass@uoguelph.ca",
-        link:"https://www.researchgate.net/profile/Neila-Ben-Sassi",
-        imageLink:"https://i.imgur.com/vA8dDXb.jpg"
-    },
-    {
         name:"William Fitzjohn",
         title:(<><Translate>Informatics Software Developer, University of Guelph</Translate></>),
         email:"wfitzjoh@uoguelph.ca",
@@ -97,13 +83,6 @@ const Members = [
         email:"sobkowik@uoguelph.ca",
         link:"https://www.linkedin.com/in/kurtis-sobkowich/?originalSubdomain=ca",
         imageLink:"https://ca.slack-edge.com/T01292WLJAK-U033Y3GNHN3-faaabc98ca38-512"
-    },
-    {
-        name:"Sky Truong",
-        title:(<><Translate>Informatics Software Developer, University of Guelph</Translate></>),
-        email:"truongy@uoguelph.ca",
-        link:"https://www.linkedin.com/in/pham-sky-truong-9baa23112/",
-        imageLink:"https://ca.slack-edge.com/T01292WLJAK-U01V9C6H5QW-01ea306fe185-512"
     },
     {
         name:"Cassandre Pyne",

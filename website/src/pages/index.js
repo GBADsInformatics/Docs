@@ -31,7 +31,7 @@ export default function Home() {
     <Layout description="Homepage">
       <HomepageHeader />
       <main className="features-section">
-        <div className='overview-container'>
+        {/* <div className='overview-container'>
           <div className='brief-overview'>
               <p><Translate>The</Translate> <b><Translate>Global Burden of Animal Diseases</Translate></b> <Translate>(GBADs) is an international initiative that 
                 aims to improve decision-making for animal health by integrating data from a variety 
@@ -42,7 +42,7 @@ export default function Home() {
                 </Translate> <b><Translate>GBADs Informatics</Translate></b> <Translate>is dedicated to providing data, data products, data quality assessment, 
                 and modelling products through data governance and secure Cloud services for all stakeholders.</Translate></p>
           </div>
-        </div>
+        </div> */}
         <HomepageFeatures />
       </main>
     </Layout>
