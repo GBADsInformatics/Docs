@@ -22,13 +22,36 @@ There is no agreed definition of data quality; the definition of data quality de
 
 *In this section we outline the dimensions of data quality that are relevant to GBADs and the processes, metrics, and tools that are used to assess the quality of data that is used and produced.* 
 
-### Dimensions of Data Quality 
+<!-- ### Dimensions of Data Quality 
 
+*Accuracy*
 
+*Internal Consistency*
 
+Internal consistency is defined as 
+
+*External Consistency* 
+
+External consistency is defined as  -->
 
 
 ## Tools to Support Data Quality Analysis 
+
+### Data Visualization Dashboard for Quality Analysis 
+
+Data from international organizations, such as FAOSTAT, embelish their data with forecasted, imputed, and unoffical values when official data is unavailable. Joshua Davidson created a dashboard which supports the analysis of longitudinal data from FAOSTAT through the following: 
+
+Given a species and country: 
+
+* Visualize potentially erroneous data due to imputed or unofficial data 
+* Provides the percentage of values that are unoffical 
+* Visualize longitudinal trends to identify unexpected or rapid changes in population from year to year 
+
+The tool is still under development; future development ideas include: 
+* Filtering for a 'quality level'. For example provide data that is over a certain percentage unofficial, or that considers the slope of the trend line across time to automatically identify possible errors. 
+
+
+### Other tools 
 
 GBADs Informatics is working on a number of data quality tools.  These tools encompass the following tasks: 
 
@@ -40,5 +63,4 @@ GBADs Informatics is working on a number of data quality tools.  These tools enc
 
 While it is up to the organization or data contributor to correct their data at source, we have procedures in place to communicate the results of quality assessments. 
 
-## Roles in Data Quality 
 
