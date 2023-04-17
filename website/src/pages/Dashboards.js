@@ -31,7 +31,7 @@ function Dashboards() {
             Population Dashboard
         </Translate>
       ),
-      link: "http://gbadske.org:8052/"
+      link: "http://dashboards-alb-2028745592.us-east-2.elb.amazonaws.com/dashboards/population/"
     },
     {
       title: (
@@ -55,7 +55,7 @@ function Dashboards() {
             Laying Hens Dashboard
         </Translate>
       ),
-      link: "http://35.182.244.40:8050/dash/"
+      link: "http://dashboards-alb-2028745592.us-east-2.elb.amazonaws.com/dashboards/layinghens/"
     },
     {
         piclink: "http://gbadske.org/images/marketing_img.png",
@@ -80,7 +80,7 @@ function Dashboards() {
               Biomass Dashboard
           </Translate>
         ),
-        link: "http://gbadske.org:8053/"
+        link: "http://dashboards-alb-2028745592.us-east-2.elb.amazonaws.com/dashboards/biomass/"
       }
       ]
 
