@@ -33,7 +33,20 @@ Internal consistency is defined as
 *External Consistency* 
 
 External consistency is defined as  -->
+## Data Quality Analysis 
 
+### Internal and External Data Consistency 
+
+Determining whether data is consistent between and within data sources is an important indicator of data quality. For example, does data from different sources that report the "same" metric align numerically?
+
+Ian McKechnie created a methodology to analyze the internal and external consistency between data sources to determine whether there is any uncertainty in the data reported. 
+
+Each data source (WOAH, FAOSTAT, National and UN Census) was analyzed with the following: 
+* Identified outliers: plotted all the yearly growth on a normal curve to determine whether there are data points outside the third standard deviation
+* Determined Interquartile range (IQR) for each source's growth range 
+* Trailing five-year population averages across all data sources and compared these average to determine whether there was an inconsistencies in the trend. 
+
+The methodology that was created will be solidified and the findings will be reported in a manuscript (currently being revised). The main findings suggest that there are inconsistencies between data sources in most species and countries; specifics will be reported in the manuscript.
 
 ## Tools to Support Data Quality Analysis 
 
