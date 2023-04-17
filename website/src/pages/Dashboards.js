@@ -61,7 +61,7 @@ function Dashboards() {
         piclink: "http://gbadske.org/images/marketing_img.png",
         title: (
           <>
-          <Translate>Models and Calculations</Translate>
+          <Translate>Biomass</Translate>
           </>
           ),
           dolu: (
@@ -81,7 +81,31 @@ function Dashboards() {
           </Translate>
         ),
         link: "http://dashboards-alb-2028745592.us-east-2.elb.amazonaws.com/dashboards/biomass/"
-      }
+      },
+      {
+        piclink: "http://gbadske.org/images/marketing_img.png",
+        title: (
+          <>
+          <Translate>Animal Health Loss Envelope</Translate>
+          </>
+          ),
+          dolu: (
+              <Translate>
+                Date of Last Update: 2022-06-02
+              </Translate>
+            ),
+        desc: (
+          <Translate>
+            The First Analytics Animal Health Loss Envelope dashboard provides analytics and visualizations for the Ethiopia Case Study, Antimicrobrial Resistance, and the Animal Health Loss Envelope. 
+          </Translate>
+        ),
+        linkText: (
+          <Translate>
+              Animal Health Loss Envelope Dashboard
+          </Translate>
+        ),
+        link: "http://dashboards-alb-2028745592.us-east-2.elb.amazonaws.com/dashboards/ahle/"
+      }     
       ]
 
   return (
