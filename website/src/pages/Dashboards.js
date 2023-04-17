@@ -99,6 +99,7 @@ function Dashboards() {
             The First Analytics Animal Health Loss Envelope dashboard provides analytics and visualizations for the Ethiopia Case Study, Antimicrobrial Resistance, and the Animal Health Loss Envelope. 
           </Translate>
         ),
+        listitems:[],
         linkText: (
           <Translate>
               Animal Health Loss Envelope Dashboard
