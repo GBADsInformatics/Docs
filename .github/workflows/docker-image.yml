@@ -8,7 +8,6 @@ on:
 
 env:
   DOCKER_IMAGE: gbadsinformatics/docs:latest
-  TASK_DEFINITION: documentation-server-task
   SERVICE_NAME: documentation-server-service
   CLUSTER_NAME: GBADs-Dashboards-Cluster
   AWS_REGION: us-east-2
@@ -47,10 +46,6 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ env.AWS_REGION }}
 
-      - name: Deploy Amazon ECS task definition
-        uses: aws-actions/amazon-ecs-deploy-task-definition@v1
-        with:
-          task-definition: ${{ env.TASK_DEFINITION }}
-          service: ${{ env.SERVICE_NAME }}
-          cluster: ${{ env.CLUSTER_NAME }}
-          wait-for-service-stability: true
+      - name: Redeploy Amazon ECS service
+        run: |
+          aws ecs update-service --cluster ${{ env.CLUSTER_NAME }} --service ${{ env.SERVICE_NAME }} --force-new-deployment
