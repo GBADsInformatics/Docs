@@ -17,7 +17,7 @@ function Dashboards() {
         ),
         dolu: (
             <Translate>
-              Date of Last Update: 2022-06-02
+              Date of Last Update: 2023-06-02
             </Translate>
           ),
       desc: (
@@ -28,10 +28,15 @@ function Dashboards() {
       listitems: ["FAOSTAT", "WOAH (formerly OIE) (2021-08-18)", "EUROSTAT"],
       linkText: (
         <Translate>
-            Population Dashboard
+            Population Dashboard V1 
         </Translate>
       ),
-      link: "https://gbadske.org/dashboards/population/"
+      link: "https://gbadske.org/dashboards/population/",
+      linkText: (
+        <Translate>
+            Population Dashboard V2 
+        </Translate>
+      )
     },
     {
       title: (
@@ -66,7 +71,7 @@ function Dashboards() {
           ),
           dolu: (
               <Translate>
-                Date of Last Update: 2022-06-02
+                Date of Last Update: 2023-05-02
               </Translate>
             ),
         desc: (
@@ -77,10 +82,16 @@ function Dashboards() {
         listitems: ["GBADs PPS calculation method", "WOAH AMR calculation method"],
         linkText: (
           <Translate>
-              Biomass Dashboard
+              Biomass Dashboard Version 1
           </Translate>
         ),
-        link: "https://gbadske.org/dashboards/biomass/"
+        link: "https://gbadske.org/dashboards/biomass/",
+        linkText: (
+          <Translate>
+              Biomass Dashboard Version 2 
+          </Translate>
+        ),
+        link: "https://gbadske.org/dashboards/biomass-v2/"
       },
       {
         piclink: "http://gbadske.org/images/marketing_img.png",
@@ -91,7 +102,7 @@ function Dashboards() {
           ),
           dolu: (
               <Translate>
-                Date of Last Update: 2022-06-02
+                Date of Last Update: 2023-05-02
               </Translate>
             ),
         desc: (
@@ -106,6 +117,36 @@ function Dashboards() {
           </Translate>
         ),
         link: "https://gbadske.org/dashboards/ahle/"
+      },
+      {
+        piclink: "http://gbadske.org/images/marketing_img.png",
+        title: (
+          <>
+          <Translate>In Development</Translate>
+          </>
+          ),
+          dolu: (
+              <Translate>
+                Date of Last Update: 2023-05-02
+              </Translate>
+            ),
+        desc: (
+          <Translate>
+            Check out our dashboards that are currently under development
+          </Translate>
+        ),
+        linkText: (
+          <Translate>
+              Data Visualizer 
+          </Translate>
+        ),
+        link: "https://www.gbadske.org/dashboards/visualizer/",
+        linkText: (
+          <Translate>
+              Ethiopia Data Stories 
+          </Translate>
+        ),
+        link: "https://www.gbadske.org/dashboards/datastories/"
       }     
       ]
 
