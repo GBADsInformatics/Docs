@@ -9,10 +9,9 @@ import "./styles/Dashboards.css";
 function Dashboards() {
   const DashInfo = [
     {
-      piclink: "http://gbadske.org/images/gbadsImage1.png",
       title: (
         <>
-        <Translate>Data Sources</Translate>
+        <Translate>Population</Translate>
         </>
         ),
         dolu: (
@@ -26,35 +25,36 @@ function Dashboards() {
         </Translate>
       ),
       listitems: ["FAOSTAT", "WOAH (formerly OIE) (2021-08-18)", "EUROSTAT"],
-      relatedLinks: [{
-          // "Population Dashboard V1": "https://gbadske.org/dashboards/population/",
-          "Population Dashboard V2": "https://gbadske.org/dashboards/population/"
-      }
+      relatedLinks: [
+          {"Population Dashboard V1": "https://gbadske.org/dashboards/population/"},
+          {"Population Dashboard V2": "https://www.gbadske.org/dashboards/population-v2/"}
     ]
      
     },
     {
       title: (
         <>
-        <Translate>Laying Hens Dashboard</Translate>
+        <Translate>Animal Health Loss Envelope</Translate>
         </>
         ),
         dolu: (
             <Translate>
-              Date of Last Update: 2023-03-14
+              Date of Last Update: 2023-05-02
             </Translate>
           ),
       desc: (
         <Translate>
-          The Laying Hens dashboard displays data on the welfare of laying hens from the European Commission.
+          The (First Analytics and University of Liverpool) Animal Health Loss Envelope dashboard provides analytics and visualizations for the Ethiopia Case Study, Antimicrobrial Resistance, and the Animal Health Loss Envelope. 
         </Translate>
       ),
       listitems:[],
 
-      relatedLinks: [{"Laying Hens Dashboard": "https://gbadske.org/dashboards/layinghens/"}]
+      relatedLinks: [{
+        "Animal Health Loss Envelope Dashboard": "https://gbadske.org/dashboards/ahle/"
+      }
+    ]
     },
     {
-        piclink: "http://gbadske.org/images/marketing_img.png",
         title: (
           <>
           <Translate>Biomass</Translate>
@@ -78,10 +78,29 @@ function Dashboards() {
       ]
       },
       {
-        piclink: "http://gbadske.org/images/marketing_img.png",
         title: (
           <>
-          <Translate>Animal Health Loss Envelope</Translate>
+          <Translate>Laying Hens Dashboard</Translate>
+          </>
+          ),
+          dolu: (
+              <Translate>
+                Date of Last Update: 2023-03-14
+              </Translate>
+            ),
+        desc: (
+          <Translate>
+            The Laying Hens dashboard displays data on the welfare of laying hens from the European Commission.
+          </Translate>
+        ),
+        listitems:[],
+  
+        relatedLinks: [{"Laying Hens Dashboard": "https://gbadske.org/dashboards/layinghens/"}]
+      },
+      {
+        title: (
+          <>
+          <Translate>Ethiopia Sub-National Population</Translate>
           </>
           ),
           dolu: (
@@ -91,93 +110,54 @@ function Dashboards() {
             ),
         desc: (
           <Translate>
-            The (First Analytics and University of Liverpool) Animal Health Loss Envelope dashboard provides analytics and visualizations for the Ethiopia Case Study, Antimicrobrial Resistance, and the Animal Health Loss Envelope. 
+           This dashboard allows users to plot, map, and download data from the Ethiopia Central Statistics Agency
           </Translate>
         ),
         listitems:[],
 
-        relatedLinks: [{
-          "Animal Health Loss Envelope Dashboard": "https://gbadske.org/dashboards/ahle/"
-        }
-      ]
+        relatedLinks: [{"Link": "https://www.gbadske.org/"}]
       },
-      ]
-
-      // {
-      //   piclink: "http://gbadske.org/images/marketing_img.png",
-      //   title: (
-      //     <>
-      //     <Translate>In Development</Translate>
-      //     </>
-      //     ),
-      //     dolu: (
-      //         <Translate>
-      //           Date of Last Update: 2023-05-02
-      //         </Translate>
-      //       ),
-      //   desc: (
-      //     <Translate>
-      //       Check out our dashboards that are currently under development
-      //     </Translate>
-      //   ),
-      //   linkText: (
-      //     <Translate>
-      //         Data Visualizer 
-      //     </Translate>
-      //   ),
-      //   link: "https://www.gbadske.org/dashboards/visualizer/",
-      //   linkText: (
-      //     <Translate>
-      //         Ethiopia Data Stories 
-      //     </Translate>
-      //   ),
-      //   link: "https://www.gbadske.org/dashboards/datastories/",
-      //   listitems:[],
-      // }     
-
-      const InDev = [
         {
           title: (
             <>
-            <Translate>Data Visualizer</Translate>
+            <Translate>GBADs API User Interface</Translate>
             </>
             ),
-          dolu: (
-            <Translate>
-              Date of Last Update: 2023-05-02
-            </Translate>
-          ),
+            dolu: (
+                <Translate>
+                  Date of Last Update: 2023-05-02
+                </Translate>
+              ),
           desc: (
             <Translate>
-              Data Visualizer
+              This dashboard allows users to visualize and download data available in the GBADs API
             </Translate>
           ),
           listitems:[],
   
-          relatedLinks: [{"Visualizer": "https://www.gbadske.org/dashboards/visualizer/"}]
+          relatedLinks: [{"Link": "https://www.gbadske.org/"}]
         },
         {
           title: (
             <>
-            <Translate>Ethiopia Data Stories</Translate>
+            <Translate>In Development</Translate>
             </>
             ),
             dolu: (
-              <Translate>
-                Date of Last Update: 2023-05-02
-              </Translate>
-            ),
-            desc: (
-              <Translate>
-                Ethiopia Data Stories
-              </Translate>
-            ),
-            listitems:[],
-    
-            relatedLinks: [{
-              "Ethiopia Data Stories": "https://www.gbadske.org/dashboards/datastories/"
-            }]
-        }
+                <Translate>
+                  Date of Last Update: 2023-05-02
+                </Translate>
+              ),
+          desc: (
+            <Translate>
+              Check out our dashboards that are currently under development
+            </Translate>
+          ),
+          listitems:[],
+  
+          relatedLinks: [{"Data Visualizer": "https://www.gbadske.org/dashboards/visualizer/"},
+                         {"Ethiopia Data Stories": "https://www.gbadske.org/dashboards/datastories/"}]
+        },
       ]
 
   return (
@@ -194,15 +174,6 @@ function Dashboards() {
             </div>
           </div>
           <div>
-            <center>
-                <h1><u>In Development</u></h1>
-                <h3>Check out our dashboards that are currently under development</h3>
-            </center>
-            <div className="row homepage-highligh-row">
-                {InDev.map((props, idx) => (
-                <DashboardCard key={idx} {...props} />
-                ))}
-            </div>
           </div>
     </Layout>
   )
