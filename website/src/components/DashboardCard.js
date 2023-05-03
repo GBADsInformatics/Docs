@@ -3,7 +3,8 @@ import "./styles/DashboardCard.css";
 import clsx from 'clsx';
 
 function DashboardCard(props){
-    console.log(props.piclink);
+    // console.log(props.piclink);
+    // console.log(props.relatedLinks);
 
     if (props.listitems.length==0){
         return (
@@ -16,7 +17,15 @@ function DashboardCard(props){
                         <h1 className="dash-title">{props.title}</h1>
                         <p className="dash-dolu">{props.dolu}</p>
                         <p className="dash-desc">{props.desc}</p>
-                        <a href={props.link}>{props.linkText}</a>
+                        {typeof props.relatedLinks !== 'undefined' &&
+              <ul style={{ listStyleType: "none" }}>
+                {props.relatedLinks.map((link, idx) => (
+                  <li key={idx}>
+                    <a href={Object.values(link)[0]}>{Object.keys(link)[0]}</a>
+                  </li>
+                ))}
+              </ul>
+            }
                     </div>
                 </div>
             </div>
@@ -33,12 +42,20 @@ function DashboardCard(props){
                     <h1 className="dash-title">{props.title}</h1>
                     <p className="dash-dolu">{props.dolu}</p>
                     <p className="dash-desc">{props.desc}</p>
-                    <ul>
+                    <ul tyle={{listStyleType: "none"}}>
                     {props.listitems.map((item, idx) => (
-                        <li key={idx}>{item}</li>
+                        <li style={{fontWeight: "bold"}} key={idx}>{item}</li>
                     ))}
                     </ul>
-                    <a href={props.link}>{props.linkText}</a>
+                    {typeof props.relatedLinks !== 'undefined' &&
+              <ul style={{ listStyleType: "none" }}>
+                {props.relatedLinks.map((link, idx) => (
+                  <li key={idx}>
+                    <a href={Object.values(link)[0]}>{Object.keys(link)[0]}</a>
+                  </li>
+                ))}
+              </ul>
+            }
                 </div>
             </div>
         </div>

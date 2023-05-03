@@ -26,17 +26,12 @@ function Dashboards() {
         </Translate>
       ),
       listitems: ["FAOSTAT", "WOAH (formerly OIE) (2021-08-18)", "EUROSTAT"],
-      linkText: (
-        <Translate>
-            Population Dashboard V1 
-        </Translate>
-      ),
-      link: "https://gbadske.org/dashboards/population/",
-      linkText: (
-        <Translate>
-            Population Dashboard V2 
-        </Translate>
-      )
+      relatedLinks: [{
+          // "Population Dashboard V1": "https://gbadske.org/dashboards/population/",
+          "Population Dashboard V2": "https://gbadske.org/dashboards/population/"
+      }
+    ]
+     
     },
     {
       title: (
@@ -55,12 +50,8 @@ function Dashboards() {
         </Translate>
       ),
       listitems:[],
-      linkText: (
-        <Translate>
-            Laying Hens Dashboard
-        </Translate>
-      ),
-      link: "https://gbadske.org/dashboards/layinghens/"
+
+      relatedLinks: [{"Laying Hens Dashboard": "https://gbadske.org/dashboards/layinghens/"}]
     },
     {
         piclink: "http://gbadske.org/images/marketing_img.png",
@@ -80,18 +71,11 @@ function Dashboards() {
           </Translate>
         ),
         listitems: ["GBADs PPS calculation method", "WOAH AMR calculation method"],
-        linkText: (
-          <Translate>
-              Biomass Dashboard Version 1
-          </Translate>
-        ),
-        link: "https://gbadske.org/dashboards/biomass/",
-        linkText: (
-          <Translate>
-              Biomass Dashboard Version 2 
-          </Translate>
-        ),
-        link: "https://gbadske.org/dashboards/biomass-v2/"
+
+        relatedLinks: [
+          {"Biomass Dashboard Version 1": "https://gbadske.org/dashboards/biomass/"},
+          {"Biomass Dashboard Version 2": "https://gbadske.org/dashboards/biomass-v2/"}
+      ]
       },
       {
         piclink: "http://gbadske.org/images/marketing_img.png",
@@ -111,43 +95,89 @@ function Dashboards() {
           </Translate>
         ),
         listitems:[],
-        linkText: (
-          <Translate>
-              Animal Health Loss Envelope Dashboard
-          </Translate>
-        ),
-        link: "https://gbadske.org/dashboards/ahle/"
+
+        relatedLinks: [{
+          "Animal Health Loss Envelope Dashboard": "https://gbadske.org/dashboards/ahle/"
+        }
+      ]
       },
-      {
-        piclink: "http://gbadske.org/images/marketing_img.png",
-        title: (
-          <>
-          <Translate>In Development</Translate>
-          </>
-          ),
+      ]
+
+      // {
+      //   piclink: "http://gbadske.org/images/marketing_img.png",
+      //   title: (
+      //     <>
+      //     <Translate>In Development</Translate>
+      //     </>
+      //     ),
+      //     dolu: (
+      //         <Translate>
+      //           Date of Last Update: 2023-05-02
+      //         </Translate>
+      //       ),
+      //   desc: (
+      //     <Translate>
+      //       Check out our dashboards that are currently under development
+      //     </Translate>
+      //   ),
+      //   linkText: (
+      //     <Translate>
+      //         Data Visualizer 
+      //     </Translate>
+      //   ),
+      //   link: "https://www.gbadske.org/dashboards/visualizer/",
+      //   linkText: (
+      //     <Translate>
+      //         Ethiopia Data Stories 
+      //     </Translate>
+      //   ),
+      //   link: "https://www.gbadske.org/dashboards/datastories/",
+      //   listitems:[],
+      // }     
+
+      const InDev = [
+        {
+          title: (
+            <>
+            <Translate>Data Visualizer</Translate>
+            </>
+            ),
           dolu: (
+            <Translate>
+              Date of Last Update: 2023-05-02
+            </Translate>
+          ),
+          desc: (
+            <Translate>
+              Data Visualizer
+            </Translate>
+          ),
+          listitems:[],
+  
+          relatedLinks: [{"Visualizer": "https://www.gbadske.org/dashboards/visualizer/"}]
+        },
+        {
+          title: (
+            <>
+            <Translate>Ethiopia Data Stories</Translate>
+            </>
+            ),
+            dolu: (
               <Translate>
                 Date of Last Update: 2023-05-02
               </Translate>
             ),
-        desc: (
-          <Translate>
-            Check out our dashboards that are currently under development
-          </Translate>
-        ),
-        linkText: (
-          <Translate>
-              Data Visualizer 
-          </Translate>
-        ),
-        link: "https://www.gbadske.org/dashboards/visualizer/",
-        linkText: (
-          <Translate>
-              Ethiopia Data Stories 
-          </Translate>
-        ),
-        link: "https://www.gbadske.org/dashboards/datastories/"
-      }     
+            desc: (
+              <Translate>
+                Ethiopia Data Stories
+              </Translate>
+            ),
+            listitems:[],
+    
+            relatedLinks: [{
+              "Ethiopia Data Stories": "https://www.gbadske.org/dashboards/datastories/"
+            }]
+        }
       ]
 
   return (
@@ -159,6 +189,17 @@ function Dashboards() {
             </center>
             <div className="row homepage-highligh-row">
                 {DashInfo.map((props, idx) => (
+                <DashboardCard key={idx} {...props} />
+                ))}
+            </div>
+          </div>
+          <div>
+            <center>
+                <h1><u>In Development</u></h1>
+                <h3>Check out our dashboards that are currently under development</h3>
+            </center>
+            <div className="row homepage-highligh-row">
+                {InDev.map((props, idx) => (
                 <DashboardCard key={idx} {...props} />
                 ))}
             </div>
