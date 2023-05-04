@@ -26,8 +26,8 @@ function Dashboards() {
       ),
       listitems: ["FAOSTAT", "WOAH (formerly OIE) (2021-08-18)", "EUROSTAT"],
       relatedLinks: [
-          {"Population Dashboard V1": "https://gbadske.org/dashboards/population/"},
-          {"Population Dashboard V2": "https://www.gbadske.org/dashboards/population-v2/"}
+          {"Population Dashboard Version 2": "https://www.gbadske.org/dashboards/population-v2/"},
+          {"Population Dashboard Version 1": "https://gbadske.org/dashboards/population/"},
     ]
      
     },
