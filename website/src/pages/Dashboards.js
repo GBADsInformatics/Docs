@@ -115,7 +115,7 @@ function Dashboards() {
         ),
         listitems:[],
 
-        relatedLinks: [{"Link": "https://www.gbadske.org/"}]
+        relatedLinks: [{"Ethiopia Sub-National Population": "https://gbadske.org/dashboards/ethiopia-population/"}]
       },
         {
           title: (
@@ -135,7 +135,7 @@ function Dashboards() {
           ),
           listitems:[],
   
-          relatedLinks: [{"Link": "https://www.gbadske.org/"}]
+          relatedLinks: [{"GBADs API User Interface": "https://www.gbadske.org/dashboards/apiui/"}]
         },
         {
           title: (
