@@ -42,13 +42,13 @@ function DashboardCard(props){
                     <h1 className="dash-title">{props.title}</h1>
                     <p className="dash-dolu">{props.dolu}</p>
                     <p className="dash-desc">{props.desc}</p>
-                    <ul tyle={{listStyleType: "none"}}>
+                    <ul className="mainDashBullets" style={{listStyleType: "none", marginLeft: "-5%"}}>
                     {props.listitems.map((item, idx) => (
                         <li style={{fontWeight: "bold"}} key={idx}>{item}</li>
                     ))}
                     </ul>
                     {typeof props.relatedLinks !== 'undefined' &&
-              <ul style={{ listStyleType: "none" }}>
+              <ul className="mainDashBullets" style={{ listStyleType: "none", marginLeft: "-5%"}}>
                 {props.relatedLinks.map((link, idx) => (
                   <li key={idx}>
                     <a href={Object.values(link)[0]}>{Object.keys(link)[0]}</a>
