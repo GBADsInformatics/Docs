@@ -31,17 +31,17 @@ function OurApi() {
             </p><ol>
             <li> As an HTML command where the result will be an html page or a CSV file:
             <ul>
-                <li> <i>http://gbadske.org/api/dataportal/</i>
-                </li><li> <i>http://gbadske.org/api/GBADsTables/public?format=html</i>
-                </li><li> <i>http://gbadske.org/api/GBADsLivestockPopulation/faostat?year=2017&amp;country=Canada&amp;species=*&amp;format=file</i>
+                <li> <i>https://gbadske.org/api/dataportal/</i>
+                </li><li> <i>https://gbadske.org/api/GBADsTables/public?format=html</i>
+                </li><li> <i>https://gbadske.org/api/GBADsLivestockPopulation/faostat?year=2017&amp;country=Canada&amp;species=*&amp;format=file</i>
             </li></ul>
             <br/>
             </li><li> As a cURL command line tool where the result will be text:
             <ul>
             <li> On Unix-based systems (Mac OSX, Linux): 
                 <ul>
-                    <li> <i>curl "http://gbadske.org/api/GBADsTables/public?format=text"</i>
-                        </li><li> <i>curl "http://gbadske.org/api/GBADsLivestockPopulation/faostat?year=2017&amp;country=Canada&amp;species=*&amp;format=file"</i> <br/>where the reponse is: <p> country,year,species,population<br/>
+                    <li> <i>curl "https://gbadske.org/api/GBADsTables/public?format=text"</i>
+                        </li><li> <i>curl "https://gbadske.org/api/GBADsLivestockPopulation/faostat?year=2017&amp;country=Canada&amp;species=*&amp;format=file"</i> <br/>where the reponse is: <p> country,year,species,population<br/>
                             "Canada","2017","Beehives","701033"<br/>
                             "Canada","2017","Cattle","11535000"<br/>
                             "Canada","2017","Chickens","170120000"<br/>
@@ -60,7 +60,7 @@ function OurApi() {
                 </li></ul>
             </li><li> On Windows systems using Powershell where the result will be text:
                 <ul>
-                    <li> <i>curl.exe http://gbadske.org:900/GBADsTable/public?table_name=livestock_production_faostat&amp;format=text</i>
+                    <li> <i>curl.exe https://gbadske.org/api/GBADsTable/public?table_name=livestock_production_faostat&amp;format=text</i>
                 </li></ul>
             </li></ul>
             <br/>
@@ -79,13 +79,13 @@ function OurApi() {
             These commands are designed to make specific population queries of <b>OIE</b> and <b>FAOSTAT</b> population data and return <b>"country, year, species, population"</b>
             </p><ul>
                 <li> Get <b>OIE</b> population data on <b>Cattle</b> for all years for a specific country, <i>e.g. Germany</i> and return it as a CSV file<br/>
-                <i>http://gbadske.org/api/GBADsLivestockPopulation/oie?species=Cattle&amp;year=*&amp;country=Germany&amp;format=file</i>
+                <i>https://gbadske.org/api/GBADsLivestockPopulation/oie?species=Cattle&amp;year=*&amp;country=Germany&amp;format=file</i>
                 <br/><br/>
                 </li><li> Get <b>FAOSTAT</b> population data on <b>Sheep</b> for <b>2010</b> for a specific country, <i>e.g. Australia</i> and display as html<br/>
-                <i>http://gbadske.org/api/GBADsLivestockPopulation/faostat?species=Sheep&amp;year=2010&amp;country=Australia&amp;format=html</i>
+                <i>https://gbadske.org/api/GBADsLivestockPopulation/faostat?species=Sheep&amp;year=2010&amp;country=Australia&amp;format=html</i>
                 <br/><br/>
                 </li><li> Get <b>OIE</b> population data on <b>all Poultry categories</b> populations for all years for a specific country, <i>e.g. Switzerland</i> and return it as a CSV file<br/>
-                <i>http://gbadske.org/api/GBADsLivestockPopulation/oie?species=Poultry&amp;year=*&amp;country=Switzerland&amp;format=file</i>
+                <i>https://gbadske.org/api/GBADsLivestockPopulation/oie?species=Poultry&amp;year=*&amp;country=Switzerland&amp;format=file</i>
                 <br/><br/>
             </li></ul>
             <p></p>
@@ -95,7 +95,7 @@ function OurApi() {
             </p>
 
             <p  style={{marginLeft:"5%", marginRight:"5%", fontSize:"14pt"}}>
-            <i>http://gbadske.org/api/dataportal/</i>
+            <i>https://gbadske.org/api/dataportal/</i>
             </p><ul>
             <li> This will provide documentation about the GBADs Data Portal including how to use the API to the GBADs Public Database.
             </li><li> It will also give the status of the Data Portal.
@@ -103,33 +103,33 @@ function OurApi() {
             <p></p>
 
             <p  style={{marginLeft:"5%", marginRight:"5%", fontSize:"14pt"}}>
-            <i>http://gbadske.org/api/GBADsTables/public?format=html   |   text</i>
+            <i>https://gbadske.org/api/GBADsTables/public?format=html   |   text</i>
             </p><ul>
             <li> This command returns the names of all of the tables that exist in the GBADs Public Database. The informationis returned either as a HTML page or as text and this is indicated by the parameter format.  If format does not appear then the default is html.
             </li><li> Example commands:
             <ul>
-                <li> <i>http://gbadske.org/api/GBADsTables/public?format=html</i>
-                </li><li> <i>http://gbadske.org/api/GBADsTables/public?format=text</i>
+                <li> <i>https://gbadske.org/api/GBADsTables/public?format=html</i>
+                </li><li> <i>https://gbadske.org/api/GBADsTables/public?format=text</i>
             </li></ul>
             </li></ul>
             <p></p>
 
             <p  style={{marginLeft:"5%", marginRight:"5%", fontSize:"14pt"}}>
-            <i>http://gbadske.org/api/GBADsTable/public?table_name=table_name&amp;format=html   |   text</i>
+            <i>https://gbadske.org/api/GBADsTable/public?table_name=table_name&amp;format=html   |   text</i>
             </p><ul>
             <li> This command returns the column/field names in the given table (<table_name>).  It will be returned as html or as text.
             </table_name></li><li> The type of return is designated by format but this is an optional parameter.  If format is not present then the response will be html.
             </li><li> The required parameter is table name.
             </li><li> Example commands:
             <ul>
-                <li> <i>http://gbadske.org/api/GBADsTable/public?table_name=eth_csa_goats_health&amp;format=html or http://gbadske.org/api/GBADsTable/public?table_name=eth_csa_goats_health</i>
-                </li><li> <i> http://gbadske.org/api/GBADsTable/public?table_name=eth_csa_goats_health&amp;format=text</i>
+                <li> <i>https://gbadske.org/api/GBADsTable/public?table_name=eth_csa_goats_health&amp;format=html or https://gbadske.org/api/GBADsTable/public?table_name=eth_csa_goats_health</i>
+                </li><li> <i> https://gbadske.org/api/GBADsTable/public?table_name=eth_csa_goats_health&amp;format=text</i>
             </li></ul>
             </li></ul>
             <p></p>
 
             <p  style={{marginLeft:"5%", marginRight:"5%", fontSize:"14pt"}}>
-            <i>http://gbadske.org/api/GBADsLivestockPopulation/data_source &#123;faostat   |   oie&#123;</i>
+            <i>https://gbadske.org/api/GBADsLivestockPopulation/data_source &#123;faostat   |   oie&#123;</i>
             </p><ul>
             <li> This commands retrieves data from one of the livestock population tables in the public database.
             </li><li> Currently (as of 2021-10-26) there are two livestock tables: faostat and oie.
@@ -148,19 +148,19 @@ function OurApi() {
             </li></ul>
             </li><li> Example commands:
             <ul>
-                <li> <i>http://gbadske.org/api/GBADsLivestockPopulation/faostat?year=2017&amp;country=Canada&amp;species=*&amp;format=html</i>
+                <li> <i>https://gbadske.org/api/GBADsLivestockPopulation/faostat?year=2017&amp;country=Canada&amp;species=*&amp;format=html</i>
                         <ul>
                         <li> Returns population numbers for all species in Canada in the year 2017 from FAOSTAT (as html)
                         </li></ul>
-                </li><li> <i>http://gbadske.org/api/GBADsLivestockPopulation/oie?year=2017&amp;country=Canada&amp;species=*&amp;format=html</i>
+                </li><li> <i>https://gbadske.org/api/GBADsLivestockPopulation/oie?year=2017&amp;country=Canada&amp;species=*&amp;format=html</i>
                     <ul>
                         <li> Returns population numbers for all species in Canada in the year 2017 from OIE (as html)
                     </li></ul>
-                </li><li> <i>http://gbadske.org/api/GBADsLivestockPopulation/oie?year=*&amp;country=Canada&amp;species=Cattle&amp;format=html</i>
+                </li><li> <i>https://gbadske.org/api/GBADsLivestockPopulation/oie?year=*&amp;country=Canada&amp;species=Cattle&amp;format=html</i>
                     <ul>
                         <li> Returns population numbers for Cattle in Canada in all years from OIE (as html)
                     </li></ul>
-                </li><li> <i>http://gbadske.org/api/GBADsLivestockPopulation/faostat?iso3=AUS&amp;species=Cattle&amp;format=html</i>
+                </li><li> <i>https://gbadske.org/api/GBADsLivestockPopulation/faostat?iso3=AUS&amp;species=Cattle&amp;format=html</i>
                 <ul>
                     <li> Returns population number for Cattle in Australia for all years from FAOSTAT (as html)
                 </li></ul>
@@ -169,7 +169,7 @@ function OurApi() {
             <p></p>
 
             <p  style={{marginLeft:"5%", marginRight:"5%", fontSize:"14pt"}}>
-            <i>http://gbadske.org/api/GBADsPublicQuery/&#123;table_name&#123;</i>
+            <i>https://gbadske.org/api/GBADsPublicQuery/&#123;table_name&#123;</i>
             </p><ul>
             <li> <b>This command is still a work in progress - to be updated very soon!</b>
             </li><li> This command performs a general query on a table in the GBADs Public Database.
@@ -182,8 +182,8 @@ function OurApi() {
             </li></ul>
             </li><li> Example commands:
             <ul>
-                <li> <i>http://gbadske.org/api/GBADsPublicQuery/livestock_production_faostat?fields=country,year,species,population&amp;query=year=2017%20AND%20species=%27Goats%27&amp;format=html</i>
-                </li><li> <i>http://gbadske.org/api/GBADsPublicQuery/livestock_production_faostat?fields=country,year,species,population&amp;query=year=2017%20AND%20species=%27Goats%27&amp;format=file</i>
+                <li> <i>https://gbadske.org/api/GBADsPublicQuery/livestock_production_faostat?fields=country,year,species,population&amp;query=year=2017%20AND%20species=%27Goats%27&amp;format=html</i>
+                </li><li> <i>https://gbadske.org/api/GBADsPublicQuery/livestock_production_faostat?fields=country,year,species,population&amp;query=year=2017%20AND%20species=%27Goats%27&amp;format=file</i>
             </li></ul>
             </li></ul>
             <p></p>
