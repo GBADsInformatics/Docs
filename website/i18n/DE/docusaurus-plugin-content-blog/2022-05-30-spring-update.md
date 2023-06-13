@@ -16,7 +16,7 @@ GBADs Informatics hat 2022 viele neue Experten mit unterschiedlichsten Talenten 
 
 ***Nitin*** hat an der Infrastruktur für Berechtigungen und Zugriffsbeschränkungen gearbeitet, die erforderlich ist, um sicherzustellen, dass GBADs-Daten sicher sind, und dass wir Zugriffsbeschränkungen für verschiedene Benutzer anwenden können, die auf das Datenportal der Wissensmaschine zugreifen möchten. Diese Infrastruktur wird für die Aufrechterhaltung der Sicherheit privater Daten von entscheidender Bedeutung sein.
 
-***Rehan*** ist unser Experte für Viehbestandsdaten geworden, die aus den PDF-Berichten der Central Statistics Agency of Ethiopia stammen. Er hat diese Daten zum ersten Mal in einer Datenbank verfügbar gemacht und arbeitet an der Entwicklung von Berichten, um Trends auf regionaler und nationaler Ebene zu vergleichen und Datenabweichungen zu identifizieren. Er hat auch daran gearbeitet, diese Daten mit globalen Daten zu vergleichen. Berichte folgen in Kürze, sehen Sie sich an, wie Sie über unsere [API](http://gbadske.org:9000/dataportal/) auf Details zugreifen können!
+***Rehan*** ist unser Experte für Viehbestandsdaten geworden, die aus den PDF-Berichten der Central Statistics Agency of Ethiopia stammen. Er hat diese Daten zum ersten Mal in einer Datenbank verfügbar gemacht und arbeitet an der Entwicklung von Berichten, um Trends auf regionaler und nationaler Ebene zu vergleichen und Datenabweichungen zu identifizieren. Er hat auch daran gearbeitet, diese Daten mit globalen Daten zu vergleichen. Berichte folgen in Kürze, sehen Sie sich an, wie Sie über unsere [API](http://gbadske.org/api/dataportal/) auf Details zugreifen können!
 
 <h2>Polieren unserer Produkte</h2>
 

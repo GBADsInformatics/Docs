@@ -16,7 +16,7 @@ GBADs Informatics ha traído muchos nuevos expertos en 2022 que tienen una ampli
 
 ***Nitin*** ha estado trabajando en la infraestructura de permisos y restricciones de acceso necesaria para garantizar que los datos de GBAD estén seguros y que podamos aplicar restricciones de acceso para diferentes usuarios que buscan acceder al portal de datos del motor de conocimiento. Esta infraestructura será fundamental para mantener la seguridad de los datos privados.
 
-***Rehan*** se ha convertido en nuestro experto en datos de ganado extraídos de los informes en pdf de la Agencia Central de Estadísticas de Etiopía. Por primera vez, ha hecho que esos datos estén disponibles en una base de datos y está trabajando para desarrollar informes para comparar tendencias a nivel regional y nacional e identificar discrepancias en los datos. También ha estado trabajando para comparar esos datos con datos globales. Próximamente se publicarán los informes. ¡Vea cómo acceder a los detalles a través de nuestra [API](http://gbadske.org:9000/dataportal/)!
+***Rehan*** se ha convertido en nuestro experto en datos de ganado extraídos de los informes en pdf de la Agencia Central de Estadísticas de Etiopía. Por primera vez, ha hecho que esos datos estén disponibles en una base de datos y está trabajando para desarrollar informes para comparar tendencias a nivel regional y nacional e identificar discrepancias en los datos. También ha estado trabajando para comparar esos datos con datos globales. Próximamente se publicarán los informes. ¡Vea cómo acceder a los detalles a través de nuestra [API](http://gbadske.org/api/dataportal/)!
 
 <h2>Pulido de nuestros Productos</h2>
 

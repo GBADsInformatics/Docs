@@ -16,7 +16,7 @@ GBADs Informatics has brought on many new experts in 2022 who have a wide range 
 
 ***Nitin*** has been working away at the permissions and access restrictions infrastructure needed to ensure GBADs data is secure, and that we can apply access restrictions for different users seeking to access the data portal of the knowledge engine. This infrastructure will be critical for maintaining private data security.
 
-***Rehan*** has become our expert for livestock data scraped from the Central Statistics Agency of Ethiopia’s pdf reports. He has, for the first time, made those data available in a database and is working to develop reports to compare trends on regional and national levels, and identify data discrepancies. He has also been working to compare those data to global data. Reports coming soon, check out how to access details via our [API](http://gbadske.org:9000/dataportal/)!
+***Rehan*** has become our expert for livestock data scraped from the Central Statistics Agency of Ethiopia’s pdf reports. He has, for the first time, made those data available in a database and is working to develop reports to compare trends on regional and national levels, and identify data discrepancies. He has also been working to compare those data to global data. Reports coming soon, check out how to access details via our [API](http://gbadske.org/api/dataportal/)!
 
 <h2>Polishing our Products</h2>
 

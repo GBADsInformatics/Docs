@@ -79,7 +79,7 @@ Input and output data are stored in [Amazon RDS](https://aws.amazon.com/rds/) ta
 
 While there may be a learning curve for human users of the API, APIs are important for providing machine-to-machine access to data (ensuring interoperability (exchange of information) between systems). 
 
-Documentation about how to build API calls is available at the [GBADs Data Portal Documentation Page](http://gbadske.org:9000/dataportal/).
+Documentation about how to build API calls is available at the [GBADs Data Portal Documentation Page](http://gbadske.org/api/dataportal/).
 
 ![GBADsAPI](./images/GBADsAPI.png)
 

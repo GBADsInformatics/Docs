@@ -25,7 +25,7 @@ local({
 
 ## Documentation
 
-*For documentation about the API and useful commands you can visit http://gbadske.org:9000/dataportal/*
+*For documentation about the API and useful commands you can visit http://gbadske.org/api/dataportal/*
 
 **Refer to Deb's presentation for more theory on APIs and why you should use them.**
 
@@ -37,7 +37,7 @@ When making an API call you create a *request* (we'll call it a command) that co
 
 **Base URL** (aka the Request URL): This is the URL that you need to access the API.
 
-For example: `http://gbadske.org:9000/GBADsTables/` and `http://gbadske.org:9000/GBADsLivestockPopulation/` are base URLs for the GBADs API.
+For example: `http://gbadske.org/api/GBADsTables/` and `http://gbadske.org/api/GBADsLivestockPopulation/` are base URLs for the GBADs API.
 
 **Endpoint**: This is where the data that you want is located. 
 
@@ -45,11 +45,11 @@ For example: `http://gbadske.org:9000/GBADsTables/` and `http://gbadske.org:9000
 
 **Example**: 
 
-This command provides all tables available in the GBADs API:  http://gbadske.org:9000/GBADsTables/public?format=html
+This command provides all tables available in the GBADs API:  http://gbadske.org/api/GBADsTables/public?format=html
 
 Broken down using the terminology above: 
 
-* Base URL: http://gbadske.org:9000/GBADsTables/
+* Base URL: http://gbadske.org/api/GBADsTables/
 * Endpoint: public
 * Query: ?format=html
 
@@ -76,7 +76,7 @@ Calling the GBADsTables/public endpoint directly provides a list of tables. When
 First, we set up the content URL. Note that we are requesting the format to be in `text` so we can handle the response.
 
 ```{r}
-url <- "http://gbadske.org:9000/GBADsTables/public?format=text"
+url <- "http://gbadske.org/api/GBADsTables/public?format=text"
 ```
 
 Then, we can use the `GET` method from `httr` by using the `GET()` function. We call the variable `res` to stand for `response`.
@@ -117,7 +117,7 @@ as.list(strsplit(tables, ","))
 At last! 
 **Our result is a list of tables that are available from the GBADs API. Each time a new table is added, or something is changed, you will get the most up-to-date list of tables using these 4 lines of code that we just reviewed:**
 ```{r, eval = FALSE}
-url <- "http://gbadske.org:9000/GBADsTables/public?format=text"
+url <- "http://gbadske.org/api/GBADsTables/public?format=text"
 res <- GET(url = url)
 tables <- content(res)
 as.list(strsplit(tables, ","))
@@ -128,7 +128,7 @@ Now that we have a list of tables, we can see what columns are available in each
 
 First, construct the URL. We can get to table content using: 
 
-* `http://gbadske.org:9000/GBADsTable/public?` 
+* `http://gbadske.org/api/GBADsTable/public?` 
 
 and specifying the table name and format: 
 
@@ -136,7 +136,7 @@ and specifying the table name and format:
 
 So we end up with this: 
 ```{r}
-url_unfccc <- 'http://gbadske.org:9000/GBADsTable/public?table_name=livestock_countries_population_unfccc&format=text'
+url_unfccc <- 'http://gbadske.org/api/GBADsTable/public?table_name=livestock_countries_population_unfccc&format=text'
 ```
 
 Then we use `GET` and check out the `status_code`: 
@@ -156,11 +156,11 @@ Now that we have the fields, we can go ahead and construct a query to ask for th
 
 ### Getting the data table 
 
-**REMINDER** FIND EXAMPLE COMMANDS ON http://gbadske.org:9000/dataportal
+**REMINDER** FIND EXAMPLE COMMANDS ON http://gbadske.org/api/dataportal
 
 First, construct the url: 
 
-* url = http://gbadske.org:9000/GBADsPublicQuery/
+* url = http://gbadske.org/api/GBADsPublicQuery/
 * table_name = livestock_countries_population_unfccc
 
 The new part of this is the fields and query parts of the url:
@@ -175,7 +175,7 @@ Then, we specify the format:
 Putting it all together this is our URL: 
 
 ```{r}
-url_unfccc_data <- 'http://gbadske.org:9000/GBADsPublicQuery/livestock_countries_population_unfccc?fields=country,species,year,population&query=&format=text'
+url_unfccc_data <- 'http://gbadske.org/api/GBADsPublicQuery/livestock_countries_population_unfccc?fields=country,species,year,population&query=&format=text'
 ```
 
 Now, we can use `GET` to get the data 
@@ -190,7 +190,7 @@ And there we have it!
 
 TO RECAP - that was only 3 lines of code: 
 ```{r, eval = FALSE}
-url_unfccc_data <- 'http://gbadske.org:9000/GBADsPublicQuery/livestock_countries_population_unfccc?fields=country,species,year,population&query=&format=text'
+url_unfccc_data <- 'http://gbadske.org/api/GBADsPublicQuery/livestock_countries_population_unfccc?fields=country,species,year,population&query=&format=text'
 res_unfccc_data <- GET(url_unfccc_data)
 unfccc_data <- content(res_unfccc_data)
 ```
@@ -224,7 +224,7 @@ To get a list of all tables in the API, you can use the `get_tables` function.
 get_tables <- function() {
   
   # The content url is where the tables are
-  content_url <- "http://gbadske.org:9000/GBADsTables/public?format=text"
+  content_url <- "http://gbadske.org/api/GBADsTables/public?format=text"
   
   # GET from the httr module allows us to ask for data from the API
   res <- GET(content_url)
@@ -258,7 +258,7 @@ get_table_fields <- function(table_name) {
   # Pass the function the table name that you want information about 
   
   # Build the url 
-  content_url = paste('http://gbadske.org:9000/GBADsTable/public?table_name=',table_name,'&format=text', sep = '')
+  content_url = paste('http://gbadske.org/api/GBADsTable/public?table_name=',table_name,'&format=text', sep = '')
   
   # Ask for the data 
   res = GET(content_url)
@@ -300,7 +300,7 @@ get_data <- function(table_name, fields, query) {
     stop('Provide a table name.')
   }
   
-  base_url = 'http://gbadske.org:9000/GBADsPublicQuery/'
+  base_url = 'http://gbadske.org/api/GBADsPublicQuery/'
   
   # Create API call in the following situations
   # if there was no query or fields provided
