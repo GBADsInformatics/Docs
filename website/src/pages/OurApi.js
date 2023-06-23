@@ -129,7 +129,7 @@ function OurApi() {
             <p></p>
 
             <p  style={{marginLeft:"5%", marginRight:"5%", fontSize:"14pt"}}>
-            <i>https://gbadske.org/api/GBADsLivestockPopulation/data_source &#123;faostat   |   oie&#123;</i>
+            <i>https://gbadske.org/api/GBADsLivestockPopulation/data_source &#123;faostat   |   oie&#125;</i>
             </p><ul>
             <li> This commands retrieves data from one of the livestock population tables in the public database.
             </li><li> Currently (as of 2021-10-26) there are two livestock tables: faostat and oie.
@@ -169,7 +169,7 @@ function OurApi() {
             <p></p>
 
             <p  style={{marginLeft:"5%", marginRight:"5%", fontSize:"14pt"}}>
-            <i>https://gbadske.org/api/GBADsPublicQuery/&#123;table_name&#123;</i>
+            <i>https://gbadske.org/api/GBADsPublicQuery/&#123;table_name&#125;;</i>
             </p><ul>
             <li> <b>This command is still a work in progress - to be updated very soon!</b>
             </li><li> This command performs a general query on a table in the GBADs Public Database.
