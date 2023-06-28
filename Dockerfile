@@ -13,7 +13,7 @@ ENV NPM_CONFIG_COLOR=false
 # We'll run the app as the `node` user, so put it in their home directory
 WORKDIR /home/node/app
 # Copy the source code over
-COPY --chown=node:node ./website /home/node/app/
+COPY ./website /home/node/app/
 
 ## Development #################################################################
 # Define a development target that installs devDeps and runs in dev mode
@@ -32,7 +32,7 @@ CMD ["npm", "start"]
 # Also define a production target which doesn't use devDeps
 FROM base as production
 WORKDIR /home/node/app
-COPY --chown=node:node --from=development /home/node/app/node_modules /home/node/app/node_modules
+COPY --from=development /home/node/app/node_modules /home/node/app/node_modules
 # Build the Docusaurus app
 RUN npm run build
 
@@ -41,6 +41,6 @@ RUN npm run build
 FROM nginx:stable-alpine as deploy
 WORKDIR /home/node/app
 # Copy the nginx config
-COPY --chown=node:node ./nginx.conf /etc/nginx/conf.d/default.conf
+COPY ./nginx.conf /etc/nginx/conf.d/default.conf
 # Copy what we've installed/built from production
-COPY --chown=node:node --from=production /home/node/app/build /usr/share/nginx/html/
+COPY --from=production /home/node/app/build /usr/share/nginx/html/
