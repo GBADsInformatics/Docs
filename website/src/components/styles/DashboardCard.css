@@ -31,8 +31,12 @@
 
 .dash-text-container{
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-ul{
+.dash-text-container ul{
     list-style-type: none;
+    margin-left: -9%;
 }
