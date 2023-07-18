@@ -21,7 +21,7 @@ function Dashboards() {
         </>
         ),
       relatedLinks: [
-          {"National Population": "https://gbadske.org/dashboards/population-v2/"},
+          {"National Population": "https://gbadske.org/dashboards/population/"},
           {"Ethiopia Sub-National Population": "https://gbadske.org/dashboards/ethiopia-population/"},
     ] 
     },
@@ -32,7 +32,7 @@ function Dashboards() {
         </>
         ),
       relatedLinks: [
-          {"Biomass": "https://gbadske.org/dashboards/biomass-v2/"},
+          {"Biomass": "https://gbadske.org/dashboards/biomass/"},
     ]
      
     },

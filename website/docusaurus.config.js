@@ -133,7 +133,7 @@ const config = {
               },
               {
                 label: 'Knowledge Engine and Data Portal',
-                href: 'http://gbadske.org:8051/dash/',
+                href: 'https://gbadske.org/api/dataportal/',
               },
             ],
           },
