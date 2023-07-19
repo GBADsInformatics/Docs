@@ -15,9 +15,7 @@ const FeatureList = [
       </Translate>
     ),
     link:(
-        <a href="/ourapi" className={styles.homepageFeatureLink}><Translate>Explore our Data Portal API</Translate><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-      </svg></a>
+        <a href="/ourapi" className={styles.homepageFeatureLink}><Translate>Explore our Data Portal API→</Translate></a>
     )
   },
   {
@@ -32,9 +30,7 @@ const FeatureList = [
       </Translate>
     ),
     link:(
-        <a href="dashboards" className={styles.homepageFeatureLink}><Translate>Explore our Dashboards</Translate><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-      </svg></a>
+        <a href="dashboards" className={styles.homepageFeatureLink}><Translate>Explore our Dashboards→</Translate></a>
     )
   },
   {
@@ -50,9 +46,7 @@ const FeatureList = [
       </Translate>
     ),
     link:(
-        <a href="docs/Welcome" className={styles.homepageFeatureLink}><Translate>Explore our docs</Translate><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-      </svg></a>
+        <a href="docs/Welcome" className={styles.homepageFeatureLink}><Translate>Explore our docs→</Translate></a>
     )
   },
   {
@@ -65,9 +59,7 @@ const FeatureList = [
       </Translate>
     ),
     link:(
-      <a href="publications/Intro" className={styles.homepageFeatureLink}><Translate>Check out our publications</Translate><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-    </svg></a>
+      <a href="publications/Intro" className={styles.homepageFeatureLink}><Translate>Check out our publications→</Translate></a>
   )
   },
   {
@@ -78,9 +70,7 @@ const FeatureList = [
       </Translate>
     ),
     link:(
-      <a href="https://www.youtube.com/channel/UCdm3CD5v8YZdHtXbsq5WdWw" className={styles.homepageFeatureLink}><Translate>GBADs TV</Translate><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-    </svg></a>
+      <a href="https://www.youtube.com/channel/UCdm3CD5v8YZdHtXbsq5WdWw" className={styles.homepageFeatureLink}><Translate>GBADs TV→</Translate></a>
   )
   },
 ];

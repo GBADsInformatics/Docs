@@ -21,9 +21,20 @@
 }
 
 
-#specialTitle{
+.specialTitle{
     margin: 0.3%;
     font-size: 48px;
+}
+
+.specialTitlePP{
+    margin: 0.3%;
+    font-size: 24px;
+}
+
+.about-titlePP{
+    display: flex;
+    flex-direction: row;
+    margin-left: 0 !important;
 }
 
 #aboutHr{
@@ -34,3 +45,43 @@
 .team{
     color: orange;
 }
+
+.partnerProfile{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.partnerProfile div{
+    margin: 1%;
+}
+
+
+
+@media only screen and (max-width: 990px) {
+    .partnerProfile{
+        flex-direction: column !important;
+        text-align: center !important;
+    }
+    .specialTitle{
+        margin: 0.3%;
+        font-size: 30px;
+    }
+    .about-titlePP{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0 !important;
+    }
+    .profileBodyText{
+        font-size: 12px;
+    }
+    .profileBodyText ul{
+        margin: 0;
+        padding: 0;
+        list-style:inside;
+    }
+
+    .partnerProfile img{
+        width: 50%;
+    }
+  }

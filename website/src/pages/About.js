@@ -8,6 +8,7 @@ import AboutCard from "../components/AboutCard";
 import Translate, {translate} from '@docusaurus/Translate';
 import Alumni from "../components/Alumni";
 import FundingImages from "../components/FundingImages";
+import PartnerProfiles from "../components/PartnerProfiles";
 
 const funders = [
   "https://gbads-documentation.s3.ca-central-1.amazonaws.com/gbads-funders-partners-collaborators/funders/aciar.webp",
@@ -63,24 +64,24 @@ function About(){
         <Layout description="About">
         <main className="about-section">
           <div className="about-title">
-            <h1 id="specialTitle"><Translate>Our</Translate></h1>
-            <h1 id="specialTitle" className="team"><Translate>Team</Translate></h1>
+            <h1 className="specialTitle"><Translate>Our</Translate></h1>
+            <h1 className="specialTitle team"><Translate>Team</Translate></h1>
           </div>
           <hr id="aboutHr"/>
             <div className={clsx('container')}>
                 <AboutCard/>
             </div>
             <div className="about-title">
-              <h1 id="specialTitle"><Translate>Past</Translate></h1>
-              <h1 id="specialTitle" className="team"><Translate>Members</Translate></h1>
+              <h1 className="specialTitle"><Translate>Past</Translate></h1>
+              <h1 className="specialTitle team"><Translate>Members</Translate></h1>
             </div>
             <hr id="aboutHr"/>
             <div className={clsx('container')}>
               <Alumni/>
             </div>
             <div className="about-title">
-              <h1 id="specialTitle"><Translate>Our</Translate></h1>
-              <h1 id="specialTitle" className="team"><Translate>Funders</Translate></h1>
+              <h1 className="specialTitle"><Translate>Our</Translate></h1>
+              <h1 className="specialTitle team"><Translate>Funders</Translate></h1>
             </div>
             <hr id="aboutHr"/>
             <div className={clsx('container')}>
@@ -88,8 +89,17 @@ function About(){
             </div>
 
             <div className="about-title">
-              <h1 id="specialTitle"><Translate>Our</Translate></h1>
-              <h1 id="specialTitle" className="team"><Translate>Partners</Translate></h1>
+              <h1 className="specialTitle"><Translate>Our</Translate></h1>
+              <h1 className="specialTitle team"><Translate>Informatics Partners</Translate></h1>
+            </div>
+            <hr id="aboutHr"/>
+            <div className={clsx('container')}>
+              <PartnerProfiles/>
+            </div>
+
+            <div className="about-title">
+              <h1 className="specialTitle"><Translate>Our</Translate></h1>
+              <h1 className="specialTitle team"><Translate>Partners</Translate></h1>
             </div>
             <hr id="aboutHr"/>
             <div className={clsx('container')}>
@@ -97,8 +107,8 @@ function About(){
             </div>
 
             <div className="about-title">
-              <h1 id="specialTitle"><Translate>Our</Translate></h1>
-              <h1 id="specialTitle" className="team"><Translate>Collaborators</Translate></h1>
+              <h1 className="specialTitle"><Translate>Our</Translate></h1>
+              <h1 className="specialTitle team"><Translate>Collaborators</Translate></h1>
             </div>
             <hr id="aboutHr"/>
             <div className={clsx('container')}>
