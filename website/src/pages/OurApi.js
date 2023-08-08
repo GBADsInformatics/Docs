@@ -31,10 +31,11 @@ function OurApi() {
             </p><ol>
             <li> As an HTML command where the result will be an html page or a CSV file:
             <ul>
-                <li> <i>https://gbadske.org/api/dataportal/</i>
-                </li><li> <i>https://gbadske.org/api/GBADsTables/public?format=html</i>
-                </li><li> <i>https://gbadske.org/api/GBADsLivestockPopulation/faostat?year=2017&amp;country=Canada&amp;species=*&amp;format=file</i>
-            </li></ul>
+                <li> <i>https://gbadske.org/api/docs</i></li>
+                <li> <i>https://gbadske.org/api/dataportal/</i></li>
+                <li> <i>https://gbadske.org/api/GBADsTables/public?format=html</i></li>
+                <li> <i>https://gbadske.org/api/GBADsLivestockPopulation/faostat?year=2017&amp;country=Canada&amp;species=*&amp;format=file</i></li>
+            </ul>
             <br/>
             </li><li> As a cURL command line tool where the result will be text:
             <ul>
