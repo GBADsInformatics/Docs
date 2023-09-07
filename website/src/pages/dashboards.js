@@ -17,7 +17,7 @@ function Dashboards() {
     {
       title: (
         <>
-        <Translate>Population</Translate>
+        <Translate>Populations</Translate>
         </>
         ),
       relatedLinks: [
@@ -62,11 +62,11 @@ function Dashboards() {
     {
       title: (
         <>
-        <Translate>Other</Translate>
+        <Translate>Community</Translate>
         </>
         ),
       relatedLinks: [
-          {"Laying Hens": "https://gbadske.org/dashboards/layinghens/"},
+          {"Usage Statistics": "https://gbadske.org/dashboards/users/"},
     ]
      
     },
