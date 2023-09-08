@@ -17,7 +17,7 @@ function Dashboards() {
     {
       title: (
         <>
-        <Translate>Populations</Translate>
+        <Translate>Livestock Populations</Translate>
         </>
         ),
       relatedLinks: [
