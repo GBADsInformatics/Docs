@@ -79,6 +79,7 @@ function Dashboards() {
       relatedLinks: [
           {"Data Visualizer": "https://gbadske.org/dashboards/visualizer/"},
           {"Ethiopia Data Stories": "https://gbadske.org/dashboards/datastories/"},
+          {"Census Data": "https://gbadske.org/dashboards/census/"},
     ]
      
     },
