@@ -5,7 +5,8 @@ sidebar_position: 12
 # References: 
 
 ## Chapter 1: Intro
-[^1]: https://cloud.google.com/learn/what-is-data-governance
+[^1]: https://www.nature.com/articles/sdata201618
+[^2]: https://cloud.google.com/learn/what-is-data-governance
 
 ## Chapter 2: Data Principles 
 [^1]: https://www.nature.com/articles/sdata201618
