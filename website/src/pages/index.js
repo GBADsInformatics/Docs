@@ -12,14 +12,14 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner, 'header-container')}>
       <div className="container sub-header">
-        <img src="img/informaticsLogo.png" alt={translate({message: "GBADs Informatics logo", description:"GBADs Informatics logo"})} className={styles.gbadHeaderLogo}></img>
-        <div className={styles.buttons}>
+        <img src="img/GBADsLogoRedesign.png" alt={translate({message: "GBADs Informatics logo", description:"GBADs Informatics logo"})} className={styles.gbadHeaderLogo}></img>
+        {/* <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
             to="/docs/Welcome">
             <Translate>New? Start here 📋</Translate>
           </Link>
-        </div>
+        </div> */}
       </div>
     </header>
   );
