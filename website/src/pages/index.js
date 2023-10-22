@@ -12,7 +12,7 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner, 'header-container')}>
       <div className="container sub-header">
-        <img src="img/GBADsLogoRedesign.png" alt={translate({message: "GBADs Informatics logo", description:"GBADs Informatics logo"})} className={styles.gbadHeaderLogo}></img>
+        <img src="img/GBADsLogoRedesign.webp" alt={translate({message: "GBADs Informatics logo", description:"GBADs Informatics logo"})} className={styles.gbadHeaderLogo}></img>
         {/* <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
