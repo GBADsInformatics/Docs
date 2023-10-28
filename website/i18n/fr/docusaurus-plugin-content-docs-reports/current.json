@@ -1,0 +1,10 @@
+{
+    "version.label": {
+        "message": "Suivant",
+        "description": "The label for version current"
+    },
+    "sidebar.tutorialSidebar.category.Ethiopia": {
+        "message": "Ethiopie",
+        "description": "The label for category Ethiopia in sidebar tutorialSidebar"
+    }
+}

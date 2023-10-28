@@ -1,0 +1,38 @@
+{
+  "title": {
+    "message": "Informatics",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "GBADs Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Docs": {
+    "message": "Docs",
+    "description": "Navbar item with label Docs"
+  },
+  "item.label.Presentations and Publications": {
+    "message": "Presentations and Publications",
+    "description": "Navbar item with label Presentations and Publications"
+  },
+  "item.label.Reports": {
+    "message": "Reports",
+    "description": "Navbar item with label Reports"
+  },
+  "item.label.Blog": {
+    "message": "Blog",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.Highlights": {
+    "message": "Highlights",
+    "description": "Navbar item with label Highlights"
+  },
+  "item.label.About": {
+    "message": "About",
+    "description": "Navbar item with label About"
+  },
+  "item.label.Create Doc": {
+    "message": "Create Doc",
+    "description": "Navbar item with label Create Doc"
+  }
+}

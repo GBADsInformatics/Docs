@@ -1,0 +1,487 @@
+{
+  "Informatics Theme Lead, University of Guelph": {
+    "message": "Informatics Theme Lead, University of Guelph"
+  },
+  "Postdoctoral Researcher, University of Guelph": {
+    "message": "Postdoctoral Researcher, University of Guelph"
+  },
+  "Informatics Technical Manager, University of Guelph": {
+    "message": "Informatics Technical Manager, University of Guelph"
+  },
+  "Informatics Software Developer, University of Guelph": {
+    "message": "Informatics Software Developer, University of Guelph"
+  },
+  "Research Assistant, University of Guelph": {
+    "message": "Research Assistant, University of Guelph"
+  },
+  "Postdoctoral Research Associate, University of Guelph": {
+    "message": "Postdoctoral Research Associate, University of Guelph"
+  },
+  "Postdoctoral Research Associate": {
+    "message": "Postdoctoral Research Associate"
+  },
+  "GBADs at the Big Data in Animal Health Webinar": {
+    "message": "GBADs at the Big Data in Animal Health Webinar"
+  },
+  "Presentation at the Big Data in Animal Health Webinar": {
+    "message": "Presentation at the Big Data in Animal Health Webinar"
+  },
+  "GBADs Informatics co-lead Theresa Bernardo presented at the Big Data in Animal Health webinar organised by the Health for Animals association. After providing an overview of the technologies and apps showing the potentials that could be unleashed from animal health data, Theresa presented the GBADs program, its goals and progress so far. She also highlighted the need for quality and reproducible data to better leverage their use when estimating animal health investments.": {
+    "message": "GBADs Informatics co-lead Theresa Bernardo presented at the Big Data in Animal Health webinar organised by the Health for Animals association. After providing an overview of the technologies and apps showing the potentials that could be unleashed from animal health data, Theresa presented the GBADs program, its goals and progress so far. She also highlighted the need for quality and reproducible data to better leverage their use when estimating animal health investments."
+  },
+  "To learn more about this topic, you can watch the presentation here. More information about this event can be found in the Health for Animals website": {
+    "message": "To learn more about this topic, you can watch the presentation here. More information about this event can be found in the Health for Animals website"
+  },
+  "here": {
+    "message": "here"
+  },
+  "GBADs Shout-Out at the Datasphere Initiative Launch": {
+    "message": "GBADs Shout-Out at the Datasphere Initiative Launch"
+  },
+  "GBADs at the launch of the Datasphere Initiative": {
+    "message": "GBADs at the launch of the Datasphere Initiative"
+  },
+  "GBADs Informatics Technical Manager Kassy Raymond (also a Datasphere Initiative Fellow) was a panelist at the recent launch event for the Datasphere Initiative, where she described her work with GBADs to highlight why data quality, sharing, interoperability, reusability, and discoverability are important.": {
+    "message": "GBADs Informatics Technical Manager Kassy Raymond (also a Datasphere Initiative Fellow) was a panelist at the recent launch event for the Datasphere Initiative, where she described her work with GBADs to highlight why data quality, sharing, interoperability, reusability, and discoverability are important."
+  },
+  "Watch Kassy's talk": {
+    "message": "Watch Kassy's talk"
+  },
+  "from minutes 26-31, and learn more about the launch event": {
+    "message": "from minutes 26-31, and learn more about the launch event"
+  },
+  "Graph Data in the Datasphere: How Graph Databases Can Help Us Understand the Data Connections in the Datasphere": {
+    "message": "Graph Data in the Datasphere: How Graph Databases Can Help Us Understand the Data Connections in the Datasphere"
+  },
+  "Explainer blog on Graph Databases": {
+    "message": "Explainer blog on Graph Databases"
+  },
+  "GBADs Informatics team member Kassy Raymond published a blog explaining how graph databases can help us visualize data, reveal trends and patterns in the data, and facilitate trust through understanding data flows. Graph databases are in integral part of the GBADs knowledge engine, and will help us maximize our use of identified data sources.": {
+    "message": "GBADs Informatics team member Kassy Raymond published a blog explaining how graph databases can help us visualize data, reveal trends and patterns in the data, and facilitate trust through understanding data flows. Graph databases are in integral part of the GBADs knowledge engine, and will help us maximize our use of identified data sources."
+  },
+  "To learn more, read the blog": {
+    "message": "To learn more, read the blog"
+  },
+  "Information on how GBADs Informatics plans to use graph databses can be found in the": {
+    "message": "Information on how GBADs Informatics plans to use graph databses can be found in the"
+  },
+  "Data Governance Handbook": {
+    "message": "Data Governance Handbook"
+  },
+  "From FAIR to FAIRS": {
+    "message": "From FAIR to FAIRS"
+  },
+  "New publication from GBADs Informatics": {
+    "message": "New publication from GBADs Informatics"
+  },
+  "Current GBADs Informatics team members Deborah Stacey and Theresa Bernardo and past team members Kenneth Wulff and Nidhip Chikhalla have recently published a paper titled \\\"From FAIR to FAIRS: Data security by design for the global burden of animal diseases\\\" in Agronomy Journal. Data and metadata should be FAIR - Findable, Accessible, Interoperable, and Reusable. This paper describes the need for GBADs to adopt an additional dimension, Security, taking FAIR to FAIRS. GBADs will need to securely manage an increasing amount of sensitive and private data. The Informatics team's plan for doing so is centered around data sharing in the cloud to \\\"facilitate our vision of a decentralized, nonhierarchical organization of data, tools, and models.\\\"": {
+    "message": "Current GBADs Informatics team members Deborah Stacey and Theresa Bernardo and past team members Kenneth Wulff and Nidhip Chikhalla have recently published a paper titled \\\"From FAIR to FAIRS: Data security by design for the global burden of animal diseases\\\" in Agronomy Journal. Data and metadata should be FAIR - Findable, Accessible, Interoperable, and Reusable. This paper describes the need for GBADs to adopt an additional dimension, Security, taking FAIR to FAIRS. GBADs will need to securely manage an increasing amount of sensitive and private data. The Informatics team's plan for doing so is centered around data sharing in the cloud to \\\"facilitate our vision of a decentralized, nonhierarchical organization of data, tools, and models.\\\""
+  },
+  "To learn more, read the paper, which can be found at": {
+    "message": "To learn more, read the paper, which can be found at"
+  },
+  "this link": {
+    "message": "this link"
+  },
+  "Discussion of guidelines for data governance can also be found in our": {
+    "message": "Discussion of guidelines for data governance can also be found in our"
+  },
+  "GBADs at the Annual Forum of the National Farmed Animal Health and Welfare Council": {
+    "message": "GBADs at the Annual Forum of the National Farmed Animal Health and Welfare Council"
+  },
+  "Spreading the word about GBADs": {
+    "message": "Spreading the word about GBADs"
+  },
+  "GBADs Informatics co-lead Theresa Bernardo, together with Liverpool colleague Ben Huntington, presented at the Annual Forum of the National Farmed Animal Health and Welfare Council (now known as Animal Health Canada). One of three invited talks at the forum, Theresa and Ben introduced the GBADs program, vision, and Informatics workflow to Canadian stakeholders.": {
+    "message": "GBADs Informatics co-lead Theresa Bernardo, together with Liverpool colleague Ben Huntington, presented at the Annual Forum of the National Farmed Animal Health and Welfare Council (now known as Animal Health Canada). One of three invited talks at the forum, Theresa and Ben introduced the GBADs program, vision, and Informatics workflow to Canadian stakeholders."
+  },
+  "Watch their presentation": {
+    "message": "Watch their presentation"
+  },
+  "More details about the 2021 forum and future events can be found at the": {
+    "message": "More details about the 2021 forum and future events can be found at the"
+  },
+  "AHC website": {
+    "message": "AHC website"
+  },
+  "Data Portal API": {
+    "message": "Data Portal API"
+  },
+  "This link takes you to our Data Portal API where you can learn how to make queries on the GBADs database tables.": {
+    "message": "This link takes you to our Data Portal API where you can learn how to make queries on the GBADs database tables."
+  },
+  "Explore our Data Portal API→": {
+    "message": "Explore our Data Portal API→"
+  },
+  "Dashboards": {
+    "message": "Dashboards"
+  },
+  "Check out all of our Dashboards!": {
+    "message": "Check out all of our Dashboards!"
+  },
+  "Explore our Dashboards→": {
+    "message": "Explore our Dashboards→"
+  },
+  "Find documentation for using our Data Portal, Knowledge Engine, and Software Tools": {
+    "message": "Find documentation for using our Data Portal, Knowledge Engine, and Software Tools"
+  },
+  "Our site has manuals, tutorials, videos, and presentations that will help with using our data portal acess through APIs and Dashboards and software tools in Python and R.": {
+    "message": "Our site has manuals, tutorials, videos, and presentations that will help with using our data portal acess through APIs and Dashboards and software tools in Python and R."
+  },
+  "Explore our docs→": {
+    "message": "Explore our docs→"
+  },
+  "Publications": {
+    "message": "Publications"
+  },
+  "All papers, abstracts, and research presentations are found here as well as information on how to cite our work in formats that are friendly for many publishing software and platforms.": {
+    "message": "All papers, abstracts, and research presentations are found here as well as information on how to cite our work in formats that are friendly for many publishing software and platforms."
+  },
+  "Check out our publications→": {
+    "message": "Check out our publications→"
+  },
+  "GBADs Media": {
+    "message": "GBADs Media"
+  },
+  "Learn more about GBADs through our Youtube channel, and Github account!": {
+    "message": "Learn more about GBADs through our Youtube channel, and Github account!"
+  },
+  "GBADs TV→": {
+    "message": "GBADs TV→"
+  },
+  "Flex Consulting": {
+    "message": "Flex Consulting"
+  },
+  "Solutions Inc.": {
+    "message": "Solutions Inc."
+  },
+  "Our": {
+    "message": "Our"
+  },
+  "Team": {
+    "message": "Team"
+  },
+  "Past": {
+    "message": "Past"
+  },
+  "Members": {
+    "message": "Members"
+  },
+  "Funders": {
+    "message": "Funders"
+  },
+  "Informatics Partners": {
+    "message": "Informatics Partners"
+  },
+  "Partners": {
+    "message": "Partners"
+  },
+  "Collaborators": {
+    "message": "Collaborators"
+  },
+  "Create a doc!": {
+    "message": "Create a doc!"
+  },
+  "Welcome to the Global Burden of Animal Diseases Dashboard Landing Page! This page provides links to our interactive dashboards that we are using to explore data and results towards our goal of calculating the economic and health disease burden of animal diseases.": {
+    "message": "Welcome to the Global Burden of Animal Diseases Dashboard Landing Page! This page provides links to our interactive dashboards that we are using to explore data and results towards our goal of calculating the economic and health disease burden of animal diseases."
+  },
+  "The Population Dashboards provide access to livestock population data at national and subnational levels, while the Biomass Dashboard quantifies livestock biomass using different calculations. Analytical Dashboards show the results of our analytics and modelling efforts, such as the calculation of the Animal Health Loss Envelope and Total Economic Value. Explore the consistency of datasets with the FAOSTAT Visualizer dashboard and explore Data Stories through our Data Stories dashboards. To access and discover the datasets we are using in our calculations, use the Data Portal dashboards.": {
+    "message": "The Population Dashboards provide access to livestock population data at national and subnational levels, while the Biomass Dashboard quantifies livestock biomass using different calculations. Analytical Dashboards show the results of our analytics and modelling efforts, such as the calculation of the Animal Health Loss Envelope and Total Economic Value. Explore the consistency of datasets with the FAOSTAT Visualizer dashboard and explore Data Stories through our Data Stories dashboards. To access and discover the datasets we are using in our calculations, use the Data Portal dashboards."
+  },
+  "Collaborate, stay updated, and contribute your own data to enhance animal health worldwide. Our dashboards empower data-driven decision-making and facilitate collaboration for improved animal health and well-being worldwide.": {
+    "message": "Collaborate, stay updated, and contribute your own data to enhance animal health worldwide. Our dashboards empower data-driven decision-making and facilitate collaboration for improved animal health and well-being worldwide."
+  },
+  "Livestock Populations": {
+    "message": "Livestock Populations"
+  },
+  "Biomass": {
+    "message": "Biomass"
+  },
+  "Analytics": {
+    "message": "Analytics"
+  },
+  "Data Portal": {
+    "message": "Data Portal"
+  },
+  "Community": {
+    "message": "Community"
+  },
+  "In Development": {
+    "message": "In Development"
+  },
+  "GBADs Informatics logo": {
+    "message": "GBADs Informatics logo",
+    "description": "GBADs Informatics logo"
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "This page crashed.",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.NotFound.title": {
+    "message": "Page Not Found",
+    "description": "The title of the 404 page"
+  },
+  "theme.NotFound.p1": {
+    "message": "We could not find what you were looking for.",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "Please contact the owner of the site that linked you to the original URL and let them know their link is broken.",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.admonition.note": {
+    "message": "note",
+    "description": "The default label used for the Note admonition (:::note)"
+  },
+  "theme.admonition.tip": {
+    "message": "tip",
+    "description": "The default label used for the Tip admonition (:::tip)"
+  },
+  "theme.admonition.danger": {
+    "message": "danger",
+    "description": "The default label used for the Danger admonition (:::danger)"
+  },
+  "theme.admonition.info": {
+    "message": "info",
+    "description": "The default label used for the Info admonition (:::info)"
+  },
+  "theme.admonition.caution": {
+    "message": "caution",
+    "description": "The default label used for the Caution admonition (:::caution)"
+  },
+  "theme.blog.archive.title": {
+    "message": "Archive",
+    "description": "The page & hero title of the blog archive page"
+  },
+  "theme.blog.archive.description": {
+    "message": "Archive",
+    "description": "The page & hero description of the blog archive page"
+  },
+  "theme.blog.paginator.navAriaLabel": {
+    "message": "Blog list page navigation",
+    "description": "The ARIA label for the blog pagination"
+  },
+  "theme.blog.paginator.newerEntries": {
+    "message": "Newer Entries",
+    "description": "The label used to navigate to the newer blog posts page (previous page)"
+  },
+  "theme.blog.paginator.olderEntries": {
+    "message": "Older Entries",
+    "description": "The label used to navigate to the older blog posts page (next page)"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "Scroll back to top",
+    "description": "The ARIA label for the back to top button"
+  },
+  "theme.blog.post.paginator.navAriaLabel": {
+    "message": "Blog post page navigation",
+    "description": "The ARIA label for the blog posts pagination"
+  },
+  "theme.blog.post.paginator.newerPost": {
+    "message": "Newer Post",
+    "description": "The blog post button label to navigate to the newer/previous post"
+  },
+  "theme.blog.post.paginator.olderPost": {
+    "message": "Older Post",
+    "description": "The blog post button label to navigate to the older/next post"
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "Switch between dark and light mode (currently {mode})",
+    "description": "The ARIA label for the navbar color mode toggle"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "dark mode",
+    "description": "The name for the dark color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "light mode",
+    "description": "The name for the light color mode"
+  },
+  "theme.blog.post.plurals": {
+    "message": "One post|{count} posts",
+    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.tagTitle": {
+    "message": "{nPosts} tagged with \"{tagName}\"",
+    "description": "The title of the page for a blog tag"
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "View All Tags",
+    "description": "The label of the link targeting the tag list page"
+  },
+  "theme.docs.DocCard.categoryDescription": {
+    "message": "{count} items",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "Breadcrumbs",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "Docs pages",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "Previous",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.paginator.next": {
+    "message": "Next",
+    "description": "The label used to navigate to the next doc"
+  },
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "One doc tagged|{count} docs tagged",
+    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.tagDocListPageTitle": {
+    "message": "{nDocsTagged} with \"{tagName}\"",
+    "description": "The title of the page for a docs tag"
+  },
+  "theme.docs.versionBadge.label": {
+    "message": "Version: {versionLabel}"
+  },
+  "theme.docs.versions.unreleasedVersionLabel": {
+    "message": "This is unreleased documentation for {siteTitle} {versionLabel} version.",
+    "description": "The label used to tell the user that he's browsing an unreleased doc version"
+  },
+  "theme.docs.versions.unmaintainedVersionLabel": {
+    "message": "This is documentation for {siteTitle} {versionLabel}, which is no longer actively maintained.",
+    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
+  },
+  "theme.docs.versions.latestVersionSuggestionLabel": {
+    "message": "For up-to-date documentation, see the {latestVersionLink} ({versionLabel}).",
+    "description": "The label used to tell the user to check the latest version"
+  },
+  "theme.docs.versions.latestVersionLinkLabel": {
+    "message": "latest version",
+    "description": "The label used for the latest version suggestion link label"
+  },
+  "theme.common.editThisPage": {
+    "message": "Edit this page",
+    "description": "The link label to edit the current page"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "Direct link to {heading}",
+    "description": "Title for link to heading"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": " on {date}",
+    "description": "The words used to describe on which date a page has been last updated"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": " by {user}",
+    "description": "The words used to describe by who the page has been last updated"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "Last updated{atDate}{byUser}",
+    "description": "The sentence used to display when a page has been last updated, and by who"
+  },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "Versions",
+    "description": "The label for the navbar versions dropdown on mobile view"
+  },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "Close",
+    "description": "The ARIA label for close button of announcement bar"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "Tags:",
+    "description": "The label alongside a tag list"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "Blog recent posts navigation",
+    "description": "The ARIA label for recent posts in the blog sidebar"
+  },
+  "theme.CodeBlock.copied": {
+    "message": "Copied",
+    "description": "The copied button label on code blocks"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "Copy code to clipboard",
+    "description": "The ARIA label for copy code blocks button"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "Copy",
+    "description": "The copy button label on code blocks"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "Toggle word wrap",
+    "description": "The title attribute for toggle word wrapping button of code block lines"
+  },
+  "theme.DocSidebarItem.toggleCollapsedCategoryAriaLabel": {
+    "message": "Toggle the collapsible sidebar category '{label}'",
+    "description": "The ARIA label to toggle the collapsible sidebar category"
+  },
+  "theme.NavBar.navAriaLabel": {
+    "message": "Main",
+    "description": "The ARIA label for the main navigation"
+  },
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "Languages",
+    "description": "The label for the mobile language switcher dropdown"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "On this page",
+    "description": "The label used by the button on the collapsible TOC component"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "One min read|{readingTime} min read",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.post.readMore": {
+    "message": "Read More",
+    "description": "The label used in blog post item excerpts to link to full blog posts"
+  },
+  "theme.blog.post.readMoreLabel": {
+    "message": "Read more about {title}",
+    "description": "The ARIA label for the link to full blog posts from excerpts"
+  },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "Collapse sidebar",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "Collapse sidebar",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "Home page",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "Close navigation bar",
+    "description": "The ARIA label for close button of mobile sidebar"
+  },
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "← Back to main menu",
+    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "Toggle navigation bar",
+    "description": "The ARIA label for hamburger menu button of mobile navigation"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "Docs sidebar",
+    "description": "The ARIA label for the sidebar navigation"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "Expand sidebar",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "Expand sidebar",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "Try again",
+    "description": "The label of the button to try again rendering when the React error boundary captures an error"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "Skip to main content",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "Tags",
+    "description": "The title of the tag list page"
+  }
+}

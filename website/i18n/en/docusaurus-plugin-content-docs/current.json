@@ -1,0 +1,14 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Data Governance Handbook for GBADs": {
+    "message": "Data Governance Handbook for GBADs",
+    "description": "The label for category Data Governance Handbook for GBADs in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Terms": {
+    "message": "Terms",
+    "description": "The label for category Terms in sidebar tutorialSidebar"
+  }
+}

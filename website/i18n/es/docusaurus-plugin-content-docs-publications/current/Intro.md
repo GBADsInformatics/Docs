@@ -1,8 +1,9 @@
 ---
 id: intro
-title: Sobre
+title: Acerca de
 sidebar_position: 1
 ---
 
-<h2>¡Mira nuestras publicaciones!</h2>
-<p>GBADs Informatics muestra su trabajo en forma de presentaciones, publicaciones de blog y documentos académicos para llegar a una variedad de audiencias y comunicarse con diferentes partes interesadas.</p>
+<h2>¡Descubre nuestras publicaciones!</h2>
+<p>La Informática de GBADs presenta su trabajo en forma de presentaciones, artículos de blog y publicaciones académicas para llegar a diversas audiencias y comunicarse con diferentes partes interesadas.</p>
+

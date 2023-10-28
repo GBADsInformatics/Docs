@@ -10,10 +10,14 @@ const FeatureList = [
         subHeading:(<><Translate>Presentation at the Big Data in Animal Health Webinar</Translate></>),
         date:"2022-06",
         imageLink:"https://i.imgur.com/HEopvWH.png",
-        text:(<><Translate>GBADs Informatics co-lead Theresa Bernardo presented at the Big Data in Animal Health webinar organised by the Health for Animals association. After  providing an overview of the technologies and apps showing the potentials that could be unleashed from animal health data, Theresa presented the GBADs program, its goals and progress so far. She also highlighted the need for quality and reproducible data to better leverage their use when estimating animal health investments.</Translate></>),
+        text:(
+            <>
+            <Translate>GBADs Informatics co-lead Theresa Bernardo presented at the Big Data in Animal Health webinar organised by the Health for Animals association. After providing an overview of the technologies and apps showing the potentials that could be unleashed from animal health data, Theresa presented the GBADs program, its goals and progress so far. She also highlighted the need for quality and reproducible data to better leverage their use when estimating animal health investments.</Translate>
+            </>
+        ),
         learnMore:(
             <>
-            <Translate>To learn more about this topic, you can watch the presentation here. More information about this event can be found in the Health for Animals website </Translate><a href="https://www.healthforanimals.org/resources/publications/publications/big-data-in-animal-health-webinar/"><Translate>here</Translate></a>.
+            <Translate>To learn more about this topic, you can watch the presentation here. More information about this event can be found in the Health for Animals website</Translate> <a href="https://www.healthforanimals.org/resources/publications/publications/big-data-in-animal-health-webinar/"><Translate>here</Translate></a>.
             </>
         ),
     },

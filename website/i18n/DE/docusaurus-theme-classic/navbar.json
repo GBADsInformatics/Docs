@@ -3,16 +3,24 @@
         "message": "Informatik",
         "description": "The title in the navbar"
     },
+    "logo.alt": {
+        "message": "GBADs-Logo",
+        "description": "The alt text of navbar logo"
+    },
     "item.label.Docs": {
         "message": "Dokumente",
         "description": "Navbar item with label Docs"
     },
     "item.label.Presentations and Publications": {
-        "message": "Präsentationen und Veröffentlichungen",
+        "message": "Vorträge und Veröffentlichungen",
         "description": "Navbar item with label Presentations and Publications"
     },
+    "item.label.Reports": {
+        "message": "Berichte",
+        "description": "Navbar item with label Reports"
+    },
     "item.label.Blog": {
-        "message": "Bloggen",
+        "message": "Blog",
         "description": "Navbar item with label Blog"
     },
     "item.label.Highlights": {

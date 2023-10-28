@@ -22,7 +22,7 @@ const config = {
     {
       termsDir: './docs/terms/'
     }],
-    require.resolve("@cmfcmf/docusaurus-search-local"),
+    // require.resolve("@cmfcmf/docusaurus-search-local"),
     [
       '@docusaurus/plugin-content-docs',
       {
@@ -48,7 +48,7 @@ const config = {
   i18n: {
     defaultLocale: 'en',
     // 'es' add after
-    locales: ['en', 'fr', 'es'],
+    locales: ['en', 'fr', 'es', 'de'],
     localeConfigs: {
       en: {
         htmlLang: 'en-GB',
