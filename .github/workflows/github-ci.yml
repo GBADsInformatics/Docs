@@ -16,4 +16,4 @@ jobs:
     uses: GBADsInformatics/DevopsWorkflows/.github/workflows/aws.yml@main
     secrets: inherit
     with:
-      SERVICE_NAME: documentation-server-service
+      SERVICE_NAME: docs-server-service
