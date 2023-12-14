@@ -10,7 +10,7 @@ This section outlines the GBADs Knowledge Engine (KE) Architecture, which is pre
 
 ## Trusted Animal Information PortaL (TAIL)
 
-![GBADs TAIL Overview](./images/GBADsTailDiagram.png)
+![GBADs TAIL Overview](./images/GBADsTailDiagram.jpg)
 
 
 
