@@ -23,11 +23,11 @@ Welcome to the GBADs documentation server github repo!
    * 2.1. [Modifying different parts of the site](https://github.com/GBADsInformatics/Docs#21-modifying-different-parts-of-the-site)
    * 2.2. [Creating a term](https://github.com/GBADsInformatics/Docs#22-creating-a-term)
 3. [Wiki documentation](https://github.com/GBADsInformatics/Docs#3-wiki-documentation)
-	* 3.1. [How do I order my files?](https://github.com/GBADsInformatics/Docs#21-modifying-different-parts-of-the-site)
-	* 3.2. [Ordering folders sidebar positions](https://github.com/GBADsInformatics/Docs#21-modifying-different-parts-of-the-site)
-	* 3.3. [How do I add multiple authours to a blog post?](https://github.com/GBADsInformatics/Docs#21-modifying-different-parts-of-the-site)
-	* 3.4. [Where can I learn more about styling?](https://github.com/GBADsInformatics/Docs#21-modifying-different-parts-of-the-site)
-	* 3.5. [How can I translate the site to another language?](https://github.com/GBADsInformatics/Docs#21-modifying-different-parts-of-the-site)
+	* 3.1. [How do I order my files?](https://github.com/GBADsInformatics/Docs#31-modifying-different-parts-of-the-site)
+	* 3.2. [Ordering folders sidebar positions](https://github.com/GBADsInformatics/Docs#32-modifying-different-parts-of-the-site)
+	* 3.3. [How do I add multiple authours to a blog post?](https://github.com/GBADsInformatics/Docs#33-modifying-different-parts-of-the-site)
+	* 3.4. [Where can I learn more about styling?](https://github.com/GBADsInformatics/Docs#34-modifying-different-parts-of-the-site)
+	* 3.5. [How can I translate the site to another language?](https://github.com/GBADsInformatics/Docs#35-modifying-different-parts-of-the-site)
 4. [Developers' message](https://github.com/GBADsInformatics/Docs#4-developers-message)
 
 ## 1. Installation
