@@ -23,11 +23,11 @@ Welcome to the GBADs documentation server github repo!
    * 2.1. [Modifying different parts of the site](https://github.com/GBADsInformatics/Docs#21-modifying-different-parts-of-the-site)
    * 2.2. [Creating a term](https://github.com/GBADsInformatics/Docs#22-creating-a-term)
 3. [Wiki documentation](https://github.com/GBADsInformatics/Docs#3-wiki-documentation)
-	* 3.1. [How do I order my files?](https://github.com/GBADsInformatics/Docs#31-modifying-different-parts-of-the-site)
-	* 3.2. [Ordering folders sidebar positions](https://github.com/GBADsInformatics/Docs#32-modifying-different-parts-of-the-site)
-	* 3.3. [How do I add multiple authours to a blog post?](https://github.com/GBADsInformatics/Docs#33-modifying-different-parts-of-the-site)
-	* 3.4. [Where can I learn more about styling?](https://github.com/GBADsInformatics/Docs#34-modifying-different-parts-of-the-site)
-	* 3.5. [How can I translate the site to another language?](https://github.com/GBADsInformatics/Docs#35-modifying-different-parts-of-the-site)
+	* 3.1. [How do I order my files?](https://github.com/GBADsInformatics/Docs#31-how-do-i-order-my-files)
+	* 3.2. [Ordering folders sidebar positions](https://github.com/GBADsInformatics/Docs#32-ordering-folders-sidebar-positions)
+	* 3.3. [How do I add multiple authours to a blog post?](https://github.com/GBADsInformatics/Docs#33-how-do-i-add-multiple-authors-to-a-blog-post)
+	* 3.4. [Where can I learn more about styling?](https://github.com/GBADsInformatics/Docs#34-where-can-i-learn-more-about-styling)
+	* 3.5. [How can I translate the site to another language?](https://github.com/GBADsInformatics/Docs#35-how-can-i-translate-the-site-to-another-language)
 4. [Developers' message](https://github.com/GBADsInformatics/Docs#4-developers-message)
 
 ## 1. Installation
@@ -81,7 +81,7 @@ To create a term in documentation, follow these steps:
 
 ## 3. Wiki documentation
 
-### How do I order my files?
+### 3.1. How do I order my files?
 
 By giving your files a naming convention like this:
 <ul>
@@ -100,7 +100,7 @@ sidebar_position: 6
 ```
 At the top of your markdown file, you can order where your document goes.
 
-### Ordering folders sidebar positions
+### 3.2. Ordering folders sidebar positions
 
 By including a _category_.json file in your folder and placing code like this:
 
@@ -113,7 +113,7 @@ By including a _category_.json file in your folder and placing code like this:
 
 You can order where your folder shows up on the sidebar.
 
-### How do I add multiple authours to a blog post?
+### 3.3. How do I add multiple authours to a blog post?
 
 This is a pretty easy fix. In the header of the markdown document, modify the "authors" property to have a list of id's instead of a single id.
 
@@ -121,10 +121,10 @@ Example:
 
 <img src="https://i.imgur.com/Q1Y3tqq.png" alt="Example of multiple authours on a blog post"/>
 
-### Where can I learn more about styling?
+### 3.4. Where can I learn more about styling?
 The Docusaurus documentation site has lots of info about styling. Most documentation material regarding the frontend is found on the [Docusaurus](https://docusaurus.io/docs) page.
 
-### How can I translate the site to another language?
+### 3.5. How can I translate the site to another language?
 Using the [Translate Docusaurus](https://github.com/GBADsInformatics/TranslateDocusaurus) repo created by Flex Consulting Solutions, developers can easily translate the site into any chosen ISO language.
 
 
