@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Overview of GBADs Knowledge Engine and Data
 
-## Data Flows 
+## Map of Models
 
 ![GBADs Model Map](./images/20231218_GBADsModelMap.png)
 
