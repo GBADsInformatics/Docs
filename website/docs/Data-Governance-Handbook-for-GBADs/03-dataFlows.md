@@ -2,7 +2,15 @@
 sidebar_position: 3
 ---
 
-# Overview of Data Flows in the GBADs Knowledge Engine 
+# Overview of GBADs Knowledge Engine and Data
+
+## Data Flows 
+
+![GBADs Model Map](./images/20231218_GBADsModelMap.png)
+
+Diagram created by Kurtis Sobkowich
+
+## GBADs KE Architecture 
 
 This section outlines the GBADs Knowledge Engine (KE) Architecture, which is presented in the figure below. 
 
