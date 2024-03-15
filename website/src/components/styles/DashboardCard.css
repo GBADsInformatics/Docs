@@ -50,6 +50,6 @@
     margin-left: -9%;
 }
 
-ul > *:not(:first-child){
+#ul-links > *:not(:first-child){
     margin-top: -10%;    
 }

@@ -10,7 +10,7 @@ function DashboardCard(props){
                     <h1 className="dash-title">{props.title}</h1>
                     <div className="align-ul-element">
                     {typeof props.relatedLinks !== 'undefined' &&
-                      <ul style={{ listStyleType: "none", textAlign: 'center' }}>
+                      <ul style={{ listStyleType: "none", textAlign: 'center' }} id="ul-links">
                         {props.relatedLinks.map((link, idx) => (
                           <li key={idx} style={{display: "flex", justifyContent: "center"}}>
                             {/* Over 24 characters - must make font smaller */}
