@@ -3,18 +3,22 @@ import clsx from 'clsx';
 import React, { useState, useEffect } from 'react';
 
 function DashboardCard(props){
-  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 1485);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
   useEffect(() => {
     const handleResize = () => {
       setIsSmallScreen(window.innerWidth < 1485);
     };
+
+    handleResize(); // Call initially to set the initial state
 
     window.addEventListener('resize', handleResize);
 
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, []);
+  }, []); // Empty dependency array ensures that this effect runs only once after the initial render
+
   return (
     <div className={clsx('col', { 'col--4': !isSmallScreen, 'col--5': isSmallScreen }, 'padding-vert--sm')}>
             <div className="text--center padding-horiz--md homepage-card">
