@@ -21,8 +21,14 @@ function Dashboards() {
         </>
         ),
       relatedLinks: [
-          {"National Population": "https://gbadske.org/dashboards/population/"},
-          {"Ethiopia Sub-National Population": "https://gbadske.org/dashboards/ethiopia-population/"},
+          {
+            "National Population": "https://gbadske.org/dashboards/population/",
+            "information": "https://docs.google.com/document/d/1j-UTrxtb44kU_wAWDUeULKdd_BpQrI6pE36ka3PT7vg/edit"
+          },
+          {
+            "Ethiopia Sub-National Population": "https://gbadske.org/dashboards/ethiopia-population/",
+            "information": "https://docs.google.com/document/d/1LnQcWmpb8oYnKg_24Nkrtn1YosevPUWA1A0V7opxv6U/edit"
+          },
     ] 
     },
     {

@@ -20,7 +20,7 @@ function DashboardCard(props){
   }, []); // Empty dependency array ensures that this effect runs only once after the initial render
 
   return (
-    <div className={clsx('col', { 'col--4': !isSmallScreen, 'col--5': isSmallScreen }, 'padding-vert--sm')}>
+    <div className={clsx('col', { 'col--4': !isSmallScreen, 'col--5': isSmallScreen }, 'padding-vert--sm')} style={isSmallScreen? {"padding": "0%"} : {}}>
             <div className="text--center padding-horiz--md homepage-card">
                 <div className="dash-text-container" style={{width: "75%"}}>
                     <h1 className="dash-title">{props.title}</h1>
@@ -32,7 +32,8 @@ function DashboardCard(props){
                             {/* Over 24 characters - must make font smaller */}
                               <a href={Object.values(link)[0]} className="dash-indv-title" style={{whiteSpace: "nowrap"}}>{Object.keys(link)[0]}</a>
                               <div style={{display: "flex", flexDirection: "row", marginLeft: "1%"}}>
-                                <a href={Object.values(link)[0]} style={{marginLeft: "2%", marginTop: "1%"}}>
+                                {/* The below SVG is for the computer dashboard icon */}
+                                <a href={Object.values(link)[0]} style={{marginLeft: "2%", marginTop: "1%"}} target="_blank" rel="noopener noreferrer">
                                   <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 512 512" viewBox="0 0 512 512" width="24" height="24">
                                       <path d="M371.5 472.6c-2.5 3.8-6.6 6.1-11.1 6.1H151.6c-4.5 0-8.7-2.3-11.1-6.1-2.4-3.7-2.7-8.3-1-12.3 5.1-11.4 16.5-18.7 29-18.7h25v-22h125.1v22h25c12.5 0 23.8 7.4 29 18.7C374.3 464.3 373.9 469 371.5 472.6zM166.7 157.4c-6.9 25.7-30.5 44.7-58.3 44.7C75.1 202 48 175 48 141.7c0-27.9 19-51.4 44.7-58.3-.7 2.7-.3.9-.4 58.3 0 8.8 7.2 16 16 16C165.4 157.6 163.9 157.9 166.7 157.4z"></path>
                                       <path d="M168.7 141.7c0 2.9-2.4 5.3-5.3 5.3h-55c-2.9 0-5.3-2.4-5.3-5.3v-55c0-3 2.4-5.3 5.3-5.3C141.7 81.4 168.7 108.4 168.7 141.7zM163.4 234.4H53.3c-2.9 0-5.3-2.4-5.3-5.3 0-2.9 2.4-5.3 5.3-5.3h110.1c2.9 0 5.3 2.4 5.3 5.3C168.7 232 166.3 234.4 163.4 234.4zM163.4 265.8H53.3c-2.9 0-5.3-2.4-5.3-5.3 0-2.9 2.4-5.3 5.3-5.3h110.1c2.9 0 5.3 2.4 5.3 5.3C168.7 263.5 166.3 265.8 163.4 265.8zM163.4 297.3H53.3c-2.9 0-5.3-2.4-5.3-5.3 0-2.9 2.4-5.3 5.3-5.3h110.1c2.9 0 5.3 2.4 5.3 5.3C168.7 294.9 166.3 297.3 163.4 297.3zM266.4 208.5v78.1c0 5.9-4.8 10.7-10.7 10.7h-22.2c-5.9 0-10.7-4.8-10.7-10.7v-78.1c0-5.9 4.7-10.7 10.7-10.7h22.2C261.6 197.8 266.4 202.6 266.4 208.5zM332.3 153.5v133.1c0 5.9-4.8 10.7-10.7 10.7h-22.2c-5.9 0-10.7-4.8-10.7-10.7V153.5c0-5.9 4.7-10.7 10.7-10.7h22.2C327.5 142.8 332.3 147.6 332.3 153.5zM398.1 208.5v78.1c0 5.9-4.8 10.7-10.7 10.7h-22.3c-5.9 0-10.7-4.8-10.7-10.7v-78.1c0-5.9 4.8-10.7 10.7-10.7h22.3C393.3 197.8 398.1 202.6 398.1 208.5zM464 175.9v110.7c0 5.9-4.8 10.7-10.7 10.7H431c-5.9 0-10.7-4.8-10.7-10.7V175.9c0-5.9 4.8-10.7 10.7-10.7h22.3C459.2 165.2 464 170 464 175.9z"></path>
@@ -43,8 +44,14 @@ function DashboardCard(props){
                                       </g>
                                   </svg>
                                 </a>
-                                <svg class="w-6 h-6 text-gray-800 dark:text-white ml-2" style={{marginLeft: "2%", marginTop: "1%"}} aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                                    <path fill-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm9.408-5.5a1 1 0 1 0 0 2h.01a1 1 0 1 0 0-2h-.01ZM10 10a1 1 0 1 0 0 2h1v3h-1a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2h-1v-4a1 1 0 0 0-1-1h-2Z" clip-rule="evenodd"/>
+                                {/* The below SVG is for the "i" or "information" icon */}
+                                <a href={Object.values(link)[1] != null ? Object.values(link)[1] : null} target="_blank" rel="noopener noreferrer">
+                                  <svg class="w-6 h-6 text-gray-800 dark:text-white ml-2" style={{marginLeft: "2%", marginTop: "1%"}} aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                      <path fill-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm9.408-5.5a1 1 0 1 0 0 2h.01a1 1 0 1 0 0-2h-.01ZM10 10a1 1 0 1 0 0 2h1v3h-1a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2h-1v-4a1 1 0 0 0-1-1h-2Z" clip-rule="evenodd"/>
+                                  </svg>
+                                </a>
+                                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 3v4a1 1 0 0 1-1 1H5m4 8h6m-6-4h6m4-8v16a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V7.914a1 1 0 0 1 .293-.707l3.914-3.914A1 1 0 0 1 9.914 3H18a1 1 0 0 1 1 1Z"/>
                                 </svg>
                               </div>
                           </li>
