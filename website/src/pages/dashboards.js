@@ -59,11 +59,12 @@ function Dashboards() {
     {
       title: (
         <>
-        <Translate>Data Portal</Translate>
+        <Translate>Data</Translate>
         </>
         ),
       relatedLinks: [
           {"GBADs API Explorer": "https://gbadske.org/dashboards/apiui/"},
+          {"Senegal Data Ecosystem Map" : "https://kumu.io/KassyRay/gbads-senegal-case-study-data-ecosystem-map#senegal-livestock-data-ecosystem-map"}
     ]
      
     },
