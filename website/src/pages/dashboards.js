@@ -49,10 +49,11 @@ function Dashboards() {
         </>
         ),
       relatedLinks: [
-          {"Total Economic Value": "https://gbadske.org/dashboards/tev/"},
           {"Animal Health Loss Envelope": "https://gbadske.org/dashboards/ahle/"},
+          {"Antimicrobial Usage": "https://gbadske.org/dashboards/ahle/"},
           {"Ethiopia Case Study": "https://gbadske.org/dashboards/ahle-casestudy/"},
           {"Senegal Case Study": "https://gbadske.org/dashboards/senegal-casestudy/"},
+          {"Total Economic Value": "https://gbadske.org/dashboards/tev/"},
     ]
      
     },
