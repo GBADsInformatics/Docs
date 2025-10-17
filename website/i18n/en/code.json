@@ -287,7 +287,7 @@
   },
   "theme.colorToggle.ariaLabel": {
     "message": "Switch between dark and light mode (currently {mode})",
-    "description": "The ARIA label for the navbar color mode toggle"
+    "description": "The ARIA label for the color mode toggle"
   },
   "theme.colorToggle.ariaLabel.mode.dark": {
     "message": "dark mode",
@@ -483,5 +483,113 @@
   "theme.tags.tagsPageTitle": {
     "message": "Tags",
     "description": "The title of the tag list page"
+  },
+  "Data": {
+    "message": "Data"
+  },
+  "GBADs Informatics provides the data, tools, and infrastructure to improve animal health decision-making. Explore how you can access, analyze, and share information that supports the United Nations’ Sustainable Development Goals.": {
+    "message": "GBADs Informatics provides the data, tools, and infrastructure to improve animal health decision-making. Explore how you can access, analyze, and share information that supports the United Nations’ Sustainable Development Goals."
+  },
+  "Flex Consulting Solutions Inc. is a software consulting company that provides a range of technology services aimed at improving the efficiency and productivity of businesses. With our solutions, businesses can streamline workflows, reduce manual labor and human error, improve performance, and deliver optimal software experiences to their customers.": {
+    "message": "Flex Consulting Solutions Inc. is a software consulting company that provides a range of technology services aimed at improving the efficiency and productivity of businesses. With our solutions, businesses can streamline workflows, reduce manual labor and human error, improve performance, and deliver optimal software experiences to their customers."
+  },
+  "Achievements": {
+    "message": "Achievements"
+  },
+  "Access our Data Portal API to learn how to query the GBADs database.": {
+    "message": "Access our Data Portal API to learn how to query the GBADs database."
+  },
+  "Explore our Data Portal API →": {
+    "message": "Explore our Data Portal API →"
+  },
+  "Explore our Dashboards →": {
+    "message": "Explore our Dashboards →"
+  },
+  "Documentation & Tools": {
+    "message": "Documentation & Tools"
+  },
+  "Find guides and tutorials for using our data portal, APIs, dashboards, and analytical tools.": {
+    "message": "Find guides and tutorials for using our data portal, APIs, dashboards, and analytical tools."
+  },
+  "Explore our docs →": {
+    "message": "Explore our docs →"
+  },
+  "Find papers, abstracts, and presentations, plus citation info for major publishing platforms.": {
+    "message": "Find papers, abstracts, and presentations, plus citation info for major publishing platforms."
+  },
+  "Check out our publications →": {
+    "message": "Check out our publications →"
+  },
+  "Learn more about GBADs through our YouTube channel and GitHub account!": {
+    "message": "Learn more about GBADs through our YouTube channel and GitHub account!"
+  },
+  "GBADs TV →": {
+    "message": "GBADs TV →"
+  },
+  "Data and Tools for Better Animal Health Decisions": {
+    "message": "Data and Tools for Better Animal Health Decisions"
+  },
+  "GBADs data is published through our Data Portal and Knowledge Engine, where you can access datasets, run analyses, and discover insights that support global animal health and sustainable development.": {
+    "message": "GBADs data is published through our Data Portal and Knowledge Engine, where you can access datasets, run analyses, and discover insights that support global animal health and sustainable development."
+  },
+  "theme.colorToggle.ariaLabel.mode.system": {
+    "message": "system mode",
+    "description": "The name for the system color mode"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "1 item|{count} items",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.admonition.warning": {
+    "message": "warning",
+    "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "Expand sidebar category '{label}'",
+    "description": "The ARIA label to expand the sidebar category"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "Collapse sidebar category '{label}'",
+    "description": "The ARIA label to collapse the sidebar category"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.expandAriaLabel": {
+    "message": "Expand the dropdown",
+    "description": "The ARIA label of the button to expand the mobile dropdown navbar item"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.collapseAriaLabel": {
+    "message": "Collapse the dropdown",
+    "description": "The ARIA label of the button to collapse the mobile dropdown navbar item"
+  },
+  "theme.blog.author.pageTitle": {
+    "message": "{authorName} - {nPosts}",
+    "description": "The title of the page for a blog author"
+  },
+  "theme.blog.authorsList.pageTitle": {
+    "message": "Authors",
+    "description": "The title of the authors page"
+  },
+  "theme.blog.authorsList.viewAll": {
+    "message": "View all authors",
+    "description": "The label of the link targeting the blog authors page"
+  },
+  "theme.blog.author.noPosts": {
+    "message": "This author has not written any posts yet.",
+    "description": "The text for authors with 0 blog post"
+  },
+  "theme.contentVisibility.unlistedBanner.title": {
+    "message": "Unlisted page",
+    "description": "The unlisted content banner title"
+  },
+  "theme.contentVisibility.unlistedBanner.message": {
+    "message": "This page is unlisted. Search engines will not index it, and only users having a direct link can access it.",
+    "description": "The unlisted content banner message"
+  },
+  "theme.contentVisibility.draftBanner.title": {
+    "message": "Draft page",
+    "description": "The draft content banner title"
+  },
+  "theme.contentVisibility.draftBanner.message": {
+    "message": "This page is a draft. It will only be visible in dev and be excluded from the production build.",
+    "description": "The draft content banner message"
   }
 }

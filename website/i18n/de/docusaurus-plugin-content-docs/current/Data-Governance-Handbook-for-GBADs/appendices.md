@@ -172,78 +172,78 @@ GBADs verwendet schema.org für Metadaten. Eine vollständige Liste der Metadate
 
 Dieser Abschnitt enthält eine JSON-Metadatenvorlage mit allen Metadatenbegriffen (Tabelle 1).
 
-„
-
-„@context“: {
-},
-"@Ausweis": "",
-"@Typ": "",
-„URI“: „“,
-"Titel": "",
-"Zugangsrechte":"",
-„Abgrenzung“:{
-„Abgrenzungsmethode:“
-„accrualPeriodicity“: „“,
-},
-„bibliografische Quellenangabe“: „“,
-„Ersteller“: {
-„creatorCorporate“: „“,
-„creatorPersonal“: „“,
-},
-"Erstellungsdatum":"",
-„Abdeckung“: {
-„temporalCoverage“: „,
-„räumliche Abdeckung“: „“
-},
-"Datum": {
-"verfügbar": "",
-„erstellt“: „“,
-„dateAccepted“: „“,
-„dateCopyrighted“: „“,
-„dateSubmitted“: „“,
-"ausgegeben": "",
-"geändert": ""
-},
-„dataID“:,
-"Beschreibung": "",
-"Verteilung": "",
-„Dokumentation“: „“,
-"gebilligt von": "",
-"Beziehung":{
-"Format": "",
-„hasFormat“: „“,
-„hasPart“: „“,
-„hasVersion“: „“,
-„isFormatOf“: „“,
-"ist ein Teil von": "",
-„isReplacedBy“: „“,
-„isRequiredBy“: „“,
-„isVersionOf“: „“,
-"relationIsTranslationOf": "",
-"relationHasTranslation": "",
-„ersetzt“: „“,
-"erfordert": ""
-},
-"Thema": {
-„subject Classification“: „“,
-„subjectKeywords“: „“,
-„subjectThesaraus“: „“
-},
-"Sprache":"",
-"Lizenz":"",
-"Vermittler":"",
-"geändert":"",
-"Herkunft":"",
-"Herausgeber":"",
-"Verweise":"",
-"Rechte":"",
-„rightsHolder“: „,
-"Quelle": "",
-„Methodik“: „“,
-„metadataInformation“: „“,
-„Vocabulary Encoding Scheme“: „“
-
-„
+```
+{
+  "@context": {
+  },
+  "@id": "",
+  "@type": "",
+  "URI": "",
+  "title": "",
+  "accessRights":"",
+  "accrual":{
+  	"accrualMethod":"",
+  	"accrualPeriodicity":"",
+  },
+  "bibliographicCitation": "",
+  "creator": {
+  	"creatorCorporate": "",
+  	"creatorPersonal": "",
+  },
+  "creationDate":"",
+  "coverage": {
+  	"temporalCoverage":"",
+  	"spatialCoverage":""
+  },
+  "date": {
+  	"available": "",
+  	"created": "",
+  	"dateAccepted": "",
+  	"dateCopyrighted": "",
+  	"dateSubmitted": "",
+  	"issued": "",
+  	"modified": ""
+  },
+  "dataID":"",
+  "description": "",
+  "distribution": "",
+  "documentation": "",
+  "endorsedBy": "",
+  "relation":{
+  	"format": "",
+  	"hasFormat": "",
+  	"hasPart": "",
+  	"hasVersion": "",
+  	"isFormatOf": "",
+  	"isPartOf": "",
+  	"isReplacedBy": "",
+  	"isRequiredBy": "",
+  	"isVersionOf": "",
+  	"relationIsTranslationOf": "",
+  	"relationHasTranslation": "",
+  	"replaces": "",
+  	"requires": ""
+  },
+  "subject": {
+  	"subjectClassification": "",
+  	"subjectKeywords": "",
+  	"subjectThesaraus": ""
+  },
+  "language":"",
+  "license":"",
+  "mediator":"",
+  "modified":"",
+  "provenance":"",
+  "publisher":"",
+  "references":"",
+  "rights":"",
+  "rightsHolder":"",
+  "source": "",
+  "methodology": "",
+  "metadataInformation": "",
+  "vocabularyEncodingScheme": ""
+}
+```
 
 ## Anhang E: Lizenzvereinbarungen
 

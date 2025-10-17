@@ -5,12 +5,10 @@ authors: Grace
 tags: [ASF, human health, perspective piece]
 ---
 
-import Term from "@docusaurus-terminology/term";
-
 
 ![Header Image](https://ptiib.s3.amazonaws.com/images/images/607000generic00b.jpg?VersionId=wKlQOJt9eHl1qsBz1o.ZDQHKEXx.n5S8)
 
-<p align="center"><i>(Graphic from <a href="https://iycf.advancingnutrition.org/content/food-animal-source-foods-00b-kyrgyz-republic">Advancing Nutrition</a>)</i></p>
+<i align="center">(Graphic from <a href="https://iycf.advancingnutrition.org/content/food-animal-source-foods-00b-kyrgyz-republic">Advancing Nutrition</a>)</i>
 
 <h2>Animal-Sourced Foods in the Global Diet</h2>
 
@@ -19,7 +17,7 @@ Livestock have long played important cultural, social, and economic roles while 
 _So, in a world where ASFs are too available for some, and too scarce for others, and livestock still play an important cultural role, how do we balance scarce planetary resources to produce equitable outcomes related to livestock production and human health?_ This is a question that the [Global Burden of Animal Diseases (GBADs) program](https://animalhealthmetrics.org/) is working to address by developing a systematic process to determine the burden of animal disease on human health and wellbeing. One piece of this puzzle involves understanding, in better detail, how ASF consumption impacts health in different contexts.
 
 ![OWiD Protein Supply](https://i.imgur.com/lLA1y1T.png)
-<p align="center"><i>(Graphic from <a href="https://ourworldindata.org/grapher/share-of-calories-from-animal-protein-vs-gdp-per-capita">Our World in Data</a>)</i></p>
+<i align="center">(Graphic from <a href="https://ourworldindata.org/grapher/share-of-calories-from-animal-protein-vs-gdp-per-capita">Our World in Data</a>)</i>
 
 
 <h2>Role of ASFs in Health </h2>
@@ -31,7 +29,7 @@ ASFs are important across the lifespan, but especially during childhood, pregnan
 <br/> 
 
 ![Global Nutrition Report 2018](https://sc.cnbcfm.com/applications/cnbc.com/resources/files/2018/11/30/DVIJ6094-GNR-Key-Message-Infographic-SEPARATE-02-181108.jpg)
-<p align="center"><i>(Graphic from <a href="https://globalnutritionreport.org/reports/global-nutrition-report-2018/">Global Nutrition Report 2018</a>)</i></p>
+<i align="center">(Graphic from <a href="https://globalnutritionreport.org/reports/global-nutrition-report-2018/">Global Nutrition Report 2018</a>)</i>
 
 While micro- and macronutrients have been linked to specific health outcomes, it is unclear in _what quantity, how frequently,_ and _how long_ they should be consumed to achieve lasting benefits in different populations, living under different conditions. Dietary guidelines, recommended daily average nutrient intakes, models of nutrient sufficiency, and other tools exist for different populations, but are sometimes based on reference populations that may not represent the group in question. Even in instances where it is clear how much of a nutrient is required for a specific population, it is unclear how to deploy specific foods to meet those needs. A person’s health status also influences their ability to absorb or use nutrients. Their gut microbiome, intestinal health, and the actual nutrient content of foods grown and stored in different manners all contribute to variance between the projected impacts of ASF consumption and the (inadequately) observed reality.
 
@@ -43,13 +41,15 @@ Recent reviews have summarized the minimal and often inconclusive empirical rese
 
 The [Lulun project](https://e3nutritionlab.wustl.edu/items/the-lulun-egg-project/) illustrates a rigorous and high-quality RCT and highlights difficulties in assessing ASF consumption impacts. The [study](https://doi.org/10.1542/peds.2016-3459) involved egg supplementation for six months among 6–9-month-old children in Ecuador, resulting in increased weight and height gain and substantially reduced stunting risk[^11]. However, a repeat of the study in [Malawi](https://doi.org/10.1093/ajcn/nqz163) saw no such effect, potentially due to higher baseline consumption of ASFs or greater exposure to gastrointestinal disease risk factors[^12]. Even the positive effects observed in Ecuador may have minimal long-term impact – a [follow-up study](https://doi.org/10.1111/mcn.12925) two years later noted similar levels of growth faltering across intervention and control groups[^13]. Interestingly, egg consumption in either group after the study ended was correlated with reduced growth faltering at the later follow-up point, suggesting that sustained egg consumption conferred benefits.
 
-A related field of study considers the impact of <Term popup="an approach to agricultural development that considers nutritional outcomes of interventions as a priority" reference="/docs/terms/nsa">nutrition-sensitive agriculture</Term>, interventions which may be more reflective of potentially long-term sustainable approaches to improving ASF access. These interventions are typically aimed at improving smallholder agriculture through training, behavior change, and/or access to agricultural resources. Several such projects have demonstrated improvements in ASF consumption among participants, though the [pathways](https://doi.org/10.1093/advances/nmaa103) through which agricultural projects impact nutrition are more complicated than in ASF supplementation studies[^14]. Most studies of nutrition-sensitive agricultural programs are not adequately designed to assess nutrition outcomes, though, and so far have only demonstrated [weak effects](https://doi.org/10.1136/bmj.d8222) on health indicators such as stunting[^6].
+A related field of study considers the impact of [nutrition-sensitive agriculture](../docs/terms/nsa), interventions which may be more reflective of potentially long-term sustainable approaches to improving ASF access. These interventions are typically aimed at improving smallholder agriculture through training, behavior change, and/or access to agricultural resources. Several such projects have demonstrated improvements in ASF consumption among participants, though the [pathways](https://doi.org/10.1093/advances/nmaa103) through which agricultural projects impact nutrition are more complicated than in ASF supplementation studies[^14]. Most studies of nutrition-sensitive agricultural programs are not adequately designed to assess nutrition outcomes, though, and so far have only demonstrated [weak effects](https://doi.org/10.1136/bmj.d8222) on health indicators such as stunting[^6].
 
 <br /> 
 
 ![NSA](https://i.imgur.com/xeevejj.png)
-<p align="center"><i>(Simplified impact pathway for nutrition-sensitive agricultural interventions. Graphic from <a href="https://www.fao.org/3/i6275e/i6275e.pdf">FAO</a>)</i></p>
-
+<p style={{ textAlign: "center", fontStyle: "italic" }}>
+  (Simplified impact pathway for nutrition-sensitive agricultural interventions. 
+  Graphic from <a href="https://www.fao.org/3/i6275e/i6275e.pdf" target="_blank" rel="noopener noreferrer">FAO</a>)
+</p>
 <h2>Some Ways Forward </h2>
 
 There are many ways to improve data collection surrounding the impact of ASFs on health, a few of which are highlighted here. Longer follow-up periods are recommended for RCTs, as the longevity of health benefits gained from ASF consumption interventions are unclear. Using different study endpoints may also improve our understanding of how ASF consumption changes our bodies during and after an intervention. Weight or circulating micronutrient levels may bounce back short term with an intervention – but do metabolic and immunological indicators change in the same time frame?

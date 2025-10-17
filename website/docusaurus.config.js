@@ -1,35 +1,41 @@
 // @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
+// `@type` JSDoc annotations allow editor autocompletion and type checking
+// (when paired with `@ts-check`).
+// There are various equivalent ways to declare your Docusaurus config.
+// See: https://docusaurus.io/docs/api/docusaurus-config
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+import {themes as prismThemes} from 'prism-react-renderer';
+
+// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'GBADs Informatics',
   tagline: 'GBADs Informatics',
   url: 'https://gbadsinformatics.github.io/',
   baseUrl: '/',
-  onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
 
-  organizationName: 'GBADsInformatics', // Usually your GitHub org/user name.
-  projectName: 'docs', // Usually your repo name.
+  organizationName: 'GBADsInformatics', // GitHub org/user
+  projectName: 'docs', // Repo name
+
+
+  // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
+  future: {
+    v4: true, // Improve compatibility with the upcoming Docusaurus v4
+  },
+
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
 
   plugins: [
-    [
-    '@docusaurus-terminology/parser',
-    {
-      termsDir: './docs/terms/'
-    }],
-    // require.resolve("@cmfcmf/docusaurus-search-local"),
     [
       '@docusaurus/plugin-content-docs',
       {
         id: 'publications',
         path: 'publications',
         routeBasePath: 'publications',
-        sidebarPath: require.resolve('./sidebars.js'),
+        sidebarPath: './sidebars.js',
         includeCurrentVersion: true,
       },
     ],
@@ -39,15 +45,17 @@ const config = {
         id: 'reports',
         path: 'reports',
         routeBasePath: 'reports',
-        sidebarPath: require.resolve('./sidebars.js'),
+        sidebarPath: './sidebars.js',
         includeCurrentVersion: true,
       },
     ],
   ],
 
+  // Even if you don't use internationalization, you can use this field to set
+  // useful metadata like html lang. For example, if your site is Chinese, you
+  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    // 'es' add after
     locales: ['en', 'fr', 'es', 'de'],
     localeConfigs: {
       en: {
@@ -58,24 +66,33 @@ const config = {
 
   presets: [
     [
-      '@docusaurus/preset-classic',
+      'classic',
+      /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          routeBasePath: 'docs',
-          path: 'docs',
-          sidebarPath: require.resolve('./sidebars.js'),
-          lastVersion: 'current',
-          onlyIncludeVersions: ['current'],
-          includeCurrentVersion: true,
-        },
-        theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          sidebarPath: './sidebars.js',
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          editUrl:
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
-          routeBasePath: 'blog',
-          path: 'blog',
+          feedOptions: {
+            type: ['rss', 'atom'],
+            xslt: true,
+          },
           // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          editUrl:
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // Useful options to enforce blogging best practices
+          onInlineTags: 'warn',
+          onInlineAuthors: 'warn',
+          onUntruncatedBlogPosts: 'warn',
+        },
+        theme: {
+          customCss: './src/css/custom.css',
         },
       }),
     ],
@@ -84,15 +101,13 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      colorMode: {
-        defaultMode: 'light',
-        disableSwitch: true,
-      },
+      // Replace with your project's social card
+      image: 'img/GBADsLogoRedesign.webp',
       navbar: {
-        title: 'Informatics',
+        title: 'GBADs Informatics',
         logo: {
-          alt: 'GBADs Logo',
-          src: 'img/GBADs-LOGO-Black.png',
+          alt: 'GBADs Informatics Logo',
+          src: 'img/GBADsLogoRedesign.webp',
         },
         items: [
           {
@@ -100,24 +115,39 @@ const config = {
             docId: 'Welcome',
             position: 'left',
             label: 'Docs',
-            className: "text-nav-item",
+            className: 'text-nav-item',
           },
-          {to: '/publications/intro', label: 'Presentations and Publications', className: "text-nav-item", position: 'left', activeBaseRegex: `/publications/`},
-          {to: '/reports/intro', label: 'Reports', className: "text-nav-item", position: 'left', activeBaseRegex: `/reports/`},
-          {to: '/blog', label: 'Blog', position: 'left', className: "text-nav-item"},
-          {to: '/highlights', label:'Highlights', position:'left', className: "text-nav-item"},
-          {to:'/about', label: 'About', position:'left', className: "text-nav-item"},
-          {to:'/createdoc', label: 'Create Doc', position:'left', className: "text-nav-item"},
-          {type: 'localeDropdown',position: 'left', className: "text-nav-item"},
+          {
+            to: '/publications/intro',
+            label: 'Presentations and Publications',
+            position: 'left',
+            className: 'text-nav-item',
+            activeBaseRegex: `/publications/`,
+          },
+          {
+            to: '/reports/intro',
+            label: 'Reports',
+            position: 'left',
+            className: 'text-nav-item',
+            activeBaseRegex: `/reports/`,
+          },
+          {to: '/blog', label: 'Blog', position: 'left', className: 'text-nav-item'},
+          {to: '/highlights', label: 'Highlights', position: 'left', className: 'text-nav-item'},
+          {to: '/about', label: 'About', position: 'left', className: 'text-nav-item'},
+          {type: 'localeDropdown', position: 'left', className: 'text-nav-item'},
           {
             href: 'https://github.com/GBADsInformatics',
+            label: 'GitHub',
             position: 'right',
-            className: "header-github-link",
           },
           {
             href: 'https://www.youtube.com/channel/UCdm3CD5v8YZdHtXbsq5WdWw',
             position: 'right',
-            className: "header-youtube-link",
+            className: 'header-youtube-link',
+          },
+          {
+            type: 'search',
+            position: 'right',
           },
         ],
       },
@@ -125,26 +155,30 @@ const config = {
         style: 'light',
         links: [
           {
-            title: 'Quick Links',
+            title: 'Documentation',
             items: [
               {
-                label: 'GBADs Main Site',
-                href: 'https://animalhealthmetrics.org/',
+                label: 'Docs',
+                to: '/docs/Welcome',
               },
               {
-                label: 'Knowledge Engine and Data Portal',
-                href: 'https://gbadske.org/ourapi/',
+                label: 'Publications',
+                to: '/publications/intro',
+              },
+              {
+                label: 'Reports',
+                to: '/reports/intro',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'Partners and Funding',
             items: [
               {
-                label: 'GBADs-OIE',
-                href: 'https://gbads-oie.com/',
+                label: 'Our Funders',
+                to: 'about/#funders'
               },
-            ],
+            ]
           },
           {
             title: 'More',
@@ -160,13 +194,13 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} GBADs.`,
+        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: prismThemes.github,
+        darkTheme: prismThemes.dracula,
       },
     }),
 };
 
-module.exports = config;
+export default config;

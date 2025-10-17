@@ -2,7 +2,6 @@
 title: "Zugriff auf die GBADs-API in R"
 author: "Kassy Raymond"
 date: "19/09/2022"
-output: html_document
 ---
 
 ## Dokumentation

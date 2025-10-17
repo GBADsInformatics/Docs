@@ -27,7 +27,7 @@ GBADs Informatics has brought on many new experts in 2022 who have a wide range 
 <br/> 
 
 ![GBADs Gif](https://i.imgur.com/x88bs1o.gif)
-<p align="center"><i>(GIF courtesy of Kurtis Sobkowich)</i></p>
+<i align="center">(GIF courtesy of Kurtis Sobkowich)</i>
 
 <h2>Cross-Theme Collaboration</h2>
 

@@ -1,14 +1,14 @@
 {
-    "version.label": {
-        "message": "Nächste",
-        "description": "The label for version current"
-    },
-    "sidebar.tutorialSidebar.category.Data Governance Handbook for GBADs": {
-        "message": "Data Governance-Handbuch für GBADs",
-        "description": "The label for category Data Governance Handbook for GBADs in sidebar tutorialSidebar"
-    },
-    "sidebar.tutorialSidebar.category.Terms": {
-        "message": "Bedingungen",
-        "description": "The label for category Terms in sidebar tutorialSidebar"
-    }
+  "version.label": {
+    "message": "Nächste",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Data Governance Handbook for GBADs": {
+    "message": "Data Governance-Handbuch für GBADs",
+    "description": "The label for category Data Governance Handbook for GBADs in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Terms": {
+    "message": "Bedingungen",
+    "description": "The label for category Terms in sidebar tutorialSidebar"
+  }
 }
