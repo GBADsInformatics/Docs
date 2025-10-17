@@ -1,7 +1,7 @@
 ---
 title: "Zugriff auf die GBADs-API in R"
-author: "Kassy Raymond"
-date: "19/09/2022"
+authors: [\"Kassy Raymond\"]
+date: "2022-09-19"
 ---
 
 ## Dokumentation
@@ -48,13 +48,13 @@ Bibliothek('stringr')
 
 ## Verwenden der `httr`-Bibliothek zum Abrufen von Daten
 
-Im nächsten Abschnitt stellen wir Funktionen bereit, die die Erstellung der Inhalts-URL für die Anfrage erleichtern, indem die Erstellung der URL und die Verarbeitung der Antwort automatisiert werden. Dieser Abschnitt bietet einen Überblick darüber, wie man die `httr“-Bibliothek in R versteht.
+Im nächsten Abschnitt stellen wir Funktionen bereit, die die Erstellung der Inhalts-URL für die Anfrage erleichtern, indem die Erstellung der URL und die Verarbeitung der Antwort automatisiert werden. Dieser Abschnitt bietet einen Überblick darüber, wie man die `httr"-Bibliothek in R versteht.
 
 ### Die Grundlagen von `httr` und das Abrufen einer Liste der verfügbaren Tabellen
 
 Durch den direkten Aufruf des Endpunkts GBADsTables/public wird eine Liste der Tabellen bereitgestellt. Wenn wir diese Liste erhalten, können wir wissen, welche Tabellen verfügbar sind und auf welche Daten wir zugreifen können.
 
-Zuerst richten wir die Inhalts-URL ein. Beachten Sie, dass wir das Format `Text“ anfordern, damit wir die Antwort verarbeiten können.
+Zuerst richten wir die Inhalts-URL ein. Beachten Sie, dass wir das Format `Text" anfordern, damit wir die Antwort verarbeiten können.
 
 ```
 {r}
@@ -87,16 +87,16 @@ res$status_code
 Ein `status_code` von 200 bedeutet, dass die Anfrage erfolgreich war.
 
 Nun der Inhalt:
-`{r, max.height=‘100px‘}
+`{r, max.height='100px'}
 res$content
 `
-Die Ausgabe ist für eine Maschine nützlich, aber wir müssen sie bitte in eine menschliche Sprache übersetzen. Die Funktion `content“ aus der Bibliothek `httr“ macht dies ziemlich einfach. Für weitere Informationen zur Funktion `content“ verwenden Sie `?content()“, um die Dokumente abzurufen.
+Die Ausgabe ist für eine Maschine nützlich, aber wir müssen sie bitte in eine menschliche Sprache übersetzen. Die Funktion `content" aus der Bibliothek `httr" macht dies ziemlich einfach. Für weitere Informationen zur Funktion `content" verwenden Sie `?content()", um die Dokumente abzurufen.
 `{r}
 Tabellen <- Inhalt(e)
 Tische
 `
 Das ist schön, aber wir sollten es wahrscheinlich in eine Liste zusammenfassen.
-`{r, max.height=‘100px‘}
+`{r, max.height='100px'}
 as.list(strsplit(tables, ",""))
 `
 Zu guter Letzt!
@@ -109,7 +109,7 @@ as.list(strsplit(tables, ",""))
 `
 ### Informationen zu einer Tabelle abrufen
 
-Da wir nun eine Liste mit Tabellen haben, können wir sehen, welche Spalten in jeder Tabelle verfügbar sind. Nehmen wir an, wir möchten Daten von `livestock_countries_population_unfccc“ oder die Bevölkerungszahlen von der UNFCCC.
+Da wir nun eine Liste mit Tabellen haben, können wir sehen, welche Spalten in jeder Tabelle verfügbar sind. Nehmen wir an, wir möchten Daten von `livestock_countries_population_unfccc" oder die Bevölkerungszahlen von der UNFCCC.
 
 Erstellen Sie zunächst die URL. Wir können zum Tabelleninhalt gelangen mit:
 
@@ -124,7 +124,7 @@ Am Ende haben wir also Folgendes:
 url_unfccc <- 'http://gbadske.org/api/GBADsTable/public?table_name=livestock_countries_population_unfccc&format=text'
 `
 
-Dann verwenden wir `GET“ und überprüfen den `status_code“:
+Dann verwenden wir `GET" und überprüfen den `status_code":
 `{r}
 res_unfccc <- GET(url = url_unfccc)
 res_unfccc$status_code
@@ -133,7 +133,7 @@ Jetzt können wir mit dem Antwortformat umgehen:
 `{r}
 Inhalt(res_unfccc)
 `
-Hier stehen uns die Spalten `Land“, `Art“, `Jahr“, `Population“ und `Flagge“ zur Verfügung.
+Hier stehen uns die Spalten `Land", `Art", `Jahr", `Population" und `Flagge" zur Verfügung.
 
 **In Kürze erhältlich**: Funktionalität für Metadaten/Beschreibung in der API.
 
@@ -163,7 +163,7 @@ Zusammenfassend ist dies unsere URL:
 url_unfccc_data <- 'http://gbadske.org/api/GBADsPublicQuery/livestock_countries_population_unfccc?fields=country,species,year,population&query=&format=text'
 `
 
-Jetzt können wir `GET“ verwenden, um die Daten abzurufen
+Jetzt können wir `GET" verwenden, um die Daten abzurufen
 `{r}
 res_unfccc_data <- GET(url_unfccc_data)
 unfccc_data <- content(res_unfccc_data)
@@ -195,15 +195,13 @@ ggtitle('Büffel in Australien', subtitle = sprintf('Daten von: %s', str_wrap(ur
 theme(plot.subtitle=element_text(size=10, face="italic", color="black"))
 `
 
-
-
 Nun, der schwierigste Teil von allem war. Erstellen der URLs. Schauen Sie sich die folgenden Funktionen an, um Ihnen das Erstellen dieser URLs zu erleichtern
 
 ## Verwenden von Funktionen zum Abrufen von Daten
 
 Um die Datenbeschaffung etwas einfacher zu machen, haben wir einige Funktionen erstellt, die das Codieren etwas erleichtern.
 
-Um eine Liste aller Tabellen in der API zu erhalten, können Sie die Funktion `get_tables“ verwenden.
+Um eine Liste aller Tabellen in der API zu erhalten, können Sie die Funktion `get_tables" verwenden.
 
 `{r}
 get_tables <- function() {
@@ -215,7 +213,7 @@ content_url <- "http://gbadske.org/api/GBADsTables/public?format=text"
 res <- GET(content_url)
 
 # Holen Sie sich den Inhalt, indem Sie die res-Variable an den Inhaltsbefehl übergeben.
-Tabellen <- content(res, `text“)
+Tabellen <- content(res, `text")
 
 # Teilen Sie den Inhalt in ein benutzerfreundlicheres Format auf
 Tabellen <- as.list(strsplit(tables, ","))
@@ -224,12 +222,12 @@ return(Tabellen)
 
 `
 
-Mithilfe der Funktion können Sie einfach `get_tables()“ aufrufen, um eine Liste der verfügbaren Tabellen abzurufen:
-`{r, max.height=‘100px‘}
+Mithilfe der Funktion können Sie einfach `get_tables()" aufrufen, um eine Liste der verfügbaren Tabellen abzurufen:
+`{r, max.height='100px'}
 get_tables()
 `
 
-Verwenden Sie die Funktion `get_table_fields“, um Informationen zu einer Tabelle von Interesse abzurufen. Die Funktion `get_table_fields“ funktioniert folgendermaßen:
+Verwenden Sie die Funktion `get_table_fields", um Informationen zu einer Tabelle von Interesse abzurufen. Die Funktion `get_table_fields" funktioniert folgendermaßen:
 
 * Übergeben Sie der Funktion den Tabellennamen, über den Sie Informationen wünschen
 * Erstellt die Inhalts-URL anhand des Tabellennamens
@@ -255,11 +253,8 @@ res_list = as.list(strsplit(res_content, ",""))
 # Die Antwort zurückgeben
 return(res_list)
 
-
 anders {
 print('Antwortstatus war nicht 200. Anfrage konnte nicht verarbeitet werden.')
-
-
 
 `
 
@@ -267,7 +262,7 @@ Ausprobieren der Funktion:
 `{r}
 get_table_fields('livestock_countries_population_unfccc')
 `
-In der Tabelle `livestock_countries_population_unfccc“ gibt es 5 Spalten – Land, Art, Jahr, Population, Flagge
+In der Tabelle `livestock_countries_population_unfccc" gibt es 5 Spalten - Land, Art, Jahr, Population, Flagge
 
 Mit der Funktion get_data können Sie den Tabellennamen, die Felder und die Abfrage angeben, um die Daten von der API abzurufen:
 
@@ -277,13 +272,12 @@ Mit der Funktion get_data können Sie den Tabellennamen, die Felder und die Abfr
 * Die Inhalts-URL wird entsprechend dem Übergebenen erstellt
 * Es werden Daten gemäß der Inhalts-URL angefordert
 * Die Antwort auf die Anfrage wird zurückgegeben
-`{r, max.height=‘100px‘}
+`{r, max.height='100px'}
 get_data <- function(tabellenname, felder, abfrage) {
 
 # Überprüfen Sie, ob ein Tabellenname angegeben wurde
 if (c(missing(table_name))) {
 stop('Geben Sie einen Tabellennamen an.')
-
 
 base_url = 'http://gbadske.org/api/GBADsPublicQuery/'
 
@@ -304,7 +298,6 @@ stop('Sie können keine Abfrage bereitstellen, ohne dass Felder angegeben sind.'
 anders {
 content_url = paste(base_url,table_name,'?fields=',fields,'&query=',query,'&format=text', sep='')
 
-
 # Fragen Sie nach den Daten
 drucken(content_url)
 res = GET(content_url)
@@ -313,14 +306,12 @@ if (res$status_code == 200) {
 # Die Antwort zurückgeben
 Rückkehr(res)
 
-
 anders {
 print('Antwortstatus war nicht 200. Anfrage konnte nicht verarbeitet werden.')
 
-
 `
 
-Testen Sie die Funktion, um die Daten `livestock_countries_population_unfccc“ zu erhalten
+Testen Sie die Funktion, um die Daten `livestock_countries_population_unfccc" zu erhalten
 `{r}
 res_unfccc_all <- get_data('livestock_countries_population_unfccc', field='country,species,year,population')
 tab_unfccc_all <- content(res_unfccc_all)
@@ -352,10 +343,10 @@ Versuchen Sie es mit einer anderen Abfrage:
 Das Erstellen dieser Abfragezeichenfolge ist etwas schwieriger.
 
 * Kanada ist eine Zeichenfolge und muss daher in einfache Anführungszeichen gesetzt werden.
-* Wenn wir in R eine Zeichenfolge in Anführungszeichen an eine Funktion übergeben, müssen wir das Escape-Zeichen `\\“ verwenden. Beispiel: Land=\\'Kanada\\'
-* Wir fragen sowohl nach einem Jahr als auch nach einem Land. Wir können AND in der Abfrage verwenden, um nach beiden zu fragen. Vor und nach AND verwenden Sie `%20“, ein Hexadezimalzeichen für ein Leerzeichen, um das Leerzeichen in der URL zu kennzeichnen. Beispiel: Land=\\'Kanada\\'%20AND%20Jahr=2008
+* Wenn wir in R eine Zeichenfolge in Anführungszeichen an eine Funktion übergeben, müssen wir das Escape-Zeichen `\\" verwenden. Beispiel: Land=\\'Kanada\\'
+* Wir fragen sowohl nach einem Jahr als auch nach einem Land. Wir können AND in der Abfrage verwenden, um nach beiden zu fragen. Vor und nach AND verwenden Sie `%20", ein Hexadezimalzeichen für ein Leerzeichen, um das Leerzeichen in der URL zu kennzeichnen. Beispiel: Land=\\'Kanada\\'%20AND%20Jahr=2008
 
-Zusammenfassend erhalten wir `query = 'country=\'Canada\'%20AND%20year=2008“.
+Zusammenfassend erhalten wir `query = 'country=\'Canada\'%20AND%20year=2008".
 
 Jetzt können Sie die Funktion wie gewohnt aufrufen, indem Sie die gerade erstellte Abfragezeichenfolge verwenden:
 `{r}
@@ -387,7 +378,7 @@ Sehen Sie sich das Ergebnis an:
 Tab
 `
 
-Mit `get_data“ ist es viel einfacher, die Inhalts-URL zu erstellen, eine Anfrage zu senden und eine Antwort zu erhalten! Viel Spaß beim Spielen mit der API!
+Mit `get_data" ist es viel einfacher, die Inhalts-URL zu erstellen, eine Anfrage zu senden und eine Antwort zu erhalten! Viel Spaß beim Spielen mit der API!
 
 ### Verweise
 Format und Erklärungen dieses Tutorials wurden inspiriert von https://www.r-bloggers.com/2015/11/accessing-apis-from-r-and-a-little-r-programming/
@@ -396,6 +387,3 @@ Format und Erklärungen dieses Tutorials wurden inspiriert von https://www.r-blo
 `{r}
 sessionInfo()
 `
-
-
-

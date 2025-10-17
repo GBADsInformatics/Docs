@@ -1,115 +1,115 @@
 ---
 slug: the-roadmap-to-reproducibility
-title: La feuille de route vers la reproductibilité
+title: The Roadmap to Reproducibility
 authors: Kassy
 tags: [reproducibility, data, values]
 ---
 
-![Image d'en-tête](https://i.imgur.com/2JEVnaV.png)
-*Figure 1 : La feuille de route vers la reproductibilité*
+![Header Image](https://i.imgur.com/2JEVnaV.png)
+*Figure 1: The Roadmap to Reproducibility*
 
-> *« Tout l’intérêt de la science, la manière dont nous connaissons quelque chose, n’est pas que je fasse confiance à Isaac Newton parce que je pense que c’était un type formidable. Le fait est que je peux le faire moi-même… Montrez-moi les données, montrez-moi le processus, montrez-moi la méthode, et si je le souhaite, je peux les reproduire. »*
-
-[Brian Nosek](https://www.washingtonpost.com/news/ Speaking-of-science/wp/2015/08/27/trouble-in-science-massive-effort-to-reproduce-100-experimental-results -réussit-seulement-36-fois/) - Washington Post[^1]
-
-<br/>
-
-Une science reproductible nécessite des méthodes, un code et la mise à disposition de données bien documentés. Cela signifie assurer la transparence de ce que vous faites tout au long du processus scientifique afin de favoriser la confiance dans le processus et les résultats et de permettre aux autres de tirer parti des travaux antérieurs. Il n’y a pas de place pour le scientifique sceptique lorsque vos recherches sont reproductibles.
+> *“The whole point of science, the way we know something, is not that I trust Isaac Newton because I think he was a great guy. The whole point is that I can do it myself … Show me the data, show me the process, show me the method, and then if I want to, I can reproduce it.”*
+> 
+[Brian Nosek](https://www.washingtonpost.com/news/speaking-of-science/wp/2015/08/27/trouble-in-science-massive-effort-to-reproduce-100-experimental-results-succeeds-only-36-times/) - Washington Post[^1]
 
 <br/>
 
-Les données utilisées par GBADs proviennent de nombreuses sources différentes et sont utilisées dans des modèles qui produisent ensuite davantage d'ensembles de données et qui servent d'entrées à d'autres modèles. Cette chaîne de données-modèle-données-modèle-données ne se limite pas au travail d’un seul scientifique ; nous avons des collaborateurs travaillant partout dans le monde. Il est essentiel que les données sous-jacentes soient disponibles et que toutes nos méthodes soient reproductibles afin que nous puissions nous appuyer sur les travaux de chacun et permettre à d’autres d’utiliser nos estimations en toute confiance.
+Reproducible science requires well-documented methods, code, and making data available. It means providing transparency in what you are doing through the whole scientific process to foster trust in the process and outcomes and allowing others to leverage past work. There is no place for the scientific skeptic when your research is reproducible. 
 
 <br/>
 
-Dans le but de rendre tous nos processus reproductibles et transparents, GBADs s’engage dans la « Feuille de route vers la reproductibilité ». Dans cet article de blog, nous vous invitons à parcourir avec nous le chemin de la reproductibilité. Attachez vos ceintures pour éviter les flammes de la « crise de la reproductibilité » avant de nous diriger vers notre destination finale, la « Data Utopia » !
+The data that GBADs is using comes from many different sources and is used in models that then produce more datasets, and that act as inputs to other models. This daisy-chain of data-model-data-model-data is not confined to the work of a single scientist; we have collaborators working all over the globe. It is crucial that the underlying data is available, and all our methods are reproducible so we can build upon each other’s work and allow others to use our estimates confidently.  
 
 <br/>
 
-## La « crise de la reproductibilité »
-
-En 2016, une enquête menée auprès de 1 576 chercheurs de Nature révélait qu'il existe une « crise de reproductibilité » dans la communauté scientifique[^2]. Parmi les participants, "plus de 70 % des chercheurs ont essayé et échoué de reproduire l'expérience d'un autre scientifique et plus de la moitié n'ont pas réussi à reproduire leurs propres expériences". De nombreux facteurs contribuent à des recherches non reproductibles (Figure 2), où la pression en faveur de la publication et la présentation de rapports sélectifs figuraient parmi les plus appréciées. Cependant, les données brutes et les méthodes ou codes non disponibles ont également été considérés comme des contributeurs importants. Même si la pression pour publier nécessite un changement de culture dans la recherche, l’indisponibilité des données brutes, des méthodes ou du code est un problème que nous pouvons résoudre.
+With the aim of making all our processes reproducible and transparent, GBADs is embarking on the “Roadmap to Reproducibility”. In this blog post we invite you to travel along the road to reproducibility with us. Buckle up your seat belts as we avoid the fiery blazes of the “Reproducibility Crisis” before heading to our final destination, the “Data Utopia”! 
 
 <br/>
 
+## The “Reproducibility Crisis” 
 
+In 2016, a survey of 1,576 researchers from Nature revealed that there is a "crisis of reproducibility" in the scientific community[^2]. Of the participants "more than 70% of researchers have tried and failed to reproduce another scientists’ experiment and more than half have failed to reproduce their own experiments." Many factors contribute to irreproducible research (Figure 2), where pressure to publish and selective reporting were among the most highly rated. However, unavailable raw data and unavailable methods or code were also rated as high contributors. While pressure to publish requires a culture shift in research, unavailable raw data and methods or code are problems we can solve. 
+
+<br/>
+
+ 
 ![Figure 2](https://i.imgur.com/dcnJkJR.jpg)
-Figure 2 : Facteurs qui contribuent à une recherche irréproductible. Chiffre obtenu de Baker, 2016[^2].
+Figure 2: Factors that contribute to irreproducible research. Figure obtained from Baker, 2016[^2]. 
 
-## S'engager sur la voie de la reproductibilité
+## Embarking on the Road to Reproducibility 
 
-### Arrêt 1 : Personnes et processus
+### Stop 1: People and processes
 
-La disponibilité du code et des données est importante pour la reproductibilité, mais il y a des personnes derrière le code et les données qui travaillent sur des processus pour les rendre reproductibles.
-
-<br/>
-
-À ce titre, nous avons établi des processus et des bonnes pratiques pour l'utilisation des données dans les GBAD, qui sont communiqués dans le [Data Governance Handbook](http://gbadskedoc.org/docs/Data-Governance-Handbook-for-GBADs/intro ), et sur notre [Site de documentation](http://gbadskedoc.org). Ces processus impliquent les éléments suivants :
+Code and data availability are important for reproducibility, however there are people behind the code and data working on processes to make it reproducible.  
 
 <br/>
 
-1. Documentation des modifications apportées aux données et aux pratiques de nettoyage des données
-2. Documentation des normes de métadonnées utilisées pour fournir des informations sur les données
-3. Où et comment les données et métadonnées sont stockées et comment elles sont diffusées
-4. Meilleures pratiques pour documenter le code dans les référentiels GitHub
+As such, we have established processes and best practices for the use of data in GBADs, which are communicated in the [Data Governance Handbook](http://gbadskedoc.org/docs/Data-Governance-Handbook-for-GBADs/intro), and on our [Documentation Site](http://gbadskedoc.org). These processes involve the following: 
 
 <br/>
 
-Nous comptons également sur le respect des processus que nous avons établis. Étant donné que certaines des données utilisées par les GBAD ne comportent pas de métadonnées, nous comptons sur la mise en place d'un point de contact pour la source de données afin de garantir que nous pouvons obtenir un contexte sur la manière dont les données ont été collectées, comment elles peuvent être utilisées, par qui, et à quelles fins et quelles catégories représentent les données.
+1.	Documentation of changes to data and data cleaning practices
+2.	Documentation of metadata standards used to provide information about the data
+3.	Where and how data and metadata are stored, and how they are disseminated
+4.	Best practices for documenting code in GitHub repositories 
 
 <br/>
 
-### Stop 2 : Acquisition et ingestion de données
-
-Pour acquérir des données, nous identifions les données pertinentes pour l'estimation des modèles. Par exemple, le cheptel par pays et par espèce ainsi que le poids vif sont des éléments d'entrée dans les calculs de biomasse.
+We also rely on people to comply to the processes we have established. Since some of the data that is used by GBADs does not have metadata, we rely on the establishment of a contact point for the data source to ensure that we can get context on how data were collected, how it can be used, by whom, and for which purposes, and what categories in the data represent. 
 
 <br/>
 
-La manière dont nous acquérons les données dépend du format dans lequel elles sont disponibles. Il existe trois manières principales d’acquérir et d’ingérer les données :
+### Stop 2: Acquisition and ingestion of data
+
+To acquire data, we identify data that is relevant to the estimation of models. For example, livestock population by country and species and live weights are inputs to biomass calculations. 
 
 <br/>
 
-* Lorsque les données sont disponibles via des interfaces de programmation d'applications (API), les données sont acquises directement à partir de la source, transformées avant d'être mises à disposition via l'API des GBAD ;
-* Lorsque les données sont disponibles par téléchargement direct, les données sont téléchargées et formatées dans des tables de base de données avant d'être mises à disposition via l'API des GBAD, et ;
-* Lorsque les données sont disponibles dans des tableaux PDF, les scripts de web scraping récupèrent les données des tableaux et les rendent disponibles via des fichiers csv avant d'être formatées dans des tableaux de base de données et mises à disposition via l'API des GBAD.
+The way we acquire data depends on the format that it is available. There are 3 main ways data has been acquired and ingested: 
 
 <br/>
 
-Chacun de ces processus est documenté. Le lignage des données est tracé dans une base de données graphique pour garantir que nous pouvons retracer toute modification apportée aux données et rendre nos processus transparents et reproductibles.
+* When data is available via Application Programming Interfaces (APIs), the data is acquired directly from the source, being transformed before made available via the GBADs’ API;
+* When data is available via direct download, the data is downloaded and formatted in database tables before being made available via the GBADs’ API, and;
+* When data is available in PDF tables, web scraping scripts scrape data from tables and make it available via csv files before being formatted in database tables and made available via the GBADs’ API.
 
 <br/>
 
-### Arrêt 3 : Qualité des données
-
-Nous vérifions la qualité de chaque source de données acquise par GBAD. Il y a parfois des erreurs internes dans l’agrégation des catégorisations où les sous-catégories ne totalisent pas une « super-catégorie ». Par exemple, si la volaille est divisée en volailles de basse-cour et commerciales, ces catégories devraient totaliser « volaille ». Dans d’autres cas, il peut y avoir une augmentation soudaine du nombre d’animaux dans un pays. Dans ce cas, nous devons enquêter en comparant la valeur à d’autres sources de données.
+Each of these processes are documented. The lineage of the data is traced in a Graph Database to ensure that we can trace any changes to the data and make our processes transparent and reproducible. 
 
 <br/>
 
-Tous les contrôles de qualité et les modifications correspondantes sont enregistrés. Une fois les données « nettoyées », la version « nettoyée » est fournie via l’API et les tableaux de bord des GBAD. De cette façon, il y a une cohérence dans les évaluations de la qualité et chaque collaborateur ne le fait pas de manière indépendante. Cela garantit la cohérence des résultats et améliore collectivement la reproductibilité des estimations et des données des GBAD.
+### Stop 3: Data quality
+
+We quality-check each data source that is acquired by GBADs. Sometimes there are internal errors in the aggregation of categorizations where sub-categories do not add up to a “super-category”. For instance, if poultry is split up into backyard and commercial poultry, these categories should add up to “poultry”. In other cases, there may be a sudden spike in the number of animals in a country. In this case, we need to investigate by comparing the value to other data sources. 
 
 <br/>
 
-### Arrêt 4 : Coder
-
-Le code utilisé pour acquérir et ingérer des données, nettoyer les données et créer des modèles est disponible via les référentiels GitHub des GBAD. Le code est bien documenté et contient des informations sur la façon d'exécuter le code, les ensembles de données utilisés et les personnes impliquées dans le développement.
+All quality-checking and respective changes are recorded. Once data has been “cleaned”, the “cleaned” version is provided via the GBADs’ API and dashboards. This way, there is consistency in quality assessments and each collaborator isn’t doing this independently. This ensures consistency in outputs and improves reproducibility of GBADs’ estimates and data collectively. 
 
 <br/>
 
-### Destination finale : l'utopie des données
+### Stop 4: Code
 
-Dans Data Utopia, les données peuvent être harmonisées et réutilisées pour des modèles ou des objectifs ultérieurs. L’idée ici est que tous les membres des GBAD utilisent les mêmes données et ne dupliquent pas les efforts de nettoyage, d’ingestion ou d’acquisition des données. En rendant les données et la méthodologie de nettoyage reproductibles, les données sous-jacentes sont cohérentes et prêtes à l'emploi. Dans notre Utopie, les données sont visualisées et disponibles via des tableaux de bord et sont accessibles via l'API. Les tableaux de bord comportent également un onglet de métadonnées où les informations sur la méthodologie, le code et la provenance sont fournies pour garantir que tous les membres peuvent accéder au code et aux données brutes affichées et disponibles dans les tableaux de bord.
+Code that is used to acquire and ingest data, clean data, and create models is available via the GBADs’ GitHub repositories. The code is well documented and there is information about how to run the code, which datasets were used, and who was involved in development. 
 
 <br/>
 
-*Remarque : Nous reconnaissons le fait que toutes les données ne peuvent pas être mises à disposition. Alors que nous travaillons actuellement avec des données gouvernementales ouvertes, nous prévoyons une gouvernance contrôlée des données privées et sensibles, qui ne seront pas ouvertement disponibles sous forme brute sans l'autorisation du détenteur des données, conformément aux accords et licences de données.*
+### Final Destination: Data Utopia
+
+In the Data Utopia, data can be harmonized and re-used for subsequent models or purposes. The idea here is that all members of GBADs are using the same data and not duplicating data cleaning, ingestion, or acquisition efforts. By making the data and methodology for cleaning reproducible, the underlying data is consistent and ready-to-use. In our Utopia, data is visualized and available via dashboards and can be accessed through the API. The dashboards also feature a metadata tab where the methodology, code, and provenance information are provided to ensure all members can access the code and raw data that are displayed and available in the dashboards. 
+
+<br/>
+
+*Note: We acknowledge the fact that not all data can be made available. While we are currently working with Open Governmental Data, we anticipate the controlled governance of private and sensitive data, which will not be openly available in raw form without permission from the data holder according to data agreements and licenses.*
 
 <br/><br/>
 
-Les références:
+References:
 
-<!--Références-->
-[^1] : Achenbach, J. (27 octobre 2021). De nombreuses études scientifiques ne peuvent pas être reproduites. c'est un problème. Le Washington Post. Consulté le 19 juin 2022 sur [https://www.washingtonpost.com/news/ Speaking-of-science/wp/2015/08/27/trouble-in-science-massive-effort-to-reproduce-100- résultats-expérimentaux-succeeds-only-36-times/](https://www.washingtonpost.com/news/ Speaking-of-science/wp/2015/08/27/trouble-in-science-massive-effort- reproduire-100-résultats-expérimentaux-réussit-seulement-36-fois/)
+<!--References-->
+[^1]: Achenbach, J. (2021, October 27). Many scientific studies can't be replicated. that's a problem. The Washington Post. Retrieved June 19, 2022, from [https://www.washingtonpost.com/news/speaking-of-science/wp/2015/08/27/trouble-in-science-massive-effort-to-reproduce-100-experimental-results-succeeds-only-36-times/](https://www.washingtonpost.com/news/speaking-of-science/wp/2015/08/27/trouble-in-science-massive-effort-to-reproduce-100-experimental-results-succeeds-only-36-times/)
 
-[^2] : Baker, M. (2016). 1 500 scientifiques lèvent le voile sur la reproductibilité. Nature, 533(7604).
+[^2]: Baker, M. (2016). 1,500 scientists lift the lid on reproducibility. Nature, 533(7604).
 
 
