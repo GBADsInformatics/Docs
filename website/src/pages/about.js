@@ -1,14 +1,12 @@
 import React from "react";
 import clsx from 'clsx';
-import 'animate.css';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import "./styles/About.css";
-import AboutCard from "../components/AboutCard";
-import Translate, {translate} from '@docusaurus/Translate';
-import Alumni from "../components/Alumni";
-import FundingImages from "../components/FundingImages";
-import PartnerProfiles from "../components/PartnerProfiles";
+import styles from './About.module.css';
+import AboutCard from "../components/AboutComponents/AboutCard";
+import Alumni from "../components/AboutComponents/Alumni";
+import FundingImages from "../components/AboutComponents/FundingImages";
+import PartnerProfiles from "../components/AboutComponents/PartnerProfiles";
 
 const funders = [
   "https://gbads-documentation.s3.ca-central-1.amazonaws.com/gbads-funders-partners-collaborators/funders/aciar.webp",
@@ -58,66 +56,42 @@ const collaborators = [
   "https://gbads-documentation.s3.ca-central-1.amazonaws.com/gbads-funders-partners-collaborators/collaborators/UU_logo_EN_RGB.webp"
 ];
 
-function About(){
-    const {siteConfig} = useDocusaurusContext();
-    return (
-        <Layout description="About">
-        <main className="about-section">
-          <div className="about-title">
-            <h1 className="specialTitle"><Translate>Our</Translate></h1>
-            <h1 className="specialTitle team"><Translate>Team</Translate></h1>
-          </div>
-          <hr id="aboutHr"/>
-            <div className={clsx('container')}>
-                <AboutCard/>
-            </div>
-            <div className="about-title">
-              <h1 className="specialTitle"><Translate>Past</Translate></h1>
-              <h1 className="specialTitle team"><Translate>Members</Translate></h1>
-            </div>
-            <hr id="aboutHr"/>
-            <div className={clsx('container')}>
-              <Alumni/>
-            </div>
-            <div className="about-title">
-              <h1 className="specialTitle"><Translate>Our</Translate></h1>
-              <h1 className="specialTitle team"><Translate>Funders</Translate></h1>
-            </div>
-            <hr id="aboutHr"/>
-            <div className={clsx('container')}>
-              <FundingImages data={funders}/>
-            </div>
+const sections = [
+    { title: "Our Team", component: <AboutCard /> },
+    { title: "Past Members", component: <Alumni /> },
+    { title: "Our Informatics Partners", component: <PartnerProfiles /> },
+    { title: "Our Funders", component: <FundingImages data={funders} /> },
+    { title: "Our Partners", component: <FundingImages data={partners} /> },
+    { title: "Our Collaborators", component: <FundingImages data={collaborators} /> },
+  ];
 
-            <div className="about-title">
-              <h1 className="specialTitle"><Translate>Our</Translate></h1>
-              <h1 className="specialTitle team"><Translate>Informatics Partners</Translate></h1>
-            </div>
-            <hr id="aboutHr"/>
-            <div className={clsx('container')}>
-              <PartnerProfiles/>
-            </div>
 
-            <div className="about-title">
-              <h1 className="specialTitle"><Translate>Our</Translate></h1>
-              <h1 className="specialTitle team"><Translate>Partners</Translate></h1>
-            </div>
-            <hr id="aboutHr"/>
-            <div className={clsx('container')}>
-              <FundingImages data={partners}/>
-            </div>
-
-            <div className="about-title">
-              <h1 className="specialTitle"><Translate>Our</Translate></h1>
-              <h1 className="specialTitle team"><Translate>Collaborators</Translate></h1>
-            </div>
-            <hr id="aboutHr"/>
-            <div className={clsx('container')}>
-              <FundingImages data={collaborators}/>
-            </div>
-
-        </main>
-        </Layout>
-    );
+function Section({ title, subtitle, children }) {
+  return (
+    <section className={styles.section}>
+      <div className={styles.sectionTitle}>
+        <h2 className={styles.title}>{title}</h2>
+        {subtitle && <h3 className={styles.subtitle}>{subtitle}</h3>}
+        <hr className={styles.sectionDivider} />
+      </div>
+      <div className={clsx('container', styles.sectionContent)}>
+        {children}
+      </div>
+    </section>
+  );
 }
 
-export default About;
+export default function About() {
+  const { siteConfig } = useDocusaurusContext();
+  return (
+    <Layout description="About">
+      <main className={styles.aboutSection}>
+        {sections.map((sec, idx) => (
+            <Section key={idx} title={sec.title} subtitle={sec.subtitle}>
+            {sec.component}
+            </Section>
+        ))}
+        </main>
+    </Layout>
+  );
+}

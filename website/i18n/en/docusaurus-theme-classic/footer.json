@@ -34,5 +34,29 @@
   "copyright": {
     "message": "Copyright © 2023 GBADs.",
     "description": "The footer copyright"
+  },
+  "link.title.Documentation": {
+    "message": "Documentation",
+    "description": "The title of the footer links column with title=Documentation in the footer"
+  },
+  "link.title.Partners and Funding": {
+    "message": "Partners and Funding",
+    "description": "The title of the footer links column with title=Partners and Funding in the footer"
+  },
+  "link.item.label.Docs": {
+    "message": "Docs",
+    "description": "The label of footer link with label=Docs linking to /docs/Welcome"
+  },
+  "link.item.label.Publications": {
+    "message": "Publications",
+    "description": "The label of footer link with label=Publications linking to /publications/intro"
+  },
+  "link.item.label.Reports": {
+    "message": "Reports",
+    "description": "The label of footer link with label=Reports linking to /reports/intro"
+  },
+  "link.item.label.Our Funders": {
+    "message": "Our Funders",
+    "description": "The label of footer link with label=Our Funders linking to about/#funders"
   }
 }

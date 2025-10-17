@@ -1,0 +1,222 @@
+.card, .partnerCard {
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .card:hover, .partnerCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  }
+  
+  .avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  
+  .partnerLogo {
+    width: 140px;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .logoContainer {
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 100px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease;
+  }
+  
+  .logoContainer:hover {
+    transform: scale(1.05);
+  }
+  
+  .logo {
+    max-width: 100%;
+    max-height: 80px;
+    object-fit: contain;
+  }
+
+
+  /* AboutCard, Alumni */
+  
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    justify-items: center;   /* centers the cards inside their cells */
+    justify-content: center; /* centers the entire grid inside container */
+    max-width: 1300px;       /* 4 cards x 300px + gaps */
+    margin: 0 auto;          /* centers the grid block itself */
+  }
+  
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    padding: 1.5rem;
+    text-align: center;
+    max-width: 300px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+    color: #222;
+  }
+  
+  .title {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 1rem;
+  }
+  
+  .links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .links img {
+    width: 24px;
+    height: 24px;
+    transition: opacity 0.2s ease;
+  }
+  
+  .links img:hover {
+    opacity: 0.7;
+  }
+  
+
+  /* PARTNER SECTION */
+  .partnerSection {
+    padding: 4rem 1rem;
+    /* background: #f9f9f9; soft neutral background */
+  }
+  
+  .partnerCard {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-bottom: 2rem;
+    text-align: left !important;
+  }
+  
+  .partnerCard:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+  }
+  
+  .partnerLogo img {
+    width: 180px;
+    max-height: 120px;
+    object-fit: contain;
+  }
+  
+  .partnerContent {
+    flex: 1;
+  }
+  
+  .partnerName {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .partnerStory {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 1.5rem;
+  }
+  
+  .partnerAchievementsTitle {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: #222;
+  }
+  
+  .partnerAchievements {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin: 0;
+    color: #444;
+  }
+  
+  .partnerAchievements li {
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+  }
+  
+
+  /* phones + small tablets */
+@media (max-width: 900px) {
+    .grid {
+      grid-template-columns: 1fr !important; /* force single column */
+      gap: 1.5rem;
+      padding: 0 1rem;
+      max-width: 100% !important;
+    }
+  
+    .grid > * {
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+  
+    .card, .partnerCard {
+      width: 100% !important;
+      max-width: 100% !important;
+      padding: 1rem;
+      box-sizing: border-box;
+    }
+  
+    .partnerCard {
+      flex-direction: column !important;
+      align-items: center;
+      text-align: center !important;
+    }
+  
+    .partnerLogo img {
+      width: 120px;
+      max-height: 90px;
+      margin-bottom: 1rem;
+    }
+  }
+  

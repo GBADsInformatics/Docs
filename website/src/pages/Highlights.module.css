@@ -1,0 +1,57 @@
+.highlightsPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6rem 1rem 3rem 1rem; /* increased top padding to match About page spacing */
+  }
+  
+  .highlightsHeader {
+    text-align: center;
+    max-width: 800px;
+    margin-bottom: 3rem;
+  }
+  
+  .highlightsHeader h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #f7931d; /* orange same as About page title */
+    margin-bottom: 1rem;
+  }
+  
+  .highlightsHeader p {
+    font-size: 1.2rem;
+    color: #4a5568;
+    margin: 0 auto;
+  }
+  
+  .highlightsContent {
+    width: 100%;
+    max-width: 1400px; /* adjust to fit multiple cards */
+  }
+  
+  .pageTitle {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #f7931d; /* same orange as About page */
+    margin-bottom: 2rem;
+  }
+  
+  .pageSubtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #4a5568;
+    max-width: 800px;
+    margin: 0 auto 3rem auto;
+  }
+  
+  /* Light mode (default) */
+.pageSubtitle {
+    color: #4a5568; /* medium-dark gray */
+  }
+  
+  /* Dark mode */
+  html[data-theme='dark'] .pageSubtitle {
+    color: #e2e8f0; /* light gray for readability */
+  }
+  
