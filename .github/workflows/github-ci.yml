@@ -3,17 +3,37 @@ on:
     branches: [ "main" , "master" ]
 
   workflow_dispatch:
-  
+
+name: Build & Deploy
+
 jobs:
+  commit-hash:
+    name: Commit SHA
+    runs-on: ubuntu-latest
+    outputs:
+      sha7: ${{ steps.commit-hash.outputs.sha7 }}
+    steps:
+      - name: Get Commit SHA
+        id: commit-hash
+        run: echo "sha7=$(echo ${GITHUB_SHA} | cut -c1-7)" >> "$GITHUB_OUTPUT"
+
   docker:
-    uses: GBADsInformatics/DevopsWorkflows/.github/workflows/docker.yml@main
+    uses: GBADsInformatics/DevopsWorkflows/.github/workflows/docker.yml@v2.0
     secrets: inherit
     with:
       IMAGE_NAME: docs
 
   aws:
-    needs: docker
-    uses: GBADsInformatics/DevopsWorkflows/.github/workflows/aws.yml@main
-    secrets: inherit
+    needs: [commit-hash, docker]
+    uses: GBADsInformatics/DevopsWorkflows/.github/workflows/aws.yml@v2.0
+    secrets:
+      template-input: >-
+        ApplicationName=docs,
+        DockerURI=gbadsinformatics/docs:${{ needs.commit-hash.outputs.sha7 }},
+        BaseURL=/docs,
+        ListenerRulePriority=2
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
     with:
-      SERVICE_NAME: docs-server-service
+      stack-name: docs-stack
+      AWS_REGION: ca-central-1
