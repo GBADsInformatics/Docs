@@ -9,6 +9,22 @@
     width: 100%;
     max-width: 400px;
   }
+
+  .disabledLinkItem {
+  opacity: 0.5;
+  pointer-events: none; /* prevent interaction */
+}
+
+.disabledText {
+  color: rgb(48, 45, 45);
+  cursor: not-allowed;
+}
+
+.disabledButton {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
   
   .card:hover {
     transform: translateY(-6px);

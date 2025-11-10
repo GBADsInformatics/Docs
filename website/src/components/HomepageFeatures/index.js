@@ -12,7 +12,7 @@ const FeatureList = [
       </Translate>
     ),
     link: (
-      <a href="/ourapi" className={styles.homepageFeatureLink}>
+      <a href="https://gbadske.org/api/dataportal/" className={styles.homepageFeatureLink}>
         <Translate>Explore our Data Portal API →</Translate>
       </a>
     ),
