@@ -25,51 +25,47 @@ function Dashboards() {
     {
       title: <Translate>Livestock Populations</Translate>,
       relatedLinks: [
-        {
-          "National Population": "https://gbadske.org/dashboards/population/",
-          "information": "https://docs.google.com/document/d/1j-UTrxtb44kU_wAWDUeULKdd_BpQrI6pE36ka3PT7vg/edit"
-        },
-        {
-          "Ethiopia Sub-National Population": "https://gbadske.org/dashboards/ethiopia-population/",
-          "information": "https://docs.google.com/document/d/1LnQcWmpb8oYnKg_24Nkrtn1YosevPUWA1A0V7opxv6U/edit"
-        }
+        {"National Population": "https://gbadske.org/dashboards/population/", disabled: false},
+        {"information": "https://docs.google.com/document/d/1j-UTrxtb44kU_wAWDUeULKdd_BpQrI6pE36ka3PT7vg/edit", disabled: false},
+        {"Ethiopia Sub-National Population": "https://gbadske.org/dashboards/ethiopia-population/", disabled: false},
+        {"information": "https://docs.google.com/document/d/1LnQcWmpb8oYnKg_24Nkrtn1YosevPUWA1A0V7opxv6U/edit", disabled: false}
       ]
     },
     {
       title: <Translate>Biomass</Translate>,
       relatedLinks: [
-        { "Biomass": "https://gbadske.org/dashboards/biomass/" }
+        { "Biomass": "https://gbadske.org/dashboards/biomass/", disabled: false}
       ]
     },
     {
       title: <Translate>Analytics</Translate>,
       relatedLinks: [
-        { "Animal Health Loss Envelope": "https://gbadske.org/dashboards/ahle/" },
-        { "Antimicrobial Usage and Resistance": "https://gbadske.org/dashboards/amu/" },
-        { "Ethiopia Case Study": "https://gbadske.org/dashboards/ahle-casestudy/" },
-        { "Senegal Case Study": "https://gbadske.org/dashboards/senegal-casestudy/" },
-        { "Total Economic Value": "https://gbadske.org/dashboards/tev/" }
+        { "Animal Health Loss Envelope": "https://gbadske.org/dashboards/ahle/", disabled: false},
+        { "Antimicrobial Usage and Resistance": "https://gbadske.org/dashboards/amu/", disabled: false},
+        { "Ethiopia Case Study": "https://gbadske.org/dashboards/ahle-casestudy/", disabled: false},
+        { "Senegal Case Study": "https://gbadske.org/dashboards/senegal-casestudy/", disabled: false},
+        { "Total Economic Value": "https://gbadske.org/dashboards/tev/", disabled: false}
       ]
     },
     {
       title: <Translate>Data</Translate>,
       relatedLinks: [
-        { "GBADs API Explorer": "https://gbadske.org/dashboards/apiui/" },
-        { "Senegal Data Ecosystem Map": "https://kumu.io/KassyRay/gbads-senegal-case-study-data-ecosystem-map#senegal-livestock-data-ecosystem-map" }
+        { "GBADs API Explorer": "https://gbadske.org/dashboards/apiui/", disabled: true},
+        { "Senegal Data Ecosystem Map": "https://kumu.io/KassyRay/gbads-senegal-case-study-data-ecosystem-map#senegal-livestock-data-ecosystem-map", disabled: false}
       ]
     },
     {
       title: <Translate>Community</Translate>,
       relatedLinks: [
-        { "Usage Statistics": "https://gbadske.org/dashboards/users/" }
+        { "Usage Statistics": "https://gbadske.org/dashboards/users/", disabled: true}
       ]
     },
     {
       title: <Translate>In Development</Translate>,
       relatedLinks: [
-        { "Data Visualizer": "https://gbadske.org/dashboards/visualizer/" },
-        { "Ethiopia Data Stories": "https://gbadske.org/dashboards/datastories/" },
-        { "Census Data": "https://gbadske.org/dashboards/census/" }
+        { "Data Visualizer": "https://gbadske.org/dashboards/visualizer/", disabled: false},
+        { "Ethiopia Data Stories": "https://gbadske.org/dashboards/datastories/", disabled: false},
+        { "Census Data": "https://gbadske.org/dashboards/census/", disabled: false}
       ]
     }
   ];
